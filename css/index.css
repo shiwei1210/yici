@@ -73,53 +73,46 @@ body,html{
 
 
 #preload-01 {width: 0px; height: 0px; display: inline; background-image: url(../images/share-text.png); }
-#preload-02 {width: 0px; height: 0px; display: inline; background-image: url(../images/z-p1-1.png); }
-#preload-03 {width: 0px; height: 0px; display: inline; background-image: url(../images/z-p2-1.png); }
-#preload-04 {width: 0px; height: 0px; display: inline; background-image: url(../images/z-p3-1.png); }
-#preload-05 {width: 0px; height: 0px; display: inline; background-image: url(../images/z-p4-1.png); }
-#preload-06 {width: 0px; height: 0px; display: inline; background-image: url(../images/z-p1-1.png); }
-#preload-07 {width: 0px; height: 0px; display: inline; background-image: url(../images/page61-bg.png); }
-#preload-08 {width: 0px; height: 0px; display: inline; background-image: url(../images/page7-bg.png); }
-#preload-09 {width: 0px; height: 0px; display: inline; background-image: url(../images/p8-bg.png); }
-#preload-10 {width: 0px; height: 0px; display: inline; background-image: url(../images/p9-1-lovebg.png); }
+#preload-02 {width: 0px; height: 0px; display: inline; background-image: url(../images/p1-bg.jpg); }
+#preload-03 {width: 0px; height: 0px; display: inline; background-image: url(../images/p2-bg.jpg); }
+#preload-04 {width: 0px; height: 0px; display: inline; background-image: url(../images/p3-bg.jpg); }
+#preload-05 {width: 0px; height: 0px; display: inline; background-image: url(../images/p4-bg.jpg); }
+#preload-06 {width: 0px; height: 0px; display: inline; background-image: url(../images/p5-bg.jpg); }
+#preload-07 {width: 0px; height: 0px; display: inline; background-image: url(../images/p6-bg.jpg); }
+#preload-08 {width: 0px; height: 0px; display: inline; background-image: url(../images/p7-bg.jpg); }
+#preload-09 {width: 0px; height: 0px; display: inline; background-image: url(../images/p6-rain-01.png); }
+#preload-10 {width: 0px; height: 0px; display: inline; background-image: url(../images/p6-rain-02.png); }
 
 
 .page-1-1{
-background:#e9e8e3 url(../images/z-p1-1.png) no-repeat center bottom;
+background:#e9e8e3 url(../images/p1-bg.jpg) no-repeat center bottom;
 background-size: 100% 100%;
 }
 .page-2-1{
-background:#e9e8e3 url(../images/z-p2-1.png) no-repeat center bottom;
+background:#e9e8e3 url(../images/p2-bg.jpg) no-repeat center bottom;
 background-size: 100% 100%;
 }
 .page-3-1{
-background:#e9e8e3 url(../images/z-p3-1.png) no-repeat center bottom;
+background:#e9e8e3 url(../images/p3-bg.jpg) no-repeat center bottom;
 background-size: 100% 100%;
 }
 .page-4-1{
-background:#e9e8e3 url(../images/z-p4-1.png) no-repeat center bottom;
+background:#e9e8e3 url(../images/p4-bg.jpg) no-repeat center bottom;
 background-size: 100% 100%;
 }
 .page-5-1{
-background:#e9e8e3 url(../images/p5-bg.png) no-repeat center bottom;
+background:#e9e8e3 url(../images/p5-bg.jpg) no-repeat center bottom;
 background-size: 100% 100%;
 }
 .page-6-1{
-	background:#e9e8e3 url(../images/page61-bg.png) no-repeat center bottom;
-	background-size: 100% 100%;
+background:#e9e8e3 url(../images/p6-bg.jpg) no-repeat center bottom;
+background-size: 100% 100%;
 }
 
-.page-7-1{
-	background:#e9e8e3   url(../images/page7-bg.png) no-repeat center bottom;
-	background-size: 100% 100%;
-}
+.page-7-1,
 .page-8-1{
-	background:#e9e8e3 url(../images/p8-bg.png) no-repeat center bottom;
-	background-size: 100% 100%;
-}
-.page-9-1{
-	background:#e9e8e3 url(../images/p9-1-lovebg.png) no-repeat center bottom;
-	background-size: 100% 100%;
+background:#e9e8e3 url(../images/p7-bg.jpg) no-repeat center bottom;
+background-size: 100% 100%;
 }
 /*.page-3-1{ background-color:#e7eef1;}
 .page-4-1{ background-color:#fffdfa;}*/
@@ -451,14 +444,7 @@ background-size: 100% 100%;
 	-webkit-animation: fadeIn 2.5s ease both;
 	animation: fadeIn 2.5s ease both;
 }
-.ani-fadeIn3 {
-	-webkit-animation: fadeIn2 2.7s ease both;
-	animation: fadeIn 2.7s ease both;
-}
-.ani-fadeIn4 {
-	-webkit-animation: fadeIn4 2.7s ease both;
-	animation: fadeIn4 2.7s ease both;
-}
+
 /*渐显循环*/
 .ani-fadeInLoop {
 	-webkit-animation: fadeInLoop 8s ease infinite;
@@ -476,12 +462,8 @@ background-size: 100% 100%;
 	animation: outScale 1.5s ease-in-out both;
 }
 .ani-fadeOut {
-	-webkit-animation: fadeOut 1.0s ease both;
-	animation: fadeOut 1.0s ease both;
-}
-.ani-fadeOut1 {
-	-webkit-animation: fadeOut1 9.5s ease both;
-	animation: fadeOut1 9.5s ease both;
+	-webkit-animation: fadeOut .7s ease both;
+	animation: fadeOut .7s ease both;
 }
 .ani-fadeInOut {
 	-webkit-animation: fadeInOut 2s ease both;
@@ -823,7 +805,7 @@ background-size: 100% 100%;
         opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2);
     }
     100% {
-        opacity: 1; -webkit-transform: scale(0.9); transform: scale(0.9);
+        opacity: 1; -webkit-transform: scale(1); transform: scale(1);
     }
 }
 
@@ -832,7 +814,7 @@ background-size: 100% 100%;
         opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2);
     }
     100% {
-        opacity: 1; -webkit-transform: scale(0.9); transform: scale(0.9);
+        opacity: 1; -webkit-transform: scale(1); transform: scale(1);
     }
 }
 @-webkit-keyframes outScale {
@@ -840,7 +822,7 @@ background-size: 100% 100%;
         opacity: 0; -webkit-transform: scale(0); transform: scale(0);
     }
     100% {
-        opacity: 1; -webkit-transform: scale(1.0); transform: scale(1.0);
+        opacity: 1; -webkit-transform: scale(1); transform: scale(1);
     }
 }
 
@@ -849,7 +831,7 @@ background-size: 100% 100%;
         opacity: 0; -webkit-transform: scale(0); transform: scale(0);
     }
     100% {
-        opacity: 1; -webkit-transform: scale(1.0); transform: scale(1.0);
+        opacity: 1; -webkit-transform: scale(1); transform: scale(1);
     }
 }
 
@@ -862,41 +844,14 @@ background-size: 100% 100%;
         opacity: 0;
     }
 }
-@-webkit-keyframes fadeOut1 {
-	0% {
-		opacity: 1
-	}
-	50%{
-		opacity: 1
-	}
-	75%{
-		opacity: 0.7
-	}
-	100% {
-		opacity: 0;
-	}
-}
+
 @keyframes fadeOut {
-	0% {
-		opacity: 1
-	}
-	100% {
-		opacity: 0;
-	}
-}
-@keyframes fadeOut1 {
-	0% {
-		opacity: 1
-	}
-	50%{
-		opacity: 1
-	}
-	75%{
-		opacity: 0.7
-	}
-	100% {
-		opacity: 0;
-	}
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+    }
 }
 @-webkit-keyframes fadeInOut {
     0% {
