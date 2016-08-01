@@ -1,0 +1,64 @@
+.product-choose-con {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background: url("../images/choose-bg.png") no-repeat;
+  backgorund-size: 100%;
+}
+.product-choose-con .wrap {
+  padding: 1.5rem;
+}
+.product-choose-con .con-box {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.3);
+}
+.product-choose-con .con-box .show-btn {
+  position: relative;
+  display: block;
+}
+.product-choose-con .con-box .show-btn em {
+  position: absolute;
+  display: block;
+  width: 4.5rem;
+  height: 4.5rem;
+  background: url(../images/left-icon.png) center no-repeat;
+  background-size: cover;
+  top: 0;
+  right: 0;
+}
+.product-choose-con .con-box .show-btn em.on {
+  transform: rotate(-90deg);
+}
+.product-choose-con .con-box .show-btn img {
+  width: 100%;
+  height: auto;
+}
+.product-choose-con .con-box .product-list {
+  padding: 0 .5rem 0 1.5rem;
+  display: none;
+}
+.product-choose-con .con-box .product-list a {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+.product-choose-con .con-box .product-list img {
+  width: 100%;
+  height: auto;
+  /*   margin-bottom: 1.5rem;*/
+}
+.product-page {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.product-page .wrap img {
+  width: 100%;
+  height: 100%;
+}
+.visiable {
+  display: block!important;
+}
