@@ -108,11 +108,17 @@
         </div>
     </div> -->
 </div>
-<script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/zepto.min.js"></script>
 <script src="js/touch.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
 <!-- <script src="js/iscroll-probe.js"></script> -->
 <script src="js/index.js"></script>
 <!-- <script src="js/page.js"></script> -->
+<script>
+    var jq=jQuery.noConflict();
+    jq(".show-btn").on("click", function () {
+        jq(this).next().stop().slideToggle(500).parent().siblings().children("div").slideUp(500);
+    });
+</script>
 </body>
 </html>
