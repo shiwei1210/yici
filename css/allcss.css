@@ -220,6 +220,9 @@
     display: block !important;
 }
 
+.vile {
+    display: none !important;
+}
 .going .img {
     width: 100%;
     height: auto;
