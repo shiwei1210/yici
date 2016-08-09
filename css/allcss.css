@@ -64,8 +64,8 @@
     width: 100%;
     height: auto;
     bottom: 0;
-    position: fixed;
-    z-index: 5;
+    position: absolute;
+    z-index: 1;
 }
 
 .prizes-con .wrap .light {
@@ -73,7 +73,7 @@
     width: 100%;
     height: auto;
     z-index: 3;
-    bottom: 5px;
+    bottom: 0;
 }
 
 .prizes-con .wrap .stars {
