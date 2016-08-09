@@ -1,9 +1,6 @@
-
-@import url("product-choose.css");
-
 body{
 	width:100%;
-	overflow:hidden;
+/*	overflow:hidden;*/
 	padding:0;
 	margin:0;
 }
@@ -67,63 +64,23 @@ body,html{
 }
 
 
-
 .loading-img {width: 0px; height: 0px; display:none; overflow:hidden; }
 /*preloadedImages bg*/
 
 
-#preload-01 {width: 0px; height: 0px; display: inline; background-image: url(../images/share-text.png); }
-#preload-02 {width: 0px; height: 0px; display: inline; background-image: url(../images/z-p1-1.png); }
-#preload-03 {width: 0px; height: 0px; display: inline; background-image: url(../images/z-p2-1.png); }
-#preload-04 {width: 0px; height: 0px; display: inline; background-image: url(../images/z-p3-1.png); }
-#preload-05 {width: 0px; height: 0px; display: inline; background-image: url(../images/z-p4-1.png); }
-#preload-06 {width: 0px; height: 0px; display: inline; background-image: url(../images/z-p1-1.png); }
-#preload-07 {width: 0px; height: 0px; display: inline; background-image: url(../images/page61-bg.png); }
-#preload-08 {width: 0px; height: 0px; display: inline; background-image: url(../images/page7-bg.png); }
-#preload-09 {width: 0px; height: 0px; display: inline; background-image: url(../images/p8-bg.png); }
-#preload-10 {width: 0px; height: 0px; display: inline; background-image: url(../images/p9-1-lovebg.png); }
+/*#preload-01 {width: 0px; height: 0px; display: inline; background-image: url(../images/share-text.png); }
+#preload-02 {width: 0px; height: 0px; display: inline; background-image: url(../images/p1-bg.jpg); }*/
+
 
 
 .page-1-1{
-background:#e9e8e3 url(../images/z-p1-1.png) no-repeat center bottom;
+background:#e9e8e3 url(../images/page-1-bg.jpg) no-repeat center bottom;
 background-size: 100% 100%;
 }
 .page-2-1{
-background:#e9e8e3 url(../images/z-p2-1.png) no-repeat center bottom;
-background-size: 100% 100%;
-}
-.page-3-1{
-background:#e9e8e3 url(../images/z-p3-1.png) no-repeat center bottom;
-background-size: 100% 100%;
-}
-.page-4-1{
-background:#e9e8e3 url(../images/z-p4-1.png) no-repeat center bottom;
-background-size: 100% 100%;
-}
-.page-5-1{
-background:#e9e8e3 url(../images/p5-bg.png) no-repeat center bottom;
-background-size: 100% 100%;
-}
-.page-6-1{
-	background:#e9e8e3 url(../images/page61-bg.png) no-repeat center bottom;
+	background:#e9e8e3 url(../images/page-2-bg.jpg) no-repeat center bottom;
 	background-size: 100% 100%;
 }
-
-.page-7-1{
-	background:#e9e8e3   url(../images/page7-bg.png) no-repeat center bottom;
-	background-size: 100% 100%;
-}
-.page-8-1{
-	background:#e9e8e3 url(../images/p8-bg.png) no-repeat center bottom;
-	background-size: 100% 100%;
-}
-.page-9-1{
-	background:#e9e8e3 url(../images/p9-1-lovebg.png) no-repeat center bottom;
-	background-size: 100% 100%;
-}
-/*.page-3-1{ background-color:#e7eef1;}
-.page-4-1{ background-color:#fffdfa;}*/
-
 
 .page-current{
 	z-index:1;
@@ -162,7 +119,7 @@ background-size: 100% 100%;
 }
 /* page2 */
 .page-2-1 {
-	overflow:hidden;
+	/*overflow:hidden;*/
 }
 .page-2-1 .img_1 {
 	height:auto;
@@ -241,90 +198,7 @@ background-size: 100% 100%;
 	left:0;
 	top:50%;
 }
-/* page-4 */
-.page-4-1 {
-	overflow:hidden;
-}
-.page-4-1 .img_1 {
-	height:auto;
-	width:100%;
-	position:absolute;
-	left:0;
-	top:50%;
-  margin-top: -4.65rem;
-}
-/*上*/
-.page-4-1 .img_u_1 {
-	height:50%;
-	width:100%;
-	position:absolute;
-	left:0;
-	top:0;
-}
-/*下*/
-.page-4-1 .img_d_1 {
-	height:50%;
-	width:100%;
-	position:absolute;
-	left:0;
-	top:50%;
-}
-/* page-5 */
-.page-5-1 {
-	overflow:hidden;
-}
-.page-5-1 .img_1 {
-	height:auto;
-	width:100%;
-	position:absolute;
-	left:0;
-	top:50%;
-  margin-top: -4.65rem;
-}
-/*上*/
-.page-5-1 .img_u_1 {
-	height:50%;
-	width:100%;
-	position:absolute;
-	left:0;
-	top:0;
-}
-/*下*/
-.page-5-1 .img_d_1 {
-	height:50%;
-	width:100%;
-	position:absolute;
-	left:0;
-	top:50%;
-}
-/* page-6 */
-.page-6-1 {
-	overflow:hidden;
-}
-.page-6-1 .divimg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top:0;
-  left:0;
-}
 
-.page-6-1 .img_1 {
-	height:auto;
-	width:100%;
-	position:absolute;
-	left:0;
-	top:50%;
-  margin-top: -4.65rem;
-}
-/*上*/
-.page-6-1 .img_u_1 {
-	height:50%;
-	width:100%;
-	position:absolute;
-	left:0;
-	top:0;
-}
 .rain-bg {
   height:100%;
 	width:100%;
@@ -343,75 +217,6 @@ background-size: 100% 100%;
 	top:50%;
 }
 
-
-/* page7 */
-.page-7-1 .img_1{
-	height: auto;
-	width: 100%;
-	position: absolute;
-	left: 0;
-	top: 3%;
-}
-.page-7-1 .img_2{
-	height: auto;
-	width: 100%;
-	position: absolute;
-	left: 0;
-	top: 11.5%;
-}
-.page-7-1 .img_3{
-	height: auto;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 23.5%;
-}
-.page-7-1 .img_4{
-	height: auto;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 51%;
-}
-.page-7-1 .img_5{
-	height: auto;
-	width: 100%;
-	position: absolute;
-	left: 0;
-	top: 72%;
-}
-/* page8 */
-.page-8-1 {
-	overflow:hidden;
-}
-.page-8-1 .img_1 {
-	height:auto;
-	width:100%;
-	position:absolute;
-	left:0;
-	top:1%;
-}
-.page-8-1 .img_2 {
-	height:auto;
-	width:100%;
-	position:absolute;
-	left:0;
-	top:36%;
-}
-.page-8-1 .img_3 {
-	height:auto;
-	width:100%;
-	position:absolute;
-	left:0;
-	top:62%;
-}
-.page-8-1 .img_4 {
-	height:auto;
-	width:100%;
-	position:absolute;
-	left:0;
-	top:88%;
-}
 
 
 /*ani class*/
@@ -444,21 +249,14 @@ background-size: 100% 100%;
 	animation: fadeInRight5 .7s ease both;
 }
 .ani-fadeIn {
-	-webkit-animation: fadeIn .7s ease both;
-	animation: fadeIn .7s ease both;
+	-webkit-animation: fadeIn 2.0s ease both;
+	animation: fadeIn 2.0s ease both;
 }
 .ani-fadeIn2 {
 	-webkit-animation: fadeIn 2.5s ease both;
 	animation: fadeIn 2.5s ease both;
 }
-.ani-fadeIn3 {
-	-webkit-animation: fadeIn2 2.7s ease both;
-	animation: fadeIn 2.7s ease both;
-}
-.ani-fadeIn4 {
-	-webkit-animation: fadeIn4 2.7s ease both;
-	animation: fadeIn4 2.7s ease both;
-}
+
 /*渐显循环*/
 .ani-fadeInLoop {
 	-webkit-animation: fadeInLoop 8s ease infinite;
@@ -476,12 +274,8 @@ background-size: 100% 100%;
 	animation: outScale 1.5s ease-in-out both;
 }
 .ani-fadeOut {
-	-webkit-animation: fadeOut 1.0s ease both;
-	animation: fadeOut 1.0s ease both;
-}
-.ani-fadeOut1 {
-	-webkit-animation: fadeOut1 9.5s ease both;
-	animation: fadeOut1 9.5s ease both;
+	-webkit-animation: fadeOut .7s ease both;
+	animation: fadeOut .7s ease both;
 }
 .ani-fadeInOut {
 	-webkit-animation: fadeInOut 2s ease both;
@@ -823,7 +617,7 @@ background-size: 100% 100%;
         opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2);
     }
     100% {
-        opacity: 1; -webkit-transform: scale(0.9); transform: scale(0.9);
+        opacity: 1; -webkit-transform: scale(1); transform: scale(1);
     }
 }
 
@@ -832,7 +626,7 @@ background-size: 100% 100%;
         opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2);
     }
     100% {
-        opacity: 1; -webkit-transform: scale(0.9); transform: scale(0.9);
+        opacity: 1; -webkit-transform: scale(1); transform: scale(1);
     }
 }
 @-webkit-keyframes outScale {
@@ -840,7 +634,7 @@ background-size: 100% 100%;
         opacity: 0; -webkit-transform: scale(0); transform: scale(0);
     }
     100% {
-        opacity: 1; -webkit-transform: scale(1.0); transform: scale(1.0);
+        opacity: 1; -webkit-transform: scale(1); transform: scale(1);
     }
 }
 
@@ -849,7 +643,7 @@ background-size: 100% 100%;
         opacity: 0; -webkit-transform: scale(0); transform: scale(0);
     }
     100% {
-        opacity: 1; -webkit-transform: scale(1.0); transform: scale(1.0);
+        opacity: 1; -webkit-transform: scale(1); transform: scale(1);
     }
 }
 
@@ -862,41 +656,14 @@ background-size: 100% 100%;
         opacity: 0;
     }
 }
-@-webkit-keyframes fadeOut1 {
-	0% {
-		opacity: 1
-	}
-	50%{
-		opacity: 1
-	}
-	75%{
-		opacity: 0.7
-	}
-	100% {
-		opacity: 0;
-	}
-}
+
 @keyframes fadeOut {
-	0% {
-		opacity: 1
-	}
-	100% {
-		opacity: 0;
-	}
-}
-@keyframes fadeOut1 {
-	0% {
-		opacity: 1
-	}
-	50%{
-		opacity: 1
-	}
-	75%{
-		opacity: 0.7
-	}
-	100% {
-		opacity: 0;
-	}
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+    }
 }
 @-webkit-keyframes fadeInOut {
     0% {
@@ -1927,8 +1694,6 @@ pulse
   	right:0;
   	top:78.5281%;
   }*/
-
-
 
 }
 
