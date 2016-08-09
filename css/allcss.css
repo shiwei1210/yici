@@ -248,7 +248,8 @@
 .going .rule-btn {
     display: block;
     float: right;
-    height: 4.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
     position: absolute;
     top: 1rem;
     right: 0;
