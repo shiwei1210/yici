@@ -63,7 +63,7 @@
 .prizes-con .wrap .youqitong {
     width: 100%;
     height: auto;
-    bottom: 20px;
+    bottom: 0;
     position: absolute;
     z-index: 1;
 }
