@@ -54,7 +54,7 @@ p {
 
 .m-h {
     font-family: 微软雅黑;
-    margin: 15px 0;
+    margin: 10px 0;
     font-size: 15px;
     color: #010101;
 }
@@ -142,9 +142,10 @@ p {
 }
 
 .mui-img {
-    width: 140px;
-    height: 115px;
-    margin-left: 28%;
+    width: 60%;
+    /*width: 140px;*/
+    /*height: 115px;*/
+    margin-left: 20%;
 }
 
 .mui-img img {
@@ -281,3 +282,10 @@ div.pop-grayzg .active {
 }
 
 /*弹层 end'*/
+.muip{
+    text-align: center;
+    color: #ff9400;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "微软雅黑";
+}
