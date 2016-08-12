@@ -1,4 +1,7 @@
-a{text-decoration: none;}
+a {
+    text-decoration: none;
+}
+
 .trasfrm {
     position: fixed;
     width: 100%;
@@ -11,14 +14,14 @@ a{text-decoration: none;}
 }
 
 /*.going .rule-btn {*/
-    /*height: 2.5rem;*/
-    /*font-size: 1.2rem;*/
-    /*line-height: 2.5rem;*/
-    /*top: .5rem;*/
-    /*display: block;*/
-    /*float: right;*/
-    /*position: absolute;*/
-    /*right: 1rem;*/
+/*height: 2.5rem;*/
+/*font-size: 1.2rem;*/
+/*line-height: 2.5rem;*/
+/*top: .5rem;*/
+/*display: block;*/
+/*float: right;*/
+/*position: absolute;*/
+/*right: 1rem;*/
 /*}*/
 
 .going .page {
@@ -176,27 +179,33 @@ a{text-decoration: none;}
     text-align: center;
 }
 
-.okeveningu-pop>div{display: none;}
-.okeveningu-pop>div.active{display: block;}
-.okeveningu-pop>div > button {
+.okeveningu-pop > div {
+    display: none;
+}
+
+.okeveningu-pop > div.active {
+    display: block;
+}
+
+.okeveningu-pop > div > button {
     margin-top: 2rem;
     margin-bottom: 1.5rem;
 }
 
-.okeveningu-pop >div > p {
+.okeveningu-pop > div > p {
     font-size: 1.5rem;
     font-family: 'Microsoft Yahei';
 }
 
-.okeveningu-pop >div > p:nth-child(2) {
+.okeveningu-pop > div > p:nth-child(2) {
     margin-top: 1.2rem;
 }
 
-.okeveningu-pop >div > p:nth-child(3) {
+.okeveningu-pop > div > p:nth-child(3) {
     margin-top: 1rem;
 }
 
-.okeveningu-pop >div > .input-style {
+.okeveningu-pop > div > .input-style {
     border: 1px solid #333;
     border-radius: .5rem;
     color: #444;
@@ -208,13 +217,13 @@ a{text-decoration: none;}
     margin-bottom: 1.5rem;
 }
 
-.okeveningu-pop >div > .errors {
+.okeveningu-pop > div > .errors {
     color: #ff4300;
     font-size: 1.2rem;
     font-weight: 700;
 }
 
-.t-con, .t-huo,.t-huo2 {
+.t-con, .t-huo, .t-huo2 {
     color: #fb5e01;
     font-weight: 700;
 }
@@ -223,7 +232,7 @@ a{text-decoration: none;}
     font-size: 2rem !important;
 }
 
-.t-huo,.t-huo2 {
+.t-huo, .t-huo2 {
     font-size: 1.2rem !important;
 }
 
@@ -308,14 +317,17 @@ a{text-decoration: none;}
     color: #2b2b2b;
     font-size: 1.4rem;
 }
-.txt1{
+
+.txt1 {
     color: #2b2b2b;
     font-size: 1.4rem;
     margin-top: .5rem;
 }
-.lgea{
+
+.lgea {
     margin-top: 1rem;
 }
+
 .advertisement {
     margin-bottom: .5rem;
 }
@@ -323,7 +335,8 @@ a{text-decoration: none;}
 #again {
     margin-bottom: 0;
 }
-.button1{
+
+.button1 {
     display: inline-block;
     background: -webkit-linear-gradient(top, #ffa200 0%, #ff7900 100%);
     box-shadow: 0 -2px 4px #ff4200 inset;
@@ -337,7 +350,8 @@ a{text-decoration: none;}
     font-weight: 700;
     margin: 0 1.0rem;
 }
-.lgea a:first-child{
+
+.lgea a:first-child {
     display: inline-block;
     background: -webkit-linear-gradient(top, #29bdf8 0%, #089ce5 100%);
     box-shadow: 0 -2px 4px #076dcb inset;
@@ -351,6 +365,7 @@ a{text-decoration: none;}
     font-weight: 700;
     margin: 0 10px;
 }
+
 .content_center > .button {
     margin: 1rem 0;
     font-size: 2rem;
@@ -401,7 +416,8 @@ a{text-decoration: none;}
         margin-left: 1.8rem;
     }
 }
-.rule-b{
+
+.rule-b {
     width: 180px;
     height: 2.5rem;
     font-size: 1.2rem;
@@ -412,19 +428,23 @@ a{text-decoration: none;}
     position: absolute;
     right: 1rem;
 }
-.rule-b img{
+
+.rule-b img {
     width: 100%;
     display: block;
 }
-.bton{
+
+.bton {
     position: absolute;
     bottom: 40px;
 }
-.bton{
+
+.bton {
     overflow: hidden;
     width: 100%;
 }
-.bton a{
+
+.bton a {
     display: block;
     float: left;
     background: -webkit-linear-gradient(top, #ef4510 0%, #f15e30 100%);
@@ -433,18 +453,68 @@ a{text-decoration: none;}
     width: 40%;
     border: none;
     font-size: 17px;
-    height:50px;
+    height: 50px;
     line-height: 50px;
     color: #fff;
     text-align: center;
     font-weight: bold;
     font-family: "微软雅黑";
 }
-.bton a:first-child{
+
+.bton a:first-child {
     float: left;
     margin-left: 3%;
 }
-.bton a:last-child{
+
+.bton a:last-child {
     float: right;
     margin-right: 3%;
+}
+
+.dingwei {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.quedb {
+    width: 100%;
+    position: absolute;
+    bottom: 4.3rem;
+    left: 0;
+    right: 0;
+}
+
+.quedb a:first-child {
+    display: inline-block;
+    float: left;
+    background: -webkit-linear-gradient(top, #ef420c 0%, #f16134 100%);
+    box-shadow: 0 -2px 4px #ff4200 inset;
+    border-radius: 2rem;
+    width: 40%;
+    border: none;
+    font-size: 1.8rem;
+    height: 4.2rem;
+    line-height: 4.2rem;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.quedb a:last-child {
+    display: inline-block;
+    float: right;
+    background: -webkit-linear-gradient(top, #ef420c 0%, #f16134 100%);
+    box-shadow: 0 -2px 4px #ff4200 inset;
+    border-radius: 2rem;
+    width: 40%;
+    border: none;
+    font-size: 1.8rem;
+    height: 4.2rem;
+    line-height: 4.2rem;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin-right: 5%;
 }
