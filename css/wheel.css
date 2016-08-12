@@ -416,3 +416,35 @@ a{text-decoration: none;}
     width: 100%;
     display: block;
 }
+.bton{
+    position: absolute;
+    bottom: 40px;
+}
+.bton{
+    overflow: hidden;
+    width: 100%;
+}
+.bton a{
+    display: block;
+    float: left;
+    background: -webkit-linear-gradient(top, #ef4510 0%, #f15e30 100%);
+    box-shadow: 0 -2px 4px #ff4200 inset;
+    border-radius: 2rem;
+    width: 40%;
+    border: none;
+    font-size: 17px;
+    height:50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-family: "微软雅黑";
+}
+.bton a:first-child{
+    float: left;
+    margin-left: 3%;
+}
+.bton a:last-child{
+    float: right;
+    margin-right: 3%;
+}
