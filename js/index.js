@@ -1,15 +1,15 @@
 (function () {
 
     //点击产品标题展开产品列表
-    //$(".show-btn").on("click", function () {
-    //    $(this).find("em").toggleClass("on");
-    //    if ($(this).find("em").hasClass("on")) {
-    //        $(this).siblings(".product-list").addClass("visiable");
-    //    }
-    //    else {
-    //        $(this).siblings(".product-list").removeClass("visiable");
-    //    }
-    //});
+    $(".show-btn").on("click", function () {
+        $(this).find("em").toggleClass("on");
+        //if ($(this).find("em").hasClass("on")) {
+        //    $(this).siblings(".product-list").addClass("visiable");
+        //}
+        //else {
+        //    $(this).siblings(".product-list").removeClass("visiable");
+        //}
+    });
     var now = {row: 1, col: 1}, last = {row: 0, col: 0};
     const towards = {up: 1, right: 2, down: 3, left: 4};
     var isAnimating = false;

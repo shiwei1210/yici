@@ -123,9 +123,11 @@
 .product-choose-con .con-box .show-btn em {
     position: absolute;
     display: block;
-    width: 4.5rem;
-    height: 4.5rem;
-    background: url(../images/left-icon.png) center no-repeat;
+    /*width: 4.5rem;*/
+    /*height: 4.5rem;*/
+    width: 2.2rem;
+    height: 2.2rem;
+    background: url(../images/left-icon1.png) center no-repeat;
     background-size: cover;
     top: 0;
     right: 0;
