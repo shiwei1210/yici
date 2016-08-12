@@ -74,7 +74,7 @@ p {
 
 .m-h {
     font-family: 微软雅黑;
-    margin: .5rem 0;
+    margin: .8rem 0;
     font-size: 1.5rem;
     color: #010101;
 }
@@ -314,4 +314,24 @@ div.pop-grayzg .active {
     height: 4rem !important;
     line-height: 4rem !important;
     margin: 0 2px !important;
+}
+
+.acbuton{
+    display: block;
+    float: left;
+    background: -webkit-linear-gradient(top, #ffa200 0%, #ff7900 100%);
+    box-shadow: 0 -2px 4px #ff4200 inset;
+    border-radius: 2rem;
+    width: 40%;
+    margin: auto;
+    border: none;
+    font-size: 17px;
+    height:50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-family: "微软雅黑";
+    margin-left: 29%;
+    margin-top: 10px;
 }
