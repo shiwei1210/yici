@@ -1,0 +1,616 @@
+/*第一种弹框*/
+.tankuangyihao {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.tankuangyihao .tankuangyihao-pop {
+    width: 75%;
+    overflow: hidden;
+    padding: 20px 0;
+    background: white;
+    margin: 50% auto 0;
+    border-radius: 8px;
+}
+
+.tankuangyihao .okright1{
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: right;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #fb5e01;
+    font-weight: 800;
+    background: url("../images/button-cha.png") no-repeat center;
+    background-size: 16px 16px;
+
+}
+
+.tankuangerhao p {
+    color: #fb4601;
+}
+
+.input1h{
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+.input1h input{
+    display: block;
+    width: 95%;
+    padding-left: 10px;
+    height: 40px;
+    margin: auto;
+    border: #c5c3c3 solid 1px;
+    border-radius: 8px;
+}
+.buton1 {
+    margin-top: 1rem;
+}
+
+.tankuangyihao-pop .buton1{
+    background: -webkit-linear-gradient(top, #ffa200 0%, #ff7900 100%);
+    box-shadow: 0 -2px 4px #ff4200 inset;
+    border-radius: 2rem;
+    width: 47%;
+    border: none;
+    font-size: 17px;
+    height: 40px;
+    line-height: 25px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 26%;
+    font-family: "微软雅黑";
+}
+
+
+/*第一种结束'*/
+/*第二种弹框*/
+.tankuangerhao {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.tankuangerhao .tankuangerhao-pop {
+    width: 75%;
+    overflow: hidden;
+    padding: 15px 0;
+    background: white;
+    margin: 50% auto 0;
+    border-radius: 8px;
+}
+
+.tankuangerhao .okright2{
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: right;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #fb5e01;
+    font-weight: 800;
+    background: url("../images/button-cha.png") no-repeat center;
+    background-size: 16px 16px;
+
+}
+
+.tankuangerhao p {
+    color: #fb4601;
+}
+
+.tankuangerhao .huode2{
+    text-align: center;
+    font-size: 18px;
+    font-family: 微软雅黑;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.tankuangerhao .t-con2 {
+    text-align: center;
+    font-size: 18px;
+    font-family: 微软雅黑;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+.tankuangerhao .t-huo2 {
+    text-align: center;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+
+.tankuangerhao .zhuce2 {
+    width: 60%;
+    height: 50px;
+    margin-left: 21.5%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.tankuangerhao .zhuce2 img {
+    width: 100%;
+    display: block;
+}
+
+.buton2 {
+    margin-top: 1rem;
+}
+
+.tankuangerhao-pop .buton2 {
+    background: -webkit-linear-gradient(top, #ffa200 0%, #ff7900 100%);
+    box-shadow: 0 -2px 4px #ff4200 inset;
+    border-radius: 2rem;
+    width: 47%;
+    border: none;
+    font-size: 17px;
+    height: 40px;
+    line-height: 25px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 26%;
+    font-family: "微软雅黑";
+}
+
+
+/*第二种结束'*/
+/*第三种弹框开始*/
+.tankuangsanhao {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.tankuangsanhao .tankuangsanhao-pop {
+    width: 75%;
+    overflow: hidden;
+    padding: 15px 0;
+    background: white;
+    margin: 50% auto 0;
+    border-radius: 8px;
+}
+
+.tankuangsanhao .okright3{
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: right;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #fb5e01;
+    font-weight: 800;
+    background: url("../images/button-cha.png") no-repeat center;
+    background-size: 16px 16px;
+
+}
+
+.tankuangsanhao p {
+    color: #ff4300;
+}
+
+.tankuangsanhao .huode3{
+    text-align: center;
+    font-size: 18px;
+    font-family: 微软雅黑;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.tankuangsanhao .t-con3 {
+    text-align: center;
+    font-size: 24px;
+    font-family: 微软雅黑;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+.tankuangsanhao .t-huo3 {
+    width: 85%;
+    margin: auto;
+    line-height: 20px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 微软雅黑;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+
+.tankuangsanhao .zhuce3 {
+    width: 60%;
+    height: 50px;
+    margin-left: 21.5%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.tankuangsanhao .zhuce3 img {
+    width: 100%;
+    display: block;
+}
+
+.buton3{
+    margin-top: 1rem;
+}
+
+.tankuangsanhao-pop .buton3 {
+    background: -webkit-linear-gradient(top, #ffa200 0%, #ff7900 100%);
+    box-shadow: 0 -2px 4px #ff4200 inset;
+    border-radius: 2rem;
+    width: 47%;
+    border: none;
+    font-size: 17px;
+    height: 40px;
+    line-height: 25px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 26%;
+    font-family: "微软雅黑";
+}
+/*第三种弹框结束*/
+/*第四种弹框开始*/
+.tankuangsihao {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.tankuangsihao .tankuangsihao-pop {
+    width: 75%;
+    overflow: hidden;
+    padding: 15px 0;
+    background: white;
+    margin: 20% auto 0;
+    border-radius: 8px;
+}
+
+.tankuangsihao .okright4{
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: right;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #fb5e01;
+    font-weight: 800;
+    background: url("../images/button-cha.png") no-repeat center;
+    background-size: 16px 16px;
+
+}
+
+.tankuangsihao p {
+    color: #ff4300;
+}
+
+.tankuangsihao .huode4{
+    text-align: center;
+    font-size: 18px;
+    font-family: 微软雅黑;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.tankuangsihao .t-con4 {
+    text-align: center;
+    font-size: 15px;
+    font-family: 微软雅黑;
+    font-weight: bolder;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+.tankuangsihao .t-huo4 {
+    text-align: center;
+    font-size: 15px;
+    font-family: 微软雅黑;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.tankuangsihao .zhuce4 {
+    width: 60%;
+    height: 50px;
+    margin-left: 21.5%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.tankuangsihao .zhuce4 img {
+    width: 100%;
+    display: block;
+}
+.buton4{
+    margin-top: 1rem;
+}
+.tankuangsihao-pop .buton4 {
+    background: -webkit-linear-gradient(top, #ffa200 0%, #ff7900 100%);
+    box-shadow: 0 -2px 4px #ff4200 inset;
+    border-radius: 2rem;
+    width: 47%;
+    border: none;
+    font-size: 17px;
+    height: 40px;
+    line-height: 25px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 26%;
+    font-family: "微软雅黑";
+}
+.t-img4{
+    margin: auto;
+    width: 170px;
+    height: 170px;
+    margin-top: 25px;
+}
+.t-img4 img{
+    width: 100%;
+    display: block;
+}
+.t-p4{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+/*第四种弹框结束*/
+/*第五种弹框开始*/
+.tankuangwuhao {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.tankuangwuhao .tankuangwuhao-pop {
+    width: 75%;
+    overflow: hidden;
+    padding: 15px 0;
+    background: white;
+    margin: 40% auto 0;
+    border-radius: 8px;
+}
+
+.tankuangwuhao .okright5{
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: right;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #fb5e01;
+    font-weight: 800;
+    background: url("../images/button-cha.png") no-repeat center;
+    background-size: 16px 16px;
+
+}
+
+.tankuangwuhao p {
+    color: #ff4300;
+}
+.tankuangwuhao-pop .buton5 {
+    background: -webkit-linear-gradient(top, #ffa200 0%, #ff7900 100%);
+    box-shadow: 0 -2px 4px #ff4200 inset;
+    border-radius: 2rem;
+    width: 47%;
+    border: none;
+    font-size: 17px;
+    height: 40px;
+    line-height: 25px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 26%;
+    font-family: "微软雅黑";
+}
+.t-img5{
+    margin: auto;
+    width: 170px;
+    height: 170px;
+    margin-top: 25px;
+}
+.t-img5 img{
+    width: 100%;
+    display: block;
+}
+.t-p5{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.tankuangwuhao .t-con5 {
+    text-align: center;
+    font-size: 15px;
+    font-family: 微软雅黑;
+    font-weight: bolder;
+    margin-top: 15px;
+    line-height: 20px;
+}
+/*第五种弹框结束*/
+/*第六种弹框开始*/
+.tankuangliuhao {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.tankuangliuhao .tankuangliuhao-pop {
+    width: 75%;
+    overflow: hidden;
+    padding: 15px 0;
+    background: white;
+    margin: 50% auto 0;
+    border-radius: 8px;
+}
+
+.tankuangliuhao .okright6{
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: right;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #fb5e01;
+    font-weight: 800;
+    background: url("../images/button-cha.png") no-repeat center;
+    background-size: 16px 16px;
+
+}
+
+.tankuangliuhao p {
+    color: #fb4601;
+}
+
+.tankuangliuhao .huode6{
+    text-align: center;
+    font-size: 18px;
+    font-family: 微软雅黑;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.tankuangliuhao .t-con6 {
+    text-align: center;
+    font-size: 18px;
+    font-family: 微软雅黑;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+.tankuangliuhao .t-huo6 {
+    text-align: center;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+
+.buton6 {
+    margin-top: 1rem;
+}
+
+.tankuangliuhao-pop .buton6 {
+    background: -webkit-linear-gradient(top, #ffa200 0%, #ff7900 100%);
+    box-shadow: 0 -2px 4px #ff4200 inset;
+    border-radius: 2rem;
+    width: 47%;
+    border: none;
+    font-size: 17px;
+    height: 40px;
+    line-height: 25px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 26%;
+    font-family: "微软雅黑";
+}
+/*弹框六号结束*/
+/*弹框7号开始*/
+.tankuangqihao {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.tankuangqihao .tankuangqihao-pop {
+    width: 75%;
+    overflow: hidden;
+    padding: 15px 0;
+    background: white;
+    margin: 50% auto 0;
+    border-radius: 8px;
+}
+
+.tankuangqihao .okright7{
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: right;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #fb5e01;
+    font-weight: 800;
+    background: url("../images/button-cha.png") no-repeat center;
+    background-size: 16px 16px;
+
+}
+
+.tankuangqihao p {
+    color: #fb4601;
+}
+
+.tankuangqihao .huode7{
+    text-align: center;
+    font-size: 18px;
+    font-family: 微软雅黑;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.tankuangqihao .t-con7 {
+    text-align: center;
+    font-size: 18px;
+    font-family: 微软雅黑;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+.tankuangqihao .t-con77 {
+    text-align: center;
+    font-size: 18px;
+    font-family: 微软雅黑;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+.tankuangqihao .t-huo7 {
+    text-align: center;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+
+.buton7 {
+    margin-top: 1rem;
+}
+
+.tankuangqihao-pop .buton7 {
+    background: -webkit-linear-gradient(top, #ffa200 0%, #ff7900 100%);
+    box-shadow: 0 -2px 4px #ff4200 inset;
+    border-radius: 2rem;
+    width: 47%;
+    border: none;
+    font-size: 17px;
+    height: 40px;
+    line-height: 25px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 26%;
+    font-family: "微软雅黑";
+}

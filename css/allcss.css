@@ -73,13 +73,13 @@
     width: 100%;
     height: auto;
     z-index: 3;
-    bottom: 0;
+    bottom: 50px;
 }
 
 .prizes-con .wrap .stars {
     width: 100%;
     height: auto;
-    bottom: 0;
+    bottom: 120px;
     position: absolute;
     z-index: 4;
 }
