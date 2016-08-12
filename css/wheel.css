@@ -53,7 +53,7 @@ a{text-decoration: none;}
 
 .wheelbox {
     position: relative;
-    margin-top: -50px;
+    margin-top: -5rem;
 }
 
 .prizes-tip {
@@ -70,8 +70,8 @@ a{text-decoration: none;}
 
 .prizes-tip > li {
     font-size: 1.2rem;
-    line-height: 40px;
-    height: 40px;
+    line-height: 4rem;
+    height: 4rem;
     color: #fff;
 }
 
@@ -152,7 +152,7 @@ a{text-decoration: none;}
     position: relative;
     width: 75%;
     overflow: hidden;
-    padding: 15px 0;
+    padding: 1.5rem 0;
     background: white;
     margin: 50% auto 0;
     border-radius: 8px;
@@ -164,7 +164,7 @@ a{text-decoration: none;}
     right: 0;
     top: 10px;
     display: block;
-    margin-right: 10px;
+    margin-right: 1.0rem;
     background: url("../images/button-cha.png") no-repeat center;
     background-size: 16px 16px;
     width: 16px;
@@ -259,28 +259,28 @@ a{text-decoration: none;}
 
 .notice_content > p {
     color: #444;
-    font-size: 14px;
-    margin-bottom: 15px;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
 }
 
 .content_center {
-    margin-top: 30px;
+    margin-top: .1rem;
     text-align: center;
 }
 
 .content_center > img {
-    width: 200px;
-    height: 200px;
+    width: 15rem;
+    height: 15rem;
     /*margin: 1rem 0;*/
-    margin-top: 15px;
+    margin-top: .5rem;
 }
 
 .integrate_txt {
     color: #ff9400;
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 700;
     margin-top: 1rem;
-    margin-bottom: 20px;
+    /*margin-bottom: 2rem;*/
 }
 
 .again {
@@ -306,15 +306,15 @@ a{text-decoration: none;}
 
 .txt {
     color: #2b2b2b;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 .txt1{
     color: #2b2b2b;
-    font-size: 14px;
-    margin-top: 20px;
+    font-size: 1.4rem;
+    margin-top: .5rem;
 }
 .lgea{
-    margin-top: 20px;
+    margin-top: 1rem;
 }
 .advertisement {
     margin-bottom: .5rem;
@@ -335,7 +335,7 @@ a{text-decoration: none;}
     line-height: 4rem;
     color: #fff;
     font-weight: 700;
-    margin: 0 10px;
+    margin: 0 1.0rem;
 }
 .lgea a:first-child{
     display: inline-block;
@@ -364,8 +364,8 @@ a{text-decoration: none;}
     /*width: 92px;*/
     /*height: 109px;*/
     /*display: inline-block;*/
-    width: 46px;
-    height: 55px;
+    width: 4.6rem;
+    height: 5.5rem;
 }
 
 .s-integrate img {
