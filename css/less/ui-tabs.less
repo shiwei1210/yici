@@ -1,0 +1,313 @@
+//main:mergercss.less
+
+
+/*
+*  searh element
+*/
+
+.nav-tabs {
+    min-height: 0%;/*IE9在父级设置了overflow:auto;后滑动鼠标导致底部出现大量空白*/
+    padding:0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    font-size: 0\9;// 去除行内块的间隙
+    li{
+        float: none;
+        display: inline-block;
+        *display:inline;
+        *zoom:1;
+        //*height:40px;
+        a{
+            margin-right: 10px;
+            border:none;
+            border-radius:0;
+            font-size: 16px;
+            line-height: 30px;
+            color: #3d3d3d;
+            padding: 0 10px;
+            display: inline-block;
+            white-space: normal;
+            color:red;
+            &:hover{
+                border: none;
+                border-bottom: 2px solid #d9d9d9;
+                background: #fff;
+                cursor: pointer;
+            
+            }
+        }
+        &.active > a,
+        &.active > a:focus {
+            color: #234e76;
+            border: none;
+            border-bottom: 2px solid #0e599b;
+            background: #fff;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        &.active > a:hover{
+            border: none;
+            border-bottom: 2px solid #0e599b;
+            cursor: pointer;
+        }
+        &.fr-more{
+            float: right;
+            a{
+                margin-right: 1px;
+                padding: 0;
+                color: #8f8f8f;
+                font-size: 18px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.tab-pane{
+    ul{
+        padding-top: 0;
+        li{
+            padding: 0 1px;
+            a{
+                display: inline-block;
+                width: auto;
+                &:hover{
+                    text-decoration: none;
+                }
+                p{
+                    width: 100%;
+                    font-size: 12px;
+                    line-height: 36px;
+                    color: #3d3d3d;
+                    padding-left: 12px;
+                    margin: 0;
+                    background: url(../images/ui/update-ico.jpg) no-repeat 0 center;
+                    i{
+                        display: inline-block;
+                        float: right;
+                        font-size: 12px;
+                        line-height: 36px;
+                        color: #c1c1c1;
+                        font-style: normal;
+                    }
+                }
+
+            }
+            div{
+                padding-bottom: 6px;
+                border-bottom: 1px dashed #dcdcdc;
+                margin-bottom: 4px;
+                a{
+                    p{
+                        font-size: 14px;
+                        line-height: 30px;
+                        i{
+                            line-height: 30px;
+                        }
+                    }
+                    em{
+                        display: inline-block;
+                        font-size: 12px;
+                        line-height: 22px;
+                        color: #7d7d7d;
+                        font-style: normal;
+                        padding-left: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+	.nav-tabs {
+		padding:0;
+        //height:61px\9;
+        overflow-y: hidden;
+        *overflow-x: auto;
+        *white-space: nowrap;
+        position: relative;
+		li{  
+			*overflow: hidden;
+			a{
+                display: inline-block;
+				margin-right: 10px;
+                margin-right: 0\9;
+				border:none;
+				border-radius:0;
+				font-size: 16px;
+				line-height: 30px;
+				color: #3d3d3d;
+				padding: 0 10px;
+				&:hover{
+					border: none;
+					border-bottom: 2px solid #d9d9d9;
+					background: #fff;
+					cursor: pointer;
+				}
+			}
+			&.active > a,
+			&.active > a:focus {
+				color: #234e76;
+				border: none;
+				border-bottom: 2px solid #0e599b;
+				background: #fff;
+				cursor: pointer;
+				font-weight: bold;
+			}
+		}
+	}
+	.tab-pane{
+		ul{
+			padding-top: 0;
+			li{
+				padding: 0 1px;
+				a{
+					display: inline-block;
+                    width: auto;
+					&:hover{
+						text-decoration: none;
+					}
+					p{
+						width: 100%;
+						font-size: 12px;
+						line-height: 36px;
+						color: #3d3d3d;
+						padding-left: 12px;
+						margin: 0;
+						background: url(../images/ui/update-ico.jpg) no-repeat 0 center;
+						i{
+							display: inline-block;
+							float: right;
+							font-size: 12px;
+							line-height: 36px;
+							color: #c1c1c1;
+							font-style: normal;
+						}
+					}
+
+				}
+				div{
+					padding-bottom: 6px;
+					border-bottom: 1px dashed #dcdcdc;
+					margin-bottom: 4px;
+					a{
+						p{
+							font-size: 14px;
+							line-height: 30px;
+							i{
+								line-height: 30px;
+							}
+						}
+						em{
+							display: inline-block;
+							font-size: 12px;
+							line-height: 22px;
+							color: #7d7d7d;
+							font-style: normal;
+							padding-left: 12px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px){
+    .nav-tabs {
+        margin: 0 0 16px;
+        padding:0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        max-width: 727px;
+        white-space:nowrap;
+        li{
+            a{
+                margin-right: 0px;
+                border:none;
+                border-radius:0;
+                font-size: 14px;
+                line-height: 42px;
+                color: #3d3d3d;
+                padding: 0 10px;
+                display: inline-block;
+                &:hover{
+                    border: none;
+                    border-bottom: 2px solid #d9d9d9;
+                    background: #fff;
+                    cursor: pointer;
+                    font-weight: bold;
+                    font-size: 14px;
+                }
+            }
+            &.active > a,
+            &.active > a:focus {
+                color: #234e76;
+                border: none;
+                border-bottom: 2px solid #0e599b;
+                background: #fff;
+                cursor: pointer;
+                font-weight: bold;
+                font-size: 14px;
+            }
+        }
+    }
+	.tab-pane{
+		ul{
+			padding-top: 14px;
+			li{
+				padding: 0 1px;
+				a{
+					display: block;
+					width: 100%;
+					&:hover{
+						text-decoration: none;
+					}
+					p{
+						width: 100%;
+						font-size: 12px;
+						line-height: 36px;
+						color: #3d3d3d;
+						padding-left: 12px;
+						margin: 0;
+						background: url(../images/ui/update-ico.jpg) no-repeat 0 center;
+						i{
+							display: inline-block;
+							float: right;
+							font-size: 12px;
+							line-height: 36px;
+							color: #c1c1c1;
+							font-style: normal;
+						}
+					}
+
+				}
+				div{
+					padding-bottom: 6px;
+					border-bottom: 1px dashed #dcdcdc;
+					margin-bottom: 4px;
+					a{
+						p{
+							font-size: 14px;
+							line-height: 30px;
+							i{
+								line-height: 30px;
+							}
+						}
+						em{
+							display: inline-block;
+							font-size: 12px;
+							line-height: 22px;
+							color: #7d7d7d;
+							font-style: normal;
+							padding-left: 12px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

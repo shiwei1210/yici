@@ -1,0 +1,90 @@
+//main:mergercss.less
+/*
+*  searh element
+*/
+.desk_search {
+  //searhinput
+  @searhinputHeight:32px;
+  @searhinputWidth:398px;
+  @bg_search_iconURL:"@{lessPatch}images/ui/ui-search-icon.svg";
+  @bg_search_iconURL_ie8:"images/ui/ui-search-icon.png";
+  @bgw :image-width(@bg_search_iconURL);
+  @bgh :image-height(@bg_search_iconURL);
+	@bg_search_icon:data-uri("image/svg+xml;utf8", @bg_search_iconURL);
+  //searchbtn
+  @sbtnWidth: @searhinputHeight*2.125;
+  @sbtnHeight: @searhinputHeight;
+
+  position: relative;
+  border: solid 2px @mainThemeColor_darken;
+  display: inline-block;
+  .search_input {
+    .vat;
+    border:  none;
+    height:  @searhinputHeight;
+    width: @searhinputWidth;
+    padding-left: @searhinputHeight;
+    padding-right: @searhinputHeight/2;
+    //background: @bg_search_icon;
+		background: url("@{cssPatch}images/ui/ui-search-icon.png");
+    background-repeat:  no-repeat;
+    background-position: (@searhinputHeight - @bgw)/2 (@searhinputHeight - @bgh)/2;
+    line-height: @searhinputHeight;
+    font-size:12px;
+      .lte-ie8 & {
+        background-image: url('@{cssPatch}@{bg_search_iconURL_ie8}');
+      }
+      &:focus {
+        -webkit-outline: none ;
+        outline: none ;
+      }
+      &::-webkit-input-placeholder {
+        line-height: 32px;
+      }
+      .lte-ie8 & {
+        line-height: @searhinputHeight;
+        vertical-align: middle;
+      }
+  }
+  .search_btn {
+    .vat;
+    width:  @sbtnWidth;
+    height:  @sbtnHeight;
+    padding: 0;
+    margin: 0;
+    border:  none;
+    color: #fff;
+    font-size: 14px;
+    background-color: @mainThemeColor_darken;
+  }
+}
+
+.search_hot_tip_wrap {
+  .txa_l;
+  @fz:13px;
+  .vat;
+  padding-top: 4px;
+  height: 26px;
+  overflow: hidden;
+  .sht {
+    display: inline-block;
+    font-size: @fz;
+    color: @gray;
+    line-height: @fz;
+    *line-height: @fz+3;
+    padding:0 5px;
+    border-left: solid 1px #dfdfdf;
+    text-decoration: none;
+    &:last-child {
+      padding-right: 0;
+    }
+    &:first-child {
+      padding-left: 0;
+      border-left:   none;
+    }
+    &:hover {
+        color: @brand-primary;
+        font-weight: bold;
+    }
+  }
+}

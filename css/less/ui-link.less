@@ -1,0 +1,81 @@
+//main:mergercss.less
+
+
+/*
+*  searh element
+*/
+ul{
+	padding: 0;
+	margin: 0;
+	li{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+}
+
+@media screen and (min-width: 767px){
+	.sse_link_base1{
+		width: 100%;
+		margin-bottom: 10px;
+		ul{
+			margin-right: -15px;
+			li{
+				width: 17.5%;
+				float: left;
+				text-align: center;
+				margin-right: 10px;
+				a{
+					display: block;
+					width: 100%;
+					border-radius: 5px;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					background: #3681c5;
+					color: #fff;
+					font-size: 12px;
+					text-decoration: none;
+					img{
+						display: block;
+						margin: 0 auto 5px;
+					}
+					&:hover{
+						background: #fa4f61;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 767px){
+	.sse_link_base1{
+		position: relative;
+		height: 115px;
+        margin-bottom: 10px;
+		background: #3681c5;
+        text-align: center;
+        .swiper-pagination-clickable .swiper-pagination-bullet{margin-left: 5px;}
+		a{
+			text-align: center;
+			width: 33%;
+			float: left;
+			font-size: 14px;
+			color: #fff;
+			padding-top: 25px;
+			text-decoration: none;
+			img{
+				display: block;
+				margin: 0 auto 10px;
+			}
+		}
+        .swiper-container4 .pagination{
+            margin-top: 3px;
+        }
+	}
+	
+
+	
+}
+

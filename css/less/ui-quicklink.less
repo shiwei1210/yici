@@ -1,0 +1,108 @@
+//main:mergercss.less
+
+
+/*
+*  searh element
+*/
+
+
+@media (min-width: 768px){
+	.sse_quicklink_1{
+		padding: 5px 5px 0;
+		a{
+            position: relative;
+			display: inline-block;
+//			background: #b0b0b0;
+			color: #656565;
+			padding: 8px 15px 8px 20px;
+			border-radius: 4px;
+			margin-right: 5px;
+			text-decoration: none;
+			&:hover{
+//				background: #fa4f61;
+                color: #3e84cb;
+                text-decoration: underline;
+			}
+
+            .arr-right{
+                position: absolute;
+                top: 10px;
+                left: 0;
+                width: 15px;
+                height: 15px;
+                margin-right: 7px;
+                background: url(../images/layout/arr-right.png) no-repeat left top;
+            }
+		}
+
+        &.sse_quicklink_1_block{
+            a{
+                display: block;
+                float: none;
+                text-align: left;
+            }
+        }
+	}
+
+	.sse_quicklink_2{
+		padding: 15px 5px;
+		a{
+			display: inline-block;
+			background:#b0b0b0 url(../images/ui/quicklink-a-bg.png) 10px center no-repeat;
+			color: #fff;
+			padding: 8px 15px 8px 35px;
+			border-radius: 4px;
+			margin-right: 5px;
+			text-decoration: none;
+			&:hover{
+				background: #fa4f61 url(../images/ui/quicklink-a-bg.png) 10px center no-repeat;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px){
+	.sse_quicklink_1{
+		width: 100%;
+		a{
+			display: block;
+			color: #656565;
+			text-align: center;
+            vertical-align: middle;
+			line-height: 30px;
+			margin-top: 10px;
+			border-radius: 2px;
+			margin-right: 5px;
+			text-decoration: none;
+			float: left;
+			//width: 43%;
+			width:auto;
+			margin-left: 2%;
+			&:hover{
+				background: #fa4f61;
+			}
+		}
+        &.sse_quicklink_1_block{//手机上要求每行显示一条信息
+            a{
+                display: block;
+                float: none;
+                text-align: left;
+            }
+        }
+	}
+
+	.sse_quicklink_2{
+		padding: 15px 5px;
+		a{
+			display: inline-block;
+			background:#b0b0b0 url(../images/ui/quicklink-a-bg.png) 10px center no-repeat;
+			color: #fff;
+			padding: 8px 15px 8px 35px;
+			border-radius: 2px;
+			text-decoration: none;
+			&:hover{
+				background: #fa4f61 url(../images/ui/quicklink-a-bg.png) 10px center no-repeat;
+			}
+		}
+	}
+}

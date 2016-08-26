@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    * 开发人员书写规范:
+    * 1.所有缩进都用 TAB， 而不是空格。
+    * 2.非必要，禁止用行内样式例如 <div style="display:block">
+    -->
+    <!-- Basic Page Needs  -->
+    <meta charset="utf-8">
+    <title>上海证券交易所</title>
+    <meta name="description" content="这个是简介">
+    <meta name="author" content="上海证券交易所">
+    <!-- 让360双核浏览器用webkit内核渲染页面 !!! 注意，这行最好放在前面，防止浏览器开始解析的时候采用其它内置的渲染方案  -->
+    <meta name="renderer" content="webkit">
+    <!-- 让IE浏览器用最高级内核渲染页面 还有用 Chrome 框架的页面用webkit 内核 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- IOS6全屏 Chrome高版本全屏
+    ================================================== -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <!-- 指定苹果设备添加到主屏的标题 -->
+    <meta name="apple-mobile-web-app-title" content="上海证券交易所">
+    <!-- CSS -->
+    <link href="css/sse_allcss.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-table.min.css" rel="stylesheet" type="text/css">
+    <!--<link href="css/sse_indexcss.css" rel="stylesheet" type="text/css">-->
+
+    <!-- Favicons -->
+    <!-- IOS 启动图标 -->
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <!-- win 8 磁贴标题 -->
+    <meta name="application-name" content="上海证券交易所">
+    <!-- win 8 磁贴颜色 -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <!-- win 8 磁贴图标 -->
+    <meta name="msapplication-TileImage" content="images/webappicon/apple-touch-icon-120x120.png">
+    <meta name="msapplication-tooltip" content="Tooltip">
+
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+    <!--调试阶段禁止缓存,例如微信，QQ浏览器缓存-->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <script src="js/lib/require.js" data-main="js/app/main" async></script>
+    <link href="css/sse-stye.css" rel="stylesheet" type="text/css">
+    <script src="js/lib/jquery.min.js" type="text/javascript"></script>
+    <script src="js/lib/index.js" type="text/javascript"></script>
+
+
+</head>
+<body class="indexbody">
+<div class="desk_search_wrap">
+    <div class="container ib_mid_wrap txa_r">
+        <!-- PC版logo -->
+        <a href="#" class="nav_logo_wrap hidden-xs">
+            <div class="nav_logo"></div>
+        </a>
+        <!-- end -->
+        <div class="desk_search_el ib_mid hidden-lg hidden-md hidden-sm">
+            <div class="desk_search">
+                <input type="search" class="search_input search_inputt" placeholder="请输入您想搜索的文字"><!-- 清除空格HACK写法
+        --><input type="" class="search_btn search_btnn" value="搜索">
+            </div>
+            <div class="search_hot_tip_wrap mobile_hide">
+                <a href="#" class="sht">上市公司</a><a href="#" class="sht">披露信息</a><a href="#" class="sht">基金公告</a><a
+                    href="#" class="sht">上证指数</a><a href="#" class="sht">行情</a><a href="#" class="sht">业务推荐</a><a
+                    href="#" class="sht">股票期权</a><a href="#" class="sht">上市公司</a>
+            </div>
+        </div>
+        <div class="navbar-right hidden-xs">
+            <a href="#" class="f16 nava">子站链接 丨</a>
+            <a href="#" class="f16 nava">意见反馈</a>
+        </div>
+    </div>
+</div>
+<!-- 搜索 end -->
+<div class="navbar_wrap">
+    <div class="container">
+        <!-- mobile头部 -->
+        <a href="#" class="nav_logo_wrap">
+            <div class="nav_logo"></div>
+        </a>
+
+        <div class="navbar-header heaad_wrap">
+            <button type="button" class="navbar-toggle collapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- mobile头部 end -->
+        <!-- pc主菜单 -->
+        <div class="navbar navbar-collapse collapse">
+            <div class="">
+                <!--<script type="text/javascript">document.write(sseMenuObj.menu_tab_text);</script>-->
+                <ul class="navf pull-left" id="jsddm">
+                    <li>
+                        <a href="#"><i class="sseicon-nav_icon_1"></i>首页</a>
+
+                    </li>
+                    <li class="">
+                        <a href="#"><i class="sseicon-nav_icon_2"></i>市场动态</a>
+                        <ul>
+                            <li><a href="#">基金公告</a></li>
+                            <li><a href="#">动态信息</a></li>
+                        </ul>
+                    </li>
+                    <li class="navfa">
+                        <a href="#"><i class="sseicon-nav_icon_3"></i>基金信息</a>
+                        <ul class="navfaul">
+                            <li><a href="#">市场总览</a></li>
+                            <li><a href="#">基金列表</a></li>
+                            <li><a href="#">公告查询</a></li>
+                            <li><a href="#">ETF申购赎回申请单</a></li>
+                            <li><a href="#">交易市场型货币市场基金</a></li>
+                            <li><a href="#">申购赎回清单</a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#"><i class="sseicon-nav_icon_4"></i>投教专区</a>
+                        <ul>
+                            <li><a href="#">基础知识</a></li>
+                            <li><a href="#">投教策略</a></li>
+                            <li><a href="#">视频课程</a></li>
+                            <li><a href="#">资料下载</a></li>
+                            <li><a href="#">常见问题</a></li>
+                            <li><a href="#">知识下载</a></li>
+                        </ul>
+                    </li>
+                    <li class="acttive">
+                        <a href="#"><i class="sseicon-nav_icon_5"></i>规则指南</a>
+                        <ul>
+                            <li><a href="#">上位法则</a></li>
+                            <li><a href="#">本所业务</a></li>
+                            <li><a href="#">业务指南</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="desk_search_el ib_mid pull-right desk_search_elbu">
+                <div class="desk_search desk_searchbu">
+                    <input type="search" class="search_input" placeholder="" value="请输入搜索内容"><!-- 清除空格HACK写法
+        --><input type="button" class="search_btn search_bt" value="搜索">
+                </div>
+            </div>
+        </div>
+        <!--pc主菜单 end-->
+    </div>
+</div>
+<div class="dl-menuwrapper" id="dl-menu">
+    <button id="dl-menu-button" class="btn"></button>
+    <ul class="dl-menu" id="mobile_menu">
+        <!--<script type="text/javascript">document.write(sseMenuObj.mobile_menu_text);</script>-->
+        <li><a>首页</a></li>
+        <li><a class="menu-li">市场动态</a>
+            <ul class="row ul-menu">
+                <li class=""><a href="#">基金广告</a></li>
+                <li class=""><a href="#">动态信息</a></li>
+            </ul>
+        </li>
+        <li><a class="menu-li">基金信息</a>
+            <ul class="row ul-menu">
+                <li><a href="#">市场总览</a></li>
+                <li><a href="#">基金列表</a></li>
+                <li><a href="#">公告查询</a></li>
+                <li><a href="#">ETF申购赎回申请单</a></li>
+                <li><a href="#">交易市场型货币市场基金</a></li>
+                <li><a href="#">申购赎回清单</a></li>
+            </ul>
+        </li>
+        <li><a class="menu-li">投教专区</a>
+            <ul class="row ul-menu">
+                <li><a href="#">基础知识</a></li>
+                <li><a href="#">投教策略</a></li>
+                <li><a href="#">视频课程</a></li>
+                <li><a href="#">资料下载</a></li>
+                <li><a href="#">常见问题</a></li>
+                <li><a href="#">知识下载</a></li>
+            </ul>
+        </li>
+        <li><a class="menu-li">规则指南</a>
+            <ul class="row ul-menu">
+                <li><a href="#">上位法则</a></li>
+                <li><a href="#">本所业务</a></li>
+                <li><a href="#">业务指南</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<!-- mobile菜单end -->
+<div class="page_content bgimg1">
+    <!-- 面包屑 -->
+    <div class="breadcrumb_wrap mobile_hide">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ol class="breadcrumb">
+                        <li><a href="#">基金信息</a></li>
+                        <li><a href="#">规则指南</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 面包屑 end -->
+    <div class="container">
+        <!--页面大标题-->
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="page_big_title">规则指南</h1>
+            </div>
+        </div>
+        <div class="container container-content">
+            <div class="rules-title row">
+                <a href="#" class="rules-active col-sm-2 col-xs-4">上位法规</a>
+                <a href="#" class="col-sm-2 col-xs-4">本所规则</a>
+                <a href="#" class="col-sm-2 col-xs-4">业务指南</a>
+            </div>
+            <ul class="rules-content row">
+                <li class="rules-content-li col-sm-12 col-xs-12">
+                    <p>学习“七一”讲话 全面从严治党 加强一线监管——上交所认真学习贯彻证监会工作会议精神</p>
+                    <span>2016-08-21</span>
+                </li>
+                <li class="rules-content-li col-sm-12 col-xs-12">
+                    <p>学习“七一”讲话 全面从严治党 加强一线监管——上交所认真学习贯彻证监会工作会议精神</p>
+                    <span>2016-08-21</span>
+                </li>
+                <li class="rules-content-li col-sm-12 col-xs-12">
+                    <p>学习“七一”讲话 全面从严治党 加强一线监管——上交所认真学习贯彻证监会工作会议精神</p>
+                    <span>2016-08-21</span>
+                </li>
+                <li class="rules-content-li col-sm-12 col-xs-12">
+                    <p>学习“七一”讲话 全面从严治党 加强一线监管——上交所认真学习贯彻证监会工作会议精神</p>
+                    <span>2016-08-21</span>
+                </li>
+                <li class="rules-content-li col-sm-12 col-xs-12">
+                    <p>学习“七一”讲话 全面从严治党 加强一线监管——上交所认真学习贯彻证监会工作会议精神</p>
+                    <span>2016-08-21</span>
+                </li>
+                <li class="rules-content-li col-sm-12 col-xs-12">
+                    <p>学习“七一”讲话 全面从严治党 加强一线监管——上交所认真学习贯彻证监会工作会议精神</p>
+                    <span>2016-08-21</span>
+                </li>
+                <li class="rules-content-li col-sm-12 col-xs-12">
+                    <p>学习“七一”讲话 全面从严治党 加强一线监管——上交所认真学习贯彻证监会工作会议精神</p>
+                    <span>2016-08-21</span>
+                </li>
+                <li class="rules-content-li col-sm-12 col-xs-12">
+                    <p>学习“七一”讲话 全面从严治党 加强一线监管——上交所认真学习贯彻证监会工作会议精神</p>
+                    <span>2016-08-21</span>
+                </li>
+            </ul>
+            <div class="pagination-page mobile_hide">
+                <div class="pagination-page-left">
+                    <a><</a>
+                    <ul class="pagination-page-ul">
+                        <li class="bg">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                    </ul>
+                    <a>></a>
+                </div>
+                <div class="pagination-page-right">
+                    <p>共<span class="pagination-page-span">2</span>页</p>
+
+                    <p class="pagination-page-p">转到第<input class="pagination-page-input">页</p>
+                    <a class="pagination-page-go">GO</a>
+                </div>
+            </div>
+            <a class="loading-ct hidden-lg hidden-md hidden-sm clearfix">加载更多内容</a>
+        </div>
+    </div>
+</div>
+<!--PC底部-->
+<div class="fotter hidden-xs">
+    <div class="container fottercon">
+        <div class="row">
+            <div class="col-sm-2">
+                <h4>市场动态</h4>
+
+                <p><a>-基金公告</a></p>
+
+                <p><a>-动态信息</a></p>
+            </div>
+            <div class="col-sm-3">
+                <h4>基金信息</h4>
+
+                <p><a>-市场总览</a></p>
+
+                <p><a>-基金列表</a></p>
+
+                <p><a>-公告查询</a></p>
+
+                <p><a>-ETF申购赎回清单</a></p>
+
+                <p><a>-交易市场型货币市场基金</a></p>
+
+                <p><a>-申购赎回清单</a></p>
+            </div>
+            <div class="col-sm-3">
+                <h4>投教专区</h4>
+
+                <p><a>-基础知识</a></p>
+
+                <p><a>-投教策略</a></p>
+
+                <p><a>-视频课程</a></p>
+
+                <p><a>-资料下载</a></p>
+
+                <p><a>-常见问题</a></p>
+
+                <p><a>-知识测试</a></p>
+            </div>
+            <div class="col-sm-2">
+                <h4>规则指南</h4>
+
+                <p><a>-上位法则</a></p>
+
+                <p><a>-本所规则</a></p>
+
+                <p><a>-业务指南</a></p>
+            </div>
+            <div class="col-sm-2">
+                <p><img src="images/ui/index-iphone.png"></p>
+                <h5>资讯热线</h5>
+
+                <p class="fotterh">400-8888-400</p>
+            </div>
+        </div>
+    </div>
+    <div class="fotter-bootm">
+        <div class="fottora">
+            <a>联系我们</a>
+            <a>意见反馈</a>
+            <a>网站地图</a>
+            <a>相关链接</a>
+            <a>法律声明</a>
+            <a class="fottoranone">注册商标</a>
+        </div>
+        <p>©上海证券交易所版权所有 2016 沪ICP备05004045号</p>
+    </div>
+</div>
+<!-- model页脚 -->
+<div class="footer main-width hidden-lg hidden-md hidden-sm">
+    <div class="footer-top">
+        <div class="container containerbu">
+            <div class="row">
+                <div class="col-sm-4 col-md-3 containerbu">
+                    <div class="footer-border-bottom">
+                        <h5 data-toggle="collapse" href="#collapse01" class="collapsed footer-h5">市场动态 <span
+                                class="containerbusp footer-bottom-span  visible-xs"
+                                aria-hidden="true"></span></h5>
+                        <ul class="list-unstyled row collapse my-visible-sm" id="collapse01">
+                            <li class="col-xs-6 col-sm-6"><a href="#">基金广告</a></li>
+                            <li class="col-xs-6 col-sm-6"><a href="#">动态信息</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 containerbu">
+                    <div class="border-bottom">
+                        <h5 data-toggle="collapse" href="#collapse02" class="collapsed footer-h5">基金信息<span
+                                class="containerbusp footer-bottom-span visible-xs"
+                                aria-hidden="true"></span></h5>
+                        <ul class="list-unstyled row collapse my-visible-sm" id="collapse02">
+                            <li class="col-xs-6 col-sm-6"><a href="#">市场总览</a></li>
+                            <li class="col-xs-6 col-sm-6"><a href="#">基金列表</a></li>
+                            <li class="col-xs-6 col-sm-6"><a href="#">公告查询</a></li>
+                            <li class="col-xs-6 col-sm-6"><a href="#">ETF申购赎回清单</a></li>
+                            <li class="col-xs-6 col-sm-6"><a href="#">交易型货币市场基金</a></li>
+                            <li class="col-xs-6 col-sm-6"><a href="#">申购赎回清单</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 containerbu">
+                    <div class="border-bottom">
+                        <h5 data-toggle="collapse" href="#collapse03" class="collapsed footer-h5">投教专区<span
+                                class="containerbusp footer-bottom-span visible-xs"
+                                aria-hidden="true"></span></h5>
+                        <ul class="list-unstyled row collapse my-visible-sm" id="collapse03">
+                            <li class="col-xs-6 col-sm-6"><a href="#">基础知识</a></li>
+                            <li class="col-xs-6 col-sm-6"><a href="#">投教策略</a></li>
+                            <li class="col-xs-6 col-sm-6"><a href="#">视频课程</a></li>
+                            <li class="col-xs-6 col-sm-6"><a href="#">资料下载</a></li>
+                            <li class="col-xs-6 col-sm-6"><a href="#">常见问题</a></li>
+                            <li class="col-xs-6 col-sm-6"><a href="#">知识测试</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-md-3 containerbu">
+                    <div class="border-bottom">
+                        <h5 data-toggle="collapse" href="#collapse04" class="collapsed footer-h5">规则指南<span
+                                class="containerbusp footer-bottom-span visible-xs"
+                                aria-hidden="true"></span></h5>
+                        <ul class="list-unstyled row collapse my-visible-sm" id="collapse04">
+                            <li class="col-xs-6 col-sm-6"><a href="#">上位法规</a></li>
+                            <li class="col-xs-6 col-sm-6"><a href="#">本所规则</a></li>
+                            <li class="col-xs-6 col-sm-6"><a href="#">业务指南</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-12 right">
+						<span class="rightsp">©上海证券交易所版权所有 2010 沪ICP备05004045号
+                            <div class="clearfix visible-xs-block rightspp"></div>
+                             咨询热线：400-8888-400</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 页脚end -->
+<div class="feedback_gotop mobile_hide visi_1200">
+    <div class="fb_sctop"><i></i>
+
+        <p class="feedback_slide">返回顶部</p></div>
+    <div class="fb_fbbot showfeedback" data-toggle="modal" data-target=".modal_feedback">
+        <i></i>
+        <!-- <p class="txa_c"><span class="fb_boticon">&nbsp;</span></p> -->
+        <p class="feedback_slide">用户调查</p>
+    </div>
+    <div class="feedback_share">
+        <i></i>
+
+        <div class="feedback_slide" id="feedback_qrcode"><s></s><span class="qrcode_details">微信扫一扫，分享好友</span></div>
+    </div>
+</div>
+
+</body>
+</html>

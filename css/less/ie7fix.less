@@ -1,0 +1,663 @@
+//out:../ie7fix.min.css, compress: false, sourcemap:true, sourceMap:false
+
+///-----
+
+/* 基础快速布局 */
+
+.txa_c {text-align: center;}
+.txa_r {text-align: right;}
+.txa_l {text-align: left;}
+.fl {float: left;}
+.fr	{float: right;}
+.vat {vertical-align: top;}
+.vam {vertical-align: middle;}
+.vab {vertical-align: bottom;}
+.nowrap {white-space: nowrap; word-break: keep-all;}
+.prewrap {white-space: pre;}
+.txa_elli{overflow: hidden;text-overflow: ellipsis;.nowrap;}
+
+@mainThemeColor:#275885;
+@mainThemeColor_darken:darken(@mainThemeColor, 10%);
+@mainThemeColor_darken2:darken(@mainThemeColor, 5%);
+@mainThemeColor_lighten:lighten(@mainThemeColor, 5%);
+@mainThemeColor_lighten2: lighten(@mainThemeColor, 15%);
+@subThemeColor:#de2938;
+@subThemeColor_darken:darken(@subThemeColor, 15%);
+
+//顶部导航
+@subnavHeight: 36px;
+@deskSearchHeight:106px;
+@subnavFontsize:12px;
+
+//导航 zIndex 等级
+@header_zIndexLevel:20;
+
+//less and css location
+@lessPatch:"../../";
+@cssPatch:"../";
+//nav bar logo
+@logo:"images/layout/nav_logo.png";
+@logo_m:"images/layout/nav_logo-m.png";
+@logo_m_lte_ie8:"images/layout/nav_logo-m-lte-ie8.png";
+//移动端 nav 跟 search 的高度
+@mobile_searchbar_height:53px;
+@search_btn_bg_mobile: data-uri('image/svg+xml;utf8', '@{lessPatch}images/ui/ui-search-icon-white.svg');
+
+
+//桌面端下拉菜单 参数
+@blockPadding:20px;
+
+
+
+
+
+
+///-------
+.ib_mid_wrap {
+
+}
+.ib_mid_wrap:before {
+
+}
+.ib_mid {
+  display: inline;
+  zoom: 1;
+  text-align:left; // 解决IE7下热刺推荐居右显示
+}
+
+
+html,body{
+  font-family: "simsun";
+}
+.navbar_wrap {
+  .navbar {
+    .equal_nav-7 > li {
+      border-left: none;
+    }
+  }
+}
+.subnav {
+  .userLogin {
+    .inner {
+      margin-top:  (@subnavHeight - 12 )/2;
+      height: 12px;
+      .sublinks {
+        vertical-align: top;
+        margin-top: -4px;
+        display: inline-block;
+        line-height: normal;
+      }
+    }
+  }
+  .sub_nav_quick_links {
+    .inner {
+      margin-top:  (@subnavHeight - 12 )/2;
+      height: 12px;
+      .nowrap;
+      .sublinks {
+        vertical-align: top;
+        margin-top: -4px;
+        display: inline;
+        zoom:1;
+        height: 12px;
+        font-size: 12px;
+        line-height: 12px;
+        *line-height: 15px;
+        &.dropdown span {
+          vertical-align: top;
+          &.caret {
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+}
+
+.desk_search_el {
+  padding-top: 22px;
+}
+.desk_search {
+  //searhinput
+  @searhinputHeight:32px;
+  @searhinputWidth:@searhinputHeight*12;
+  @bg_search_iconURL:"../../images/ui/ui-search-icon.svg";
+  @bgw :image-width(@bg_search_iconURL);
+  @bgh :image-height(@bg_search_iconURL);
+	@bg_search_icon:data-uri("image/svg+xml;utf8", @bg_search_iconURL);
+  //searchbtn
+  @sbtnWidth: @searhinputHeight*2.125;
+  @sbtnHeight: @searhinputHeight;
+
+  position: relative;
+  border: solid 2px @mainThemeColor_darken;
+  display: inline-block;
+
+
+
+  .search_input {
+    border:  none;
+    padding: 0;
+    margin: -1px 0;
+    height:  @searhinputHeight;
+    width: @searhinputWidth;
+    padding-left: @searhinputHeight;
+    padding-right: @searhinputHeight/2;
+    background: @bg_search_icon;
+    background-repeat:  no-repeat;
+    background-position: (@searhinputHeight - @bgw)/2 (@searhinputHeight - @bgh)/2;
+    line-height: normal;
+    font-size: 12px;
+      &:focus {
+        -webkit-outline: none ;
+        outline: none ;
+      }
+  }
+  .search_btn {
+  }
+}
+
+//IE7---page_home.html
+.navbar_wrap .navbar .equal_nav-7 > li{
+    width:142px;
+}
+.col-lg-12{
+    position: relative;
+}
+.container{
+    .sse_home_user{
+        h2{
+          width:115px;  
+        }
+        ul{
+            width:870px;
+            position: absolute;
+            top:0;
+            left:130px;
+        li{   
+            height:103px;
+            &.last-child{
+              border-right:0;  
+            }
+            }
+        }
+    } 
+}
+/*.page_content1{
+    .row-one{
+        padding-top:120px;
+    .sse_list_tit1 h2 a{
+        margin-top:15px;
+    }
+}
+} 
+*/
+.row .col-sm-8{
+    width:64.66666667%;
+    .pb7{
+        div{
+            height:auto;
+        }
+    }
+}
+.row .col-sm-4{
+    float: right;
+    padding-right: 0;
+    padding-left: 0;
+    overflow: hidden;
+}
+.sse_home_in_list2 ul li div span{
+    overflow: hidden;
+    em{
+        float:left;
+    }
+}
+.carousel-inner > .item{
+    width:100%;
+    img{
+        display: inline-block;
+        width:100%;
+    }
+}
+.sse_footer{
+    .ft2_rows{
+        overflow: hidden;
+    }
+}
+
+//IE7---page_hugangtong.html
+.bgimg1{
+    .container-content,.tables-container{
+        overflow: hidden;
+    }
+        .row{
+        .col-sm-9{
+            width:73%;
+//            top:20px;
+            .sse_about_base1{
+                dl{
+                    overflow: hidden;
+                }
+            }
+        }
+        .col-sm-7,.col-sm-5{
+            .col-sm-12{
+                float: none;
+                .last_item{
+                    margin-right:0;
+                }
+                .sse_link_base1{
+                    overflow: hidden;
+                }
+            }
+        }
+        .col-sm-7{
+            width:54.5%;
+            margin-right: 5px;
+            overflow: hidden;
+        }
+        .col-sm-5{
+            width:42.3%;
+            .col-sm-12{
+                margin-bottom: 10px;
+                .table{
+                margin-bottom: 0;
+            }
+            }
+        }
+    }
+    .ie-col-sm-12{
+        position: relative;
+        top:3px;
+        margin-top:8px;
+        margin-bottom: -1px;
+    }
+    .col-sm-12{
+        position: static;
+    }
+}
+
+//page_info_tables.html
+.bgimg1{
+    position: relative;
+    z-index: 21;
+    .clearfix{
+        zoom:1;
+    }
+    
+    .nav-tabs{
+        //height:61px;
+//        width: 100%;
+        position: relative;
+        white-space: nowrap;
+        font-size: 0;
+    }
+    .sse_con_page{
+               .input-group{  
+                   .form-control{
+                       width:14px;
+                       height:10px;
+                   }
+               }
+               .btn{
+                   height:22px;
+                   border:0;
+               }
+           }
+    .tables-container .row{
+       .col-sm-9{
+            top:14px;
+           
+           .ms-parent{
+               z-index: 10;
+           }
+           .sse_con_query{
+               .typehead,.selected{
+                   height:29px;
+               }
+               #start_date2{
+                   height: 26px;
+               }
+               .dateico{
+                   top:5px;
+               }
+               .input-group{
+                   margin-right:27px;
+                .form-control{
+                   height:19px;
+                   }
+               }
+           }
+           .sse_con_date{
+                display: inline;
+                 #start_date, #end_date{
+                   height:28px;
+                    width:88px;
+           } 
+            i{
+                 height:34px; 
+                *height: 30px;
+                line-height:34px;
+                
+                   img{
+                       vertical-align: bottom;
+                   }
+               }
+           } 
+           
+           .sse_table_title2 a{
+               line-height: 21px;
+           }
+           .sse_table_infor{
+               p{
+                   display: inline;
+                   zoom:1;
+                   float: left;
+               }
+               em{ 
+                   float:left;
+                   margin-left:5px;
+               }
+           }
+           .table-responsive{
+               overflow-x: auto;
+               .table_inline_scroll_wrap{
+                   overflow-y: hidden;
+               }
+               th,td{
+                   white-space: nowrap;
+               }
+           }
+           .page-con-table{
+               position: relative;
+               .table-page{
+                   position: relative;
+                   top:-2px;
+                   left:120px;
+                   width:385px;
+                   float: left;
+                   margin-left:0;
+                   .pagination{
+                       left:0;
+                   }
+                   li{
+                       float:left;
+                   }
+               }
+           }
+        }  
+    } 
+}
+
+//page_info_query.html
+
+.sse_query_input{
+    .sse_query_input_box{
+        height:44px;
+        .query_input{
+            width:410px;
+            border: 0;
+        }
+        .query_btn{
+            height:44px;
+            width:100px;
+        }
+    } 
+}
+#sse_query_menu{
+    ul{
+        label{
+            position: absolute;
+            right:0;
+            left:0;
+        }
+        .checkbox,.arrow{
+            z-index: 10;
+        }
+    }
+}
+.sse_footer{
+    border-top:1px solid #d9d9d9;
+    .ft_quick_links{
+        padding-top: 20px;
+    }
+}
+//nav-side-show
+.nav-side-show{
+    .container{
+        .col-sm-3 {
+			width:24.8%;
+        }
+        a{
+            color:#666;
+        } 
+    }
+}
+
+//ui-query.html
+.sse_query_wrap{
+    button{
+        border:0;
+    }
+    .sse_con_query{
+      .sse_con_date{
+                display: inline;
+                 #start_date, #end_date{
+                   height:28px;
+                    width:88px;
+           } 
+            i{
+                 height:34px; 
+                line-height:34px;
+                
+                   img{
+                       vertical-align: bottom;
+                   }
+               }
+           }
+        .selected{
+            height:29px;
+        }
+        .typehead{
+            width:144px;
+            height:34px;
+        }
+        .pickerinit{
+            width:162px;
+            height:32px;
+        }
+        .dateico{
+        top:10px;
+        left:17px;
+        }
+        .ms-choice{
+            width:146px;
+        }
+        .form-control{
+            width:120px;
+            height:22px;
+            margin-left:-8px;
+        }
+    }
+   
+}
+
+//ui_table_1~4.html
+.table-wrap{
+    .sse_table_tit {
+        h2{
+          overflow: hidden;
+            span{
+                position: relative;
+                top:-35px;
+            }
+        }
+    }
+    .sse_table_base1,.sse_table_base2,.sse_table_base3,.sse_table_base4{
+        width:100%;
+    }
+    .table-page{
+        .pagination{
+            display: inline;
+            zoom:1;
+        }
+    }
+}
+
+//page_info_rest.html
+.sse_list_R04{
+  .sse_list_Row{
+    text-align: center;
+   .sse_list_Rinfo{
+    display: inline-block;
+    display: inline;
+    zoom:1;
+    height:100%;
+    width:44.5%;
+} 
+}  
+}
+
+//大事记 --page-events.html
+.history-date li{
+    .history-date-icon{
+        top:36px;
+    }
+}
+
+.organize_con {
+    .btn-primary i{
+          height:14px;
+    }
+}
+
+
+//导航logo
+.txa_r{
+    .nav_logo_wrap{
+        .fl
+    }
+}
+.page-con{
+    .pagination{
+        display: inline-block;
+        display: inline;
+        zoom:1;
+        
+    }
+}
+//伪标签
+.alpha-top a{
+    //margin-top: 12px;
+}
+.sse_home_user_wrap{
+    background-image: url(../images/ui/indexsubbanner_ie7.jpg)!important;
+    background-repeat: 0 0!important;
+}
+.sse_home_in_list1 ul li div a em{
+    display: inherit!important;
+}
+
+
+//IE7下首页各个模块高度一致
+.page_content1{
+    .row-two .col-sm-8 .con_block{
+        height: 324px;
+    }
+    .row-three .br.fast-nav-conment{
+        height: 313px;
+        width: 96.5%;
+    } 
+    .row-three .col-sm-4 .fast-nav-conment{
+        width: 92%;
+    }
+    
+    .sse_list_title H2 .span{
+        margin-top: -40px;
+    }
+}
+
+
+
+
+/*IE7不支持before伪元素，hack*/
+*+html .icon-arrow-left{
+    width: 0;
+    height: 0;
+    font-size: 0;
+    border-style: dashed solid dashed dashed;
+    border-color: transparent #ccc transparent transparent;
+    border-width: 8px;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+}
+*+html .icon-arrow-left:hover{
+    border-color: transparent #3681c5 transparent transparent;
+}
+
+
+*+html .icon-arrow-right{
+    width: 0;
+    height: 0;
+    font-size: 0;
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent #ccc;
+    border-width: 8px;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+}
+*+html .icon-arrow-right:hover{
+    border-color: transparent transparent transparent #3681c5;
+}
+
+.datetimepicker thead tr:first-child th,
+.datetimepicker tfoot tr:first-child th {
+    cursor: pointer;
+    *text-align: center;
+    
+}
+/*end*/
+
+/*调整sse_list_1在IE7下的兼容性问题*/
+/*.sse_list_1{
+    dl dd{
+        position: relative;
+        .left-fixed-width{
+            display: block;
+            max-width: 94%;
+            white-space: normal;
+            word-break: break-all;
+            word-wrap: break-word;
+            text-align: left;
+            font-style: normal;
+        }
+        span{
+            position: absolute;
+            bottom: 3px;
+            right: -4px;
+            float: none;
+        }
+    }
+}*/
+/*- end -*/
+.sse_home_bus #SUB_SCROLL_SWIPER_PAGE SPAN{
+    border-width: 1px;
+    width: 5px;
+    height: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

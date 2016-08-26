@@ -1,0 +1,117 @@
+//main:mergercss.less
+/* 基础快速布局 */
+.ib_mid_wrap {
+	font-size: 0;
+	text-align: center;
+	letter-spacing: e("[;-3px;]");
+}
+.ib_mid_wrap:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	width: 0px;
+}
+.ib_mid {
+	font-size: medium;
+    *text-align: left;// 解决低版本的IE文字居右的问题
+	display: inline-block;
+	vertical-align: middle;
+	letter-spacing: e("[;normal;]");
+} 
+
+.txa_c {text-align: center;}
+.txa_r {text-align: right;}
+.txa_l {text-align: left;}
+.fl {float: left;}
+.fr	{float: right;}
+.vat {vertical-align: top;}
+.vam {vertical-align: middle;}
+.vab {vertical-align: bottom;}
+.nowrap {white-space: nowrap; word-break: keep-all;}
+.prewrap {white-space: pre;}
+.txa_elli {overflow: hidden;text-overflow: ellipsis;.nowrap;}
+a:active,a:focus{outline: none;}
+
+@mediaretina: ~"(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)";
+@mainThemeColor:#1467b3;
+//@mainThemeColor_darken:#1f598e;
+@mainThemeColor_darken: mix(#ffffff,@mainThemeColor_darken2,20%);
+//@mainThemeColor_darken2:#155a99;
+@mainThemeColor_darken2: @mainThemeColor;
+@mainThemeColor_lighten: lighten(@mainThemeColor, 5%);
+@mainThemeColor_lighten2: lighten(@mainThemeColor, 15%);
+@subThemeColor: #de2938;
+@subThemeColor_darken: darken(@subThemeColor, 15%);
+@subThemeColor_lighten: lighten(@subThemeColor, 10%);
+
+//顶部导航
+@subnavHeight: 36px;
+@deskSearchHeight:106px;
+@subnavFontsize:12px;
+
+//导航 zIndex 等级
+@header_zIndexLevel:20;
+
+//less and css location
+@lessPatch:"../../";
+@cssPatch:"../";
+//nav bar logo
+@logo:"images/layout/nav_logo.png";
+@logo_m:"images/layout/nav_logo-m.png";
+@logo_m_lte_ie8:"images/layout/nav_logo-m-lte-ie8.png";
+//移动端 nav 跟 search 的高度
+@mobile_searchbar_height:53px;
+@search_btn_bg_mobile: url('@{cssPatch}images/ui/ui-search-icon-white.svg');
+//@search_btn_bg_mobile: data-uri('image/svg+xml;utf8', '@{lessPatch}images/ui/ui-search-icon-white.svg');
+@search_btn_bg_mobile_ie8: "@{cssPatch}images/ui/ui-search-icon-white.png";
+
+//桌面端下拉菜单 参数
+@blockPadding:20px;
+
+@shadow_attr1:0 3px 12px;
+@shadow_attr2:rgba(0, 0, 0, 0.15);
+@shadow_attr: @shadow_attr1 @shadow_attr2;
+
+.navSideShadow(@inset) {
+	-webkit-box-shadow: @shadow_attr;
+	box-shadow: @shadow_attr;
+}
+.navSideShadow(@inset) when (@inset = true) {
+	-webkit-box-shadow: inset @shadow_attr;
+	box-shadow: inset @shadow_attr;
+}
+
+.getimgwhi(@imglocation) {
+	@img1: "@{lessPatch}@{imglocation}";
+	@img2: "@{cssPatch}@{imglocation}";
+	width: image-width(@img1);
+	height: image-height(@img1);
+	background-image: url(@img2);
+}
+
+
+//页面大标题参数
+@desk_page_title_height: 80px;
+@desk_page_title_color: @mainThemeColor;
+@desk_page_title_fsize: 30px;
+@mobile_page_title_height: @desk_page_title_height/2;
+
+
+//回馈滚动
+@fb_fontSize:12px;
+@fb_radius:2px;
+@fb_sctop_color:@subThemeColor_lighten;
+@fb_sctop_fcolor:#fff;
+@fb_fbbot_color:lighten(@gray-light,40%);
+@fb_iconImg:"images/ui/feedback_icon.png";
+@fb_iconSize:32px;
+
+
+/* 首页－用户专区 */
+@sse_user_infoarea_height:138px;
+@sse_user_infoarea_width:765px;
+@sse_user_infoarea_h2_color:#f03245;
+@sse_user_infoarea_h2_pdt:15px;
+
+

@@ -33,9 +33,6 @@ body {
 	user-select: none; */	
 	/* 上面的css是用来禁止用户选中 */
 	font-family: "Helvetica Neue",\5FAE\8F6F\96C5\9ED1,Tohoma; /* mac字体，微软雅黑，xp字体，宋体有点问题，所以不用，除非自写*/
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 }
 ol, ul { list-style: none; }
 blockquote, q { quotes: none; }
@@ -151,47 +148,8 @@ and (min-width : 1224px) {
 and (min-width : 1824px) {
 /* Styles */
 }
-/*html font-size setting rem*/
-html {
-    font-size : 10px;
-}
-/* marc new 201505*/
-@media only screen and (min-width: 360px){ 
-    html {
-        font-size: 11.25px !important;
-    }
-}
 
-@media only screen and (min-width: 400px){
-    html {
-        font-size: 12.5px !important;
-    }
-}
-@media only screen and (min-width: 414px){
-    html {
-        font-size: 12.935px !important;
-    }
-}
-@media only screen and (min-width: 428px){
-    html {
-        font-size: 13.375px !important;
-    }
-}
-@media only screen and (min-width: 480px){
-    html {
-        font-size: 15px !important; 
-    }
-}
-@media only screen and (min-width: 560px){
-    html {
-        font-size: 17.5px !important; 
-    }
-}
-@media only screen and (min-width: 640px){
-    html {
-        font-size: 20px !important; 
-    }
-}
+
 
 
 

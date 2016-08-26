@@ -1,0 +1,249 @@
+//main:mergercss.less
+@article-border: 1px solid #e6e6e6;
+@article-title-color: #0b3c61;
+
+
+
+.article-infor {
+    position: relative;
+    h2 {
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 50px;
+        padding-bottom: 15px;
+        text-align: center;
+        color: @article-title-color;
+        margin-top: 0px;
+        padding-top: 20px;
+    }
+    .article_opt {
+        font-weight: normal;
+        margin-bottom: 20px;
+        padding: 0 0 10px 23px;
+        border-bottom: @article-border;
+        i {
+            font-size: 12px;
+            font-style: normal;
+            line-height: 26px;
+            display: inline-block;
+            color: #8d8d8d;
+        }
+        span {
+            position: relative;
+            float: right;
+            padding-top: 8px;
+        }
+        a {
+            display: inline-block;
+            margin-left: 10px;
+            padding-left: 10px;
+            font-size: 16px;
+            color: #a2a2a2;
+            text-decoration: none;
+            .txa_c;
+            border-left: @article-border;
+            &:first-child {
+                border-left: none;
+            }
+        }
+        .share_slide{
+            position: absolute;
+            top:35px;
+            left: -39px;
+            display: none;
+            width: 137px;
+            height: 34px;
+            *height: 22px;
+            border: 1px solid #D3D3D3;
+            padding:6px 0px;
+            background-color: #fff;
+            border-radius: 5px;
+            a{
+                display: inline-block;
+                width: 42px;
+                height: 22px;
+                padding-left: 0;
+                margin-left: 0;
+                border:none;
+                &.weiboico{
+                    background: url(../images/layout/sinaico.png) no-repeat center center;
+                }
+                &.wechatico{
+                    background: url(../images/layout/wechatico.png) no-repeat center center;
+                    border-left: 1px solid #D3D3D3;
+                    border-right: 1px solid #D3D3D3;
+                }
+                &.tencentico{
+                    background: url(../images/layout/tencent-weibo.png) no-repeat center center;
+                }
+            }
+
+            .arr-top{
+                position: absolute;
+                top:-7px;
+                left:50%;
+                margin-left: -7px;
+                width: 14px;
+                height: 7px;
+                background: url(../images/layout/arr-top.png) no-repeat center center;
+            }
+        }
+    }
+    p {
+        font-size: 14px;
+        line-height: 160%;
+        padding: 0 20px 15px;
+//        text-indent: 28px;
+        color: #4d4d4d;
+        &.noindent {
+            padding-top: 30px;
+            text-indent: 0;
+        }
+        a{
+            //text-decoration: underline;//暂时不需要
+        }
+    }
+    .create_date {
+        padding-left: 28px;
+    }
+    .share {
+        font-size: 12px;
+        line-height: 32px;
+        padding: 15px 12px 26px;
+        color: #999;
+        span {
+            display: inline-block;
+            width: auto;
+            height: 30px;
+            border: @article-border;
+        }
+        a {
+            display: inline-block;
+            width: 36px;
+            height: 100%;
+            color:#fff;
+            border-left: @article-border;
+			vertical-align: top;
+
+            &:first-child{
+                border-left: none;//文章页第一个分享按钮总是无边框
+            }
+        }
+        .sinaico {
+            background: url(../images/layout/sinaico.png) no-repeat center center;
+        }
+        .wechatico {
+            background: url(../images/layout/wechatico.png) no-repeat center center;
+        }
+        .tencentico{
+            background: url(../images/layout/tencent-weibo.png) no-repeat center center;
+        }
+    }
+
+    img{
+      display: block;
+      max-width: 100%;
+      height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .article-infor{
+        h2 {
+            font-size: 19px;
+            line-height: 30px;
+            padding-bottom: 0;
+        }
+        p {
+            padding:0 10px 15px;
+        }
+        .article_opt {
+            padding-left: 0;
+            a {
+                border-left: none;
+            }
+        }
+        .share {
+            .txa_c;
+            border-top: @article-border;
+        }
+    }
+}
+
+
+
+//领导致辞(template_col2_message.html)
+.con_details{
+    padding:10px 5px 0;
+    word-wrap: break-word;
+
+    img{
+        //display: block;
+        max-width: 100%;
+        height: auto;
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+
+    p{
+        word-wrap: break-word;//解决手机版文章中非链接问题过长导致出现横向滚动条
+    }
+    p a{
+        white-space: normal;
+        word-break: break-all;//解决手机版文章中链接文字过长导致出现横向滚动条
+    }
+}
+
+/*end*/
+.leader_introduction{
+    padding:23px 0px;
+
+    .leader_introduction_list{
+        float: left;
+        margin-right: 94px;
+        dt{
+        float: left;
+        }
+        dd{
+            padding-left: 124px;
+            padding-top: 58px;
+        }
+        .leader-name,.leader-job{
+            font-family: 'Arial';
+            font-size: 18px;
+            color: #333;
+        }
+        .leader-job{
+            color: #3a89c9;
+            font-weight: bold;
+        }
+    }
+}
+.leader_content{
+
+    p{
+        padding-bottom: 21px;
+        color: #4d4d4d;
+    }
+}
+
+
+
+//手机版文章页设置文字和图片的宽度不超出页面
+@media ( max-width:768px ) {
+    .con_details{
+        word-wrap: break-word;
+
+        img{
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        p{
+            word-wrap: break-word;
+            line-height: 1.8;
+        }
+    }
+}

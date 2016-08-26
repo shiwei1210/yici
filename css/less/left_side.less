@@ -1,0 +1,361 @@
+//main:mergercss.less
+@side_name_space:left_side;
+//左侧菜单
+@leftMenuHeight: 42px;
+@leftActiveColor:#3d92e0;
+@leftMenuBgColor_title: #418dd3;
+@leftMenuBgColor_lv1: #e0f0ff;
+@leftMenuBgColor_lv2: #f3f9ff;
+@leftMenuBgColor_lv3: #ffffff;
+.left_menu_active{
+    &.active{
+        >a{
+            color: @leftActiveColor;
+            font-weight: bold;
+        }
+    }
+}
+.@{side_name_space} {
+    background-color: #ffffff;
+    padding:0;
+    padding-bottom: 40px;
+    margin-bottom:10px;
+	border: solid 1px #dcdcdc;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    .ib_mid_wrap:before{
+        display: none;
+    }
+    .ib_mid_wrap .ib_mid_before{
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+        width: 0px;
+        *display:inline;
+        *zoom:1;
+        font-size: 0;
+    }
+    a{
+        text-decoration:none;
+        outline:none;
+        display: block;
+        //position: relative;
+        height:@leftMenuHeight - 2;
+        color:#454444;
+        text-align: left;
+        padding: 0 12px;
+        span{
+            //overflow: hidden;
+            text-align: left;
+            font-size: 14px;
+            line-height: 18px;
+            *display:inline;
+            *zoom:1;
+        }
+        &:hover{
+            span{
+                font-weight: bold;
+            }
+            color:@leftActiveColor;
+        }
+        &.hasMenu{
+            padding-right: 25px;
+            i{
+                //position: absolute;
+                position: static;
+                margin-right:-12px;
+                margin-top:19px;
+                *margin-top:-25px;
+                float: right;
+                font-size: 14px;
+                display: inline-block;
+				height: 0;
+				vertical-align: middle;
+                border-width: 4px;
+                border-style: dashed dashed dashed solid;
+                border-color: transparent transparent transparent #9c9c9c;
+            }
+            &.active{
+                i{
+                    top: 21px;
+                    *top:-21px;
+                    right: -12px;
+                    border-color: #9c9c9c transparent transparent transparent;
+                    border-style: solid dashed dashed dashed;
+                }
+            }
+        }
+    }
+    li{
+        list-style: none;
+        &.menu_title{
+            background: @leftMenuBgColor_title;
+            margin: 0 -1px;
+            margin-top: 0px;
+            padding-top: 0px;
+            color:#fff;
+            border-bottom: none;
+            height:@leftMenuHeight;
+            text-align: left;
+            padding:0 12px;
+            line-height: 42px\0; //IE8 hack
+            span{
+                font-size: 18px;
+				overflow: hidden;
+				white-space: nowrap;
+				width: 100%;
+            }
+        }
+        ul {
+            display: none;
+        }
+    }
+    
+    .menu_lv_1{
+        background: @leftMenuBgColor_lv1;
+         line-height: 40px;
+        .left_menu_active;
+        >a{
+            border-bottom: 1px solid #d4e1ec;
+        }
+    }
+    .menu_lv_2{
+        background: @leftMenuBgColor_lv2;
+        .left_menu_active;
+        >a{
+            height: @leftMenuHeight - 4;
+            padding-left:24px;
+            border-bottom: 1px solid #e3eaf1;
+            span{
+                font-size: 12px;  
+            }
+        }
+    }
+    .menu_lv_3{
+        background: @leftMenuBgColor_lv3;
+        .left_menu_active;
+        >a{
+            height: @leftMenuHeight - 6;
+            padding-left:36px;
+            border-bottom: 1px solid #eff3f7;
+            span{
+                font-size: 12px;  
+            }
+        }
+    }
+    .menu_lv_4{
+        background: @leftMenuBgColor_lv3;
+        .left_menu_active;
+        >a{
+            padding-left:48px;
+            border-bottom: 1px solid #eff3f7;
+            span{
+                font-size: 12px;  
+            }
+        }
+    }
+    .menu_lv_5{
+        background: @leftMenuBgColor_lv3;
+        .left_menu_active;
+        >a{
+            padding-left:60px;
+            border-bottom: 1px solid #eff3f7;
+            span{
+                font-size: 12px;  
+            }
+        }
+    }
+    .left_ewm_con{
+		padding-top: 10px;
+		text-align: center;
+		.ewm_img{
+			margin: 6px auto;
+		  	width: 128px;
+		}
+	  	img{
+	  		margin: 6px 0;
+	  	}
+	  	span{
+	  		font-size: 12px;
+	  	}
+	}
+}
+
+#sse_query_menu{
+    background: #eeeeee;
+    padding-bottom: 40px;
+	ul{
+        list-style-type: none;
+        margin: 0;
+        li{
+            color: #545454;
+            position: relative;
+            line-height: 42px;
+        }
+        i{
+            font-style: normal;
+        }
+        input[type="checkbox"] {
+            display: none;
+        }
+    }
+    ul label {
+        display: block;
+        cursor: pointer;
+        margin:0;
+        font-weight: bold;
+        span{
+            .txa_elli;
+            display: block;
+            margin: 0 10px;
+            padding-left:20px;
+            padding-right: 18px;
+            border-bottom: 1px solid #e2e2e2;
+        }
+        .badge {
+            text-indent: 0;
+            background: #f7f7f7;
+            color: #fa4f61;
+            display: inline-block;
+            margin-left: 5px;
+            font-size: inherit;
+            font-weight: inherit;
+        }
+    }
+    ul label.active {
+        color: #fff;
+        background: #fa4f61;
+        &>span{
+            border-bottom: none;
+        }
+    }
+    ul li .arrow {
+        position: absolute;
+        right: 10px;
+        top: 14px;
+        width: 0px;
+        margin: 0;
+        padding: 0;
+        &.expanded,&.collapsed{
+            cursor: pointer;
+            height: 16px;
+            width: 16px;
+            background-image: url(../images/ui/query_menu.png);
+        }
+        &.expanded{
+            background-position: -16px -16px;
+            &.active{
+                background-position: 0px -16px;
+            }
+        }
+        &.collapsed{
+            background-position: -16px 0px;
+           &.active{
+                background-position: 0px 0px;
+            }
+        }
+    }
+    ul li .checkbox{
+        position: absolute;
+        left:10px;
+        top:14px;
+        margin: 0;
+        padding: 0;
+        height: 16px;
+        width: 16px;
+        overflow: hidden;
+        cursor: pointer;
+        background: url(../images/ui/query_menu.png) 0px -32px no-repeat;
+        &.checked {
+            background-position: -16px -32px;
+        }
+        &.half_checked {
+//            background-image: url(images/check1.gif);
+        }
+    }
+    &>ul{
+        &>li{
+            font-size: 14px;
+            &>label{
+                font-weight: bold;
+            }
+            &>ul>li{
+                padding-left: 0px;
+                &>label{
+                    font-weight: bold;
+                }
+                &>ul>li{
+                    font-size: 12px;
+                    &>label span{
+                        margin-left: 25px;
+                    }
+                    &>.checkbox{
+                        left:25px;
+                    }
+                    &>ul>li{
+                        font-size: 12px;
+                        &>label{
+                            font-weight: normal;
+                        }
+                        &>label span{
+                            margin-left: 40px;
+                        }
+                        &>.checkbox{
+                            left:40px;
+                        }
+                        &>ul>li{
+                            font-size: 12px;
+                            &>label{
+                                font-weight: normal;
+                            }
+                            &>label span{
+                                margin-left: 55px;
+                            }
+                            &>.checkbox{
+                                left:55px;
+                            }
+                            &>ul>li{
+                                font-size: 12px;
+                                &>label{
+                                    font-weight: normal;
+                                }
+                                &>label span{
+                                    margin-left: 70px;
+                                }
+                                &>.checkbox{
+                                    left:70px;
+                                }
+                                &>ul>li{
+                                   font-size: 12px;
+                                    &>label{
+                                        font-weight: normal;
+                                    }
+                                   &>label span{
+                                        margin-left: 85px;
+                                    }
+                                    &>.checkbox{
+                                        left:85px;
+                                    }
+                                }
+                            }
+                       }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.lte-ie8{
+    #sse_query_menu{
+        label{
+            .badge{
+                background: none;
+            }
+            &.active{
+                .badge{
+                    color: #f7f7f7;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+//
+// Breadcrumbs
+// --------------------------------------------------
+
+
+
+.breadcrumb {
+  padding: @breadcrumb-padding-vertical @breadcrumb-padding-horizontal;
+  margin-bottom: @line-height-computed;
+  list-style: none;
+  background-color: @breadcrumb-bg;
+  border-radius: @border-radius-base;
+
+  > li {
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+    color: @breadcrumb-active-color;
+    font-size: 12px;
+      padding-right:1px;
+    + li:before {
+      content: "@{breadcrumb-separator}\00a0"; // Unicode space added since inline-block means non-collapsing white-space
+      color: darken(@breadcrumb-color, 20%);
+        padding-right:5px;   
+        }
+    }
+    a {
+        color: inherit;
+        *color: #777;
+    }
+      > .active {
+        color: @breadcrumb-active-color;
+      }
+  }
+
+
+
+.breadcrumb {
+    > li {
+      + li:before {
+        line-height: 1;
+        display: inline-block;
+        font-family: 'Glyphicons Halflings';
+        content: '\e258';
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-size: 12px;
+        vertical-align: middle;
+        margin-top: -2px;
+          padding-right:5px;
+      }
+    }
+}
+
+.breadcrumb_wrap {
+  margin-top: @grid-gutter-width * -1;
+  margin-bottom: @grid-gutter-width;
+  background-color: fade(@gray-base, 10%);
+  -webkit-backdrop-filter:blur(4px);
+  backdrop-filter:blur(4px);
+	.lte-ie8 & {
+		background: 0 0 repeat;
+		background-image:url("@{cssPatch}images/ui/breadcrumb_wrap_bg_ie8.png");
+	}
+  .breadcrumb {
+    margin-bottom: 0;
+    background: none;
+  }
+}

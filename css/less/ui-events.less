@@ -1,0 +1,98 @@
+//main:mergercss.less
+
+
+/*
+*  searh element
+*/
+/*大事记-page_events*/
+.sse_con_query{
+    .noMargin{
+        margin-left: 0;
+    }
+}
+.history-date{
+    position: relative;
+    overflow: hidden;
+    .lighter-text{
+        font-size: 16px;
+        color:#545454;
+        font-family: 'Microsoft YaHei';
+        padding-left: 15px;
+        padding-bottom: 5px;
+    }
+    ul{
+        margin-left:37px;
+        margin-bottom: 155px;
+        padding-top: 19px;
+        border-left:1px solid #f5f5f5;
+    }
+    li{
+        position: relative;
+        padding-left: 22px;
+        padding-right: 20px;
+        margin-bottom:19px;
+        .history-date-icon{
+            position: absolute;
+            left:-7px;
+            top:18px;
+            width:13px;
+            height:13px;
+            background:url(../images/ui/history-date-icon.png) no-repeat left top;
+        }
+        &.cur,&:hover > dl{
+            border-color:#a5bcd2;
+            
+            .date-arr{
+                background-position:left bottom; 
+            }
+        }
+        &.cur,&:hover > .history-date-icon{
+            background-position: left bottom;
+        }
+    }
+    dl{
+        position: relative;
+        padding:17px 30px 17px 23px;
+        font-size: 14px;
+        color:#545454;
+        border:1px solid #eee;
+        border-radius: 5px;
+        dt{
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 16px;
+            padding-bottom: 7px;
+        }
+        dd{
+            line-height: 22px;
+        }
+        em{
+            font-style: normal;
+        }
+    }
+    .date-arr{
+        position: absolute;
+        left:-8px;
+        top:17px;
+        width:8px;
+        height:13px;
+        background:url(../images/ui/date-arr.png) no-repeat left top;
+    }
+}
+
+@media screen and ( max-width:768px ){
+    .history-date{
+        ul{
+            margin-left: 22px;
+            margin-bottom: 72px;
+            li{
+                padding-left:15px;
+                padding-right: 10px;
+            }
+        } 
+        dl{
+            padding-left:8px;
+            padding-right: 8px;
+        }
+    }
+}

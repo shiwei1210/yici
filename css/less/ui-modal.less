@@ -1,0 +1,265 @@
+//main:mergercss.less
+@sse_modal_title_height:36px;
+@sse_modal_title_fontWeight:normal;
+@sse_modal_title_subFonts_size:12px;
+
+@sse_modal_icon_word: "images/ui/icon-word.png";
+@sse_modal_icon_word_retina: "images/ui/icon-word@2x.png";
+
+@sse_modal_icon_pdf: "images/ui/icon-pdf.png";
+@sse_modal_icon_pdf_retina: "images/ui/icon-pdf@2x.png";
+
+
+/* pdf modal start */
+
+.sse_modal {
+	.close {
+		&:focus {
+			outline: none;
+		}
+	}
+	.modal-fullwidth {
+		width: auto;
+		margin: @grid-gutter-width * 2  @grid-gutter-width * 3;
+	}
+	.con_title {
+		line-height: @sse_modal_title_height;
+		font-size: @sse_modal_title_height * 0.6;
+		font-weight: @sse_modal_title_fontWeight;
+        display: none;//暂时不需要此icon
+		.icon {
+			height:  @sse_modal_title_height;
+			width:  @sse_modal_title_height;
+			float: left;
+			background: 50% 50% no-repeat;
+		}
+		.icon_pdf,
+		.icon_word {
+			-webkit-background-size: image-width("@{lessPatch}@{sse_modal_icon_word}") image-height("@{lessPatch}@{sse_modal_icon_word}")-4;
+			background-size: image-width("@{lessPatch}@{sse_modal_icon_word}") image-height("@{lessPatch}@{sse_modal_icon_word}")-4;
+			background-image: url("@{cssPatch}@{sse_modal_icon_word}");
+		}
+		.icon_pdf {
+			background-image: url("@{cssPatch}@{sse_modal_icon_pdf}");
+			margin-top: -5px;
+		}
+	}
+	.con_tips_area {
+		overflow: hidden;
+	}
+	.con_subtips,
+	.con_subdate {
+		font-size: @sse_modal_title_subFonts_size;
+		line-height: @sse_modal_title_subFonts_size / 0.6;
+		color: @gray-light;
+	}
+	.con_subtips {
+		padding-bottom: @grid-gutter-width;
+	}
+	& .has_icon {
+		.con_subtips,
+		.con_subdate {
+			padding-left: @sse_modal_title_height;
+		}
+	}
+	.download_and_feedback {
+		overflow: hidden;
+		.modal_feedback {
+			float: left;
+			line-height: 34px;
+			font-size: 14px;
+			vertical-align: middle;
+			.glyphicon {
+				display: none;
+				margin-top: 3px;
+			}
+		}
+	}
+	.pdfdownloadlink {
+		margin-left: 20px;
+		//margin-bottom: 20px;
+		float: right;
+	}
+	.download_and_feedback {
+		@thisimg:"images/layout/ui-modal-fb-bgfonts.png";
+		background: 0 50% no-repeat;
+		background-image: url("@{cssPatch}@{thisimg}");
+		padding-left: image-width("@{lessPatch}@{thisimg}") + 20;
+	}
+}
+
+
+/*pdf的标题时间的样式*/
+.pdf-modal-date{margin-bottom: 0;}
+/*-end-*/
+
+.modal-body{
+    padding-top: 10px;
+    
+    iframe{margin-top: -10px;}
+}
+
+//右侧预览数据区域
+.con_prvdate {
+	padding-left: 20px;
+	position: relative;
+
+	.toggleBar {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		//min-height: 713px;
+		width: 10px;
+		background-color: #e7e9eb;
+		.togglebtn {
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 90px;
+			left: 0;
+			top: 50%;
+			margin-top: -45px;
+			background: 50% 50% no-repeat;
+			background-color: @mainThemeColor_darken2;
+			cursor: pointer;
+			&.open {
+				@thisimg:"images/layout/ui-modal-toggle-btn-open.png";
+				background-image: url("@{cssPatch}@{thisimg}");
+			}
+			&.close {
+				@thisimg:"images/layout/ui-modal-toggle-btn-close.png";
+				background-image: url("@{cssPatch}@{thisimg}");
+				float: none;
+				font-size:medium;
+				font-weight: bold;
+				line-height: 1;
+				color: #000000;
+				text-shadow: none;
+				opacity: 1;
+			}
+		}
+	}
+	.conp_block_1 {
+		.dt_table_1 {
+			width: 100%;
+			td {
+				padding: @grid-gutter-width;
+				vertical-align: middle;
+				background-color: #f5f5f5;
+			}
+			.title,
+			.number1,
+			.number2,
+			.number3 {
+				display: inline-block;
+				width: 100%;
+				margin: auto;
+				line-height: normal;
+			}
+			.title {
+				font-size: 22px;
+				color: #434343;
+			}
+			.number1 {
+				font-size: 14px;
+				color: #999999;
+				padding-top: 10px;
+			}
+			.number2 {
+				font-size: 24px;
+				font-weight: bold;
+				color: #545454;
+			}
+
+			.number3 {
+				font-size: 24px;
+				line-height: 24px;
+				.icons {
+					display: inline-block;
+					font-family: 'Glyphicons Halflings';
+					font-style: normal;
+					vertical-align: top;
+					font-size: 0;
+					height: 24px;
+					line-height: 24px;
+					width: 20px;
+					overflow: hidden;
+				}
+			}
+			.up {
+				color: #f94744;
+				.icons {
+//					font-size: 0px;
+//					&:first-letter {
+//						font-size: 20px;
+//					}
+					font-size:20px;
+				}
+			}
+			.down {
+				color: #29a457;
+				.icons {
+					font-size: 20px;
+					text-indent: -20px;
+//					&:first-letter {
+//						font-size: 0px;
+//					}
+				}
+			}
+			.tdleft {
+				text-align: left;
+			}
+			.tdright {
+				text-align: right;
+			}
+		}
+		.dt_table_2 {
+			width: 100%;
+			margin-top: 10px;
+			border-collapse: collapse;
+			.tdleft,
+			.tdright {
+				width: 50%;
+				text-align: center;
+				padding: 0 @grid-gutter-width;
+				.title {
+					font-size: 12px;
+					color: #434343;
+				}
+				.nums {
+					.num1 {
+						font-size: 30px;
+						color: #214e77;
+					}
+					.num2 {
+						font-size: 12px;
+						color: #434343;
+					}
+				}
+			}
+			.tdleft {
+				border-right: solid 1px #f3f3f3;
+			}
+		}
+	}
+	.conp_block_2 {
+		padding-top: @grid-gutter-width - 5;
+		overflow: hidden;
+	}
+	.conp_block_3 {
+		overflow: hidden;
+		.conp_show_img_wrap {
+			text-align: center;
+			img {
+				vertical-align: top;
+				width: 100%;
+				max-height: 400px;
+			}
+		}
+	}
+
+
+}
+
+/* pdf modal end */

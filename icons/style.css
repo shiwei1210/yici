@@ -1,0 +1,76 @@
+@font-face {
+	font-family: 'sseicon';
+	src:url('fonts/sseicon.eot?jgii41');
+	src:url('fonts/sseicon.eot?#iefixjgii41') format('embedded-opentype'),
+		url('fonts/sseicon.ttf?jgii41') format('truetype'),
+		url('fonts/sseicon.woff?jgii41') format('woff'),
+		url('fonts/sseicon.svg?jgii41#sseicon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="sseicon-"], [class*=" sseicon-"] {
+	font-family: 'sseicon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.sseicon-icon_menu:before {
+	content: "\e610";
+}
+.sseicon-icon_prompt:before {
+	content: "\e60f";
+}
+.sseicon-icon_more:before {
+	content: "\e60e";
+}
+.sseicon-slide-icon-left:before {
+	content: "\e60c";
+}
+.sseicon-slide-icon-right:before {
+	content: "\e60d";
+}
+.sseicon-icon_phone:before {
+	content: "\e60b";
+}
+.sseicon-icon_fontSizeDown:before {
+	content: "\e607";
+}
+.sseicon-icon_fontSizeUp:before {
+	content: "\e608";
+}
+.sseicon-icon_print:before {
+	content: "\e609";
+}
+.sseicon-icon_share:before {
+	content: "\e60a";
+}
+.sseicon-nav_icon_1:before {
+	content: "\e600";
+}
+.sseicon-nav_icon_2:before {
+	content: "\e601";
+}
+.sseicon-nav_icon_3:before {
+	content: "\e602";
+}
+.sseicon-nav_icon_4:before {
+	content: "\e603";
+}
+.sseicon-nav_icon_5:before {
+	content: "\e604";
+}
+.sseicon-nav_icon_6:before {
+	content: "\e605";
+}
+.sseicon-nav_icon_7:before {
+	content: "\e606";
+}
