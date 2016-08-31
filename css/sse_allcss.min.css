@@ -1709,7 +1709,7 @@ pre code {
   padding-left: 5px;
   padding-right: 5px;
 }
-@media (min-width: 768px) {
+@media (min-width: 968px) {
   .container {
     width: 1000px;
   }
@@ -11637,6 +11637,52 @@ h2 {
     *padding-top: 2px;
   }
 }
+@media (max-width: 768px) {
+  #banner1 {
+    width: 100%;
+    height: 308px;
+    background-color: #fff;
+  }
+  #banner1 .swiper-container3 {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    height: 100%;
+  }
+  #banner1 .swiper-container3 .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    -ms-transition-property: -ms-transform;
+    transition-property: transform;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+  #banner1 .swiper-container3 .swiper-wrapper .swiper-slide {
+    background: center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  #banner1 .swiper-container3 .swiper-button-next,
+  #banner1 .swiper-container3 .swiper-button-prev {
+    display: none;
+  }
+}
 @media (max-width: 767px) {
   #banner1 {
     width: 100%;
@@ -20553,7 +20599,7 @@ h2 {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* 新旧浏览器视网膜样式 */
   .desk_search .search_input {
-    background-image: url("../images/ui/ui-search-icon.svg");
+    /*background-image: url("../images/ui/ui-search-icon.svg");*/
   }
   .sse_modal .con_title .icon_word {
     background-image: url("../images/ui/icon-word@2x.png");
