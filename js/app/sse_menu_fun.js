@@ -1,5 +1,5 @@
 if (typeof (col_id) === 'undefined') {
-	var col_id = 8565;
+	var col_id = 10438;
 }
 //菜单cookie
 var sseMenuCookie = {
@@ -29,11 +29,11 @@ var sseMenuCookie = {
 	    exp.setTime(exp.getTime() - 1);
 	    var cval=this.get(cname);
 	    if(cval!==null){
-        	document.cookie= cname + "="+cval+";expires="+exp.toGMTString();  
+        	document.cookie= cname + "="+cval+";expires="+exp.toGMTString();
         }
 	}
 };
-var sseMenuObj = {
+var ssefundMenuObj = {
 	menu_tab_text: '', //主菜单
 	menu_con_text: '', //hover状态下显示的二三级菜单
 	mobile_menu_text: '', //手机版菜单
@@ -87,7 +87,7 @@ var sseMenuObj = {
 		return lv;
 	},
 	formatNode: function (key) { //格式化栏目节点
-		var obj = SSE_MENU_28[key];
+		var obj = SSE_MENU_35[key];
 		if (typeof (obj) != 'object') { //如果找不到对应的栏目
 			return false;
 		}
@@ -116,14 +116,14 @@ var sseMenuObj = {
 			target: obj.TARGET == '1' ? '_blank' : '_self', //打开窗口方式
 			children: obj.CHILDREN, //子菜单
 			nodeStyle: 'menu_style_' + obj.STYLE, //显示样式 0=新栏目
-			active: key == sseMenuObj.act_id ? "active" : '' //是否是当前页面
+			active: key == ssefundMenuObj.act_id ? "active" : '' //是否是当前页面
 		};
 	},
 	//检查当前专栏是否是前一页专栏的子级
 	checkSpecialCookie:function(node){
 		var specialNode = sseMenuCookie.get('sseMenuSpecial');
 		function compareSpecial(key){
-			var currNode = SSE_MENU_28[key];
+			var currNode = SSE_MENU_35[key];
 			if(currNode.PARENTCODE == '0'){
 				sseMenuCookie.set('sseMenuSpecial',node,1);
 				return node;
@@ -139,15 +139,15 @@ var sseMenuObj = {
 		}else{
 			return compareSpecial(node);
 		}
-	}, 
+	},
 	findSpecialNode: function (key) { //查找最近的专栏
-		var currNode = SSE_MENU_28[key];
+		var currNode = SSE_MENU_35[key];
 		if (typeof (currNode) != 'object') { //如果找不到对应的栏目
 			return false;
 		}
-		if ((currNode.DISPLAY == "0" || currNode.TYPE.split(";").indexOf('2') < 0) && sseMenuObj.act_id == key) {
-			sseMenuObj.act_id = currNode.PARENTCODE;
-			return this.findSpecialNode(sseMenuObj.act_id);
+		if ((currNode.DISPLAY == "0" || currNode.TYPE.split(";").indexOf('2') < 0) && ssefundMenuObj.act_id == key) {
+			ssefundMenuObj.act_id = currNode.PARENTCODE;
+			return this.findSpecialNode(ssefundMenuObj.act_id);
 		}
 		if ( currNode.ISSPECIALCHANNEL == "1" ||  currNode.PARENTCODE == '0') { //如果当前栏目是专栏或者一级菜单，直接返回当前节点
 			key = this.checkSpecialCookie(key);
@@ -169,11 +169,11 @@ var sseMenuObj = {
 		var lv = [];
 
 		function findParent(key) {
-			var currNode = SSE_MENU_28[key];
+			var currNode = SSE_MENU_35[key];
 			if (typeof (currNode) != 'object' || key === '') { //如果找不到对应的栏目
 				return false;
 			}
-			lv.push(sseMenuObj.formatNode(key, 1));
+			lv.push(ssefundMenuObj.formatNode(key, 1));
 			if (currNode.CHNLNAME === "首页" && currNode.PARENTCODE == "0") {
 				return false;
 			}
@@ -186,7 +186,7 @@ var sseMenuObj = {
 		var activeIdx = '';
 
 		function findParentMenu(key) {
-			var currNode = SSE_MENU_28[key];
+			var currNode = SSE_MENU_35[key];
 			if (typeof (currNode) != 'object' || key === '') { //如果找不到对应的栏目
 				return false;
 			}
@@ -200,11 +200,11 @@ var sseMenuObj = {
 		return activeIdx;
 	}
 };
-//pc版主菜单
-sseMenuObj.initPcMainMenu = function () {
+//pc版主菜单;
+ssefundMenuObj.initPcMainMenu = function () {
 	this.menu_type = '1';
-	var menu_tab = '<ul class="nav navbar-nav equal_nav equal_nav-7" id="menu_tab">', //主菜单
-		menu_con = '', //hover状态下显示的二三级菜单
+	var menu_tab = '<ul class="navf pull-left" id="jsddm">', //主菜单
+		menu_con = '<ul class="navf pull-left" id="jsddm">', //hover状态下显示的二三级菜单
 		currNode = null,
 		hasChild = 0, //有二三级菜单的索引值
 		lv1 = this.getNodeChild(this.siteObj),
@@ -214,75 +214,67 @@ sseMenuObj.initPcMainMenu = function () {
 			navClass = '',
 			currNode_1 = lv1[i],
 			lv2 = this.getNodeSpeChild(currNode_1);
-		//如果有第二级菜单
-		if (lv2.length > 0) {
-			menu_con += '<div class="trow row">';
-			for (var j = 0, len2 = lv2.length; j < len2; j++) {
-				var the_col = lv2[j];
-				if (j == len2 - 1) {
-					menu_con += '<div class="col-sm-3 no-border">';
-				} else {
-					menu_con += '<div class="col-sm-3">';
-				}
-				for (var k = 0, len3 = the_col.length; k < len3; k++) {
-					currNode = the_col[k];
-					menu_con += '<div class="block"><h2><a href="' + currNode.href + '" target="' + currNode.target + '" class="' + currNode.nodeStyle + '">' + currNode.label + '</a></h2>';
-					var lv3 = this.getNodeChild(currNode);
-					//如果有第三级菜单
-					if (lv3.length > 0) {
-						for (var m = 0, len4 = lv3.length; m < len4; m++) {
-							currNode = lv3[m];
-							menu_con += '<p><a href="' + currNode.href + '" target="' + currNode.target + '" class="links ' + currNode.nodeStyle + '">' + currNode.label + '</a></p>';
-						}
-					}
-					menu_con += '</div>';
-				}
-				menu_con += '</div>';
+			if (activeIdx == currNode_1.code) {
+				navClass += ' acttive';
 			}
-			menu_con += '</div>';
-			navClass = 'top_side_show_items';
-			sssld = ' side-data="' + (hasChild++) + '"';
-		}
-		if (activeIdx == currNode_1.code) {
-			navClass += ' active';
-		}
-		menu_tab += '<li class="' + navClass + '"' + sssld + '><a href="' + currNode_1.href + '" target="' + currNode_1.target + '"><i class="sseicon-nav_icon_' + (i + 1) + '"></i>' + currNode_1.label + '</a></li>';
+			menu_con += '<li class="' + navClass + '">';
+					//如果有第二级菜单
+			if (lv2.length > 0) {
+				for (var j = 0, len2 = lv2.length; j < len2; j++) {
+					var the_col = lv2[j];
+					for (var k = 0, len3 = the_col.length; k < len3; k++) {
+						currNode = the_col[k];
+						if(k==0){
+							menu_con += '<a href="' + currNode.href + '" target="' + currNode_1.target + '">' + currNode_1.label + '</a>';
+							menu_con += '<ul>';
+						}
+						menu_con += '<li><a href="' + currNode.href + '" target="' + currNode.target + '" class="' + currNode.nodeStyle + '">' + currNode.label + '</a></li>';
+						var lv3 = this.getNodeChild(currNode);
+					}
+				}
+			menu_con += '</ul>';
+			}else{
+				// 如果没有二级菜单
+				menu_con += '<a href="' + currNode_1.href + '" target="' + currNode_1.target + '">' + currNode_1.label + '</a>';
+			}
+		menu_con += '</li>';
 	}
+
 	menu_tab += '</ul>';
-	this.menu_tab_text = menu_tab; //主菜单
 	this.menu_con_text = menu_con; //hover状态下显示的二三级菜单
 };
 //手机版菜单
-sseMenuObj.initMobileMenu = function () {
+ssefundMenuObj.initMobileMenu = function () {
 	this.menu_type = '2';
-	this.mobile_menu_text = '<h2>菜单</h2>' + getMobileMenu(this.siteObj);
+	this.mobile_menu_text = '<h2><a href="#">导航</a></h2>' + getMobileMenu(this.siteObj);
 
 	function getMobileMenu(theNode) {
 		var ret = '',
-			list = sseMenuObj.getNodeChild(theNode);
+			list = ssefundMenuObj.getNodeChild(theNode);
 		for (var i = 0, len = list.length; i < len; i++) {
 			var currNode = list[i];
-			var list2 = sseMenuObj.getNodeChild(currNode);
+			var list2 = ssefundMenuObj.getNodeChild(currNode);
 			if (list2.length > 0) { //如果有下级菜单
-				ret += '<li class="hasMenu ' + currNode.active + '">' +
-					'<a href="' + currNode.href + '" target="' + currNode.target + '">' + currNode.label + '</a>' +
-					'<ul class="dl-submenu">' +
-					'<li class="dl-back"><a href="#"><i class="glyphicon glyphicon-menu-left"></i> 返回</a></li>';
+				ret +=	'<li>';
+				ret +=	'<a class="menu-li ' + currNode.active + '" href="javascript:void(0);" target="' + currNode.target + '">' + currNode.label + '</a>';
+				ret +='<ul class="row ul-menu">'
 				ret += getMobileMenu(currNode); //递归调用当前函数
 				ret += '</ul></li>';
-			} else {
-				ret += '<li class="' + currNode.active + '"><a href="' + currNode.href + '" target="' + currNode.target + '">' + currNode.label + '</a></li>';
+			}else{
+				ret +=	'<li>';
+				ret +=	'<a class="menu-li ' + currNode.active + '" href="' + currNode.href + '" target="' + currNode.target + '">' + currNode.label + '</a>';
+				ret += '</li>';
 			}
 		}
 		return ret;
 	}
 };
 //pc版左侧菜单
-sseMenuObj.initLeftMenu = function () {
+ssefundMenuObj.initLeftMenu = function () {
 	var menu_lv = 0;
 	this.specialNodeObj = this.findSpecialNode(col_id);
 	function getNodeMenu(theNode, menu_lv) {
-		var lv = sseMenuObj.getNodeChild(theNode);
+		var lv = ssefundMenuObj.getNodeChild(theNode);
 		var shtml = '';
 		var menulv = 'menu_lv_' + menu_lv;
 		if (lv.length > 0) {
@@ -326,24 +318,24 @@ sseMenuObj.initLeftMenu = function () {
 	return ret;
 };
 //面包屑
-sseMenuObj.initBreadMenu = function () {
+ssefundMenuObj.initBreadMenu = function () {
 	var currNode = null,
 		lv = this.findBreadNode();
 	var ret = '';
 	for (var i = lv.length - 1; i >= 0; i--) {
 		currNode = lv[i];
-		ret += '<li><a href="' + currNode.href + '" target="' + currNode.target + '">' + currNode.label + '</a>';
+		ret += '<li><a href="javascript:void(0);" target="' + currNode.target + '">' + currNode.label + '</a>';
 		if (i > 0) {
-			ret += '<i class="sseicon-slide-icon-right"></i>';
+			ret += '';
 		}
 		ret += '</li>';
 	}
 	return ret;
 };
 //网站地图
-sseMenuObj.initSiteMap = function () {
+ssefundMenuObj.initSiteMap = function () {
 	this.menu_type = '3';
-	var ret = '', 
+	var ret = '',
 		lv1 = this.getNodeChild(this.siteObj);
 	for (var i = 0, len = lv1.length; i < len; i++) {
 		var currNode_1 = lv1[i],
@@ -373,7 +365,7 @@ sseMenuObj.initSiteMap = function () {
 	return ret;
 };
 //菜单初始化
-sseMenuObj.init = function () {
+ssefundMenuObj.init = function () {
 	if (!Array.prototype.indexOf) {
 		Array.prototype.indexOf = function (elt /*, from*/ ) {
 			var len = this.length >>> 0;
@@ -394,4 +386,4 @@ sseMenuObj.init = function () {
 	this.initPcMainMenu();
 	this.initMobileMenu();
 };
-sseMenuObj.init();
+ssefundMenuObj.init();

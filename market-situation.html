@@ -38,7 +38,8 @@
     <!-- win 8 磁贴图标 -->
     <meta name="msapplication-TileImage" content="images/webappicon/apple-touch-icon-120x120.png">
     <meta name="msapplication-tooltip" content="Tooltip">
-
+    <!--以IE最高版本打开-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
     <meta http-equiv="Cache-Control" content="no-siteapp">
 
     <!--调试阶段禁止缓存,例如微信，QQ浏览器缓存-->
@@ -50,7 +51,7 @@
     <link href="css/laydate.css" rel="stylesheet" type="text/css">
     <script src="js/lib/jquery.min.js" type="text/javascript"></script>
     <script src="js/lib/index.js" type="text/javascript"></script>
-
+    <script src="js/lib/laydate.dev.js"></script>
 
 </head>
 <body class="indexbody">
@@ -153,38 +154,39 @@
 </div>
 <div class="dl-menuwrapper" id="dl-menu">
     <button id="dl-menu-button" class="btn"></button>
-    <ul class="dl-menu" id="mobile_menu">
-        <li><a>首页</a></li>
-        <li><a class="menu-li">市场动态</a>
+    <ul class="dl-menu dl-menubu" id="mobile_menu">
+        <!--<script type="text/javascript">document.write(sseMenuObj.mobile_menu_text);</script>-->
+        <h2><a href="#">导航</a></h2>
+        <li><a class="">首页</a></li>
+        <li><a class="menu-li menu-active">市场动态</a>
             <ul class="row ul-menu">
-                <li class=""><a href="#">基金广告</a></li>
+                <li class=""><a href="#">市场概况</a></li>
                 <li class=""><a href="#">动态信息</a></li>
             </ul>
         </li>
         <li><a class="menu-li">基金信息</a>
             <ul class="row ul-menu">
-                <li><a href="#">市场总览</a></li>
-                <li><a href="#">基金列表</a></li>
+                <li><a href="#">基金总览</a></li>
+                <li><a href="#">基金公告</a></li>
                 <li><a href="#">公告查询</a></li>
-                <li><a href="#">ETF申购赎回申请单</a></li>
-                <li><a href="#">交易市场型货币市场基金</a></li>
-                <li><a href="#">申购赎回清单</a></li>
+                <li><a href="#">LOF动态净值</a></li>
+                <li><a href="#">基金特征展示</a></li>
+                <li><a href="#">ETF申赎清单</a></li>
             </ul>
         </li>
         <li><a class="menu-li">投教专区</a>
             <ul class="row ul-menu">
                 <li><a href="#">基础知识</a></li>
                 <li><a href="#">投教策略</a></li>
-                <li><a href="#">视频课程</a></li>
+                <li><a href="#">投教讲堂</a></li>
                 <li><a href="#">资料下载</a></li>
                 <li><a href="#">常见问题</a></li>
-                <li><a href="#">知识下载</a></li>
             </ul>
         </li>
         <li><a class="menu-li">规则指南</a>
             <ul class="row ul-menu">
-                <li><a href="#">上位法则</a></li>
-                <li><a href="#">本所业务</a></li>
+                <li><a href="#">上位法规</a></li>
+                <li><a href="#">本所规则</a></li>
                 <li><a href="#">业务指南</a></li>
             </ul>
         </li>
@@ -209,7 +211,7 @@
     <div class="container">
         <!--页面大标题-->
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 hidden-lg hidden-md">
                 <h1 class="page_big_title">动态信息</h1>
             </div>
         </div>
@@ -225,11 +227,12 @@
             </div>
             <div class="maket-tab row">
                 <div class="sse-date col-sm-5 col-xs-12 pull-right">
-                    <a class="sse-date-a">查询</a>
+                    <button class="sse-date-a btn">查询</button>
                     <input value="2016-07-03" type="text" id="J-xl" class="maket-tab-input">
 
                     <p class="maket-tab-p">数据日期:2016-07-15</p>
                 </div>
+                <input type="hidden" value="marketSituation" id="pagename">
                 <ul class="maket-tab-ul row col-sm-5 col-xs-12  pull-left">
                     <li class="maket-active col-sm-4 col-xs-4">每日概况</li>
                     <li class="col-sm-4 col-xs-4">月度概况</li>
@@ -237,7 +240,7 @@
                 </ul>
                 <div class="maket-tab-box">
                     <div class="maket-table-box">
-                    <table border="0" class="maket-table table table-striped text-center">
+                    <table border="0" class="maket-table table table-striped text-center _fundDay">
                         <tr class="maket-tab-tr">
                             <td>每日情况</td>
                             <td>基金总体</td>
@@ -246,295 +249,31 @@
                             <td>分级LOF</td>
                             <td>封闭式基金</td>
                         </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
                     </table></div>
                 </div>
                 <div class="maket-tab-box" style="display: none">
                     <div class="maket-table-box">
-                    <table border="0" class="maket-table table table-striped text-center">
+                    <table border="0" class="maket-table table table-striped text-center _fundMonth">
                         <tr class="maket-tab-tr">
-                            <td>啊日情况</td>
+                            <td>每日情况</td>
                             <td>基金总体</td>
                             <td>ETF</td>
                             <td>LOF</td>
                             <td>分级LOF</td>
                             <td>封闭式基金</td>
                         </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
                     </table></div>
                 </div>
                 <div class="maket-tab-box" style="display: none">
                     <div class="maket-table-box">
-                    <table border="0" class="maket-table table table-striped text-center">
+                    <table border="0" class="maket-table table table-striped text-center _fundYear">
                         <tr class="maket-tab-tr">
-                            <td>单日情况</td>
+                            <td>每日情况</td>
                             <td>基金总体</td>
                             <td>ETF</td>
                             <td>LOF</td>
                             <td>分级LOF</td>
                             <td>封闭式基金</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
-                        </tr>
-                        <tr>
-                            <td>股票型(只)</td>
-                            <td>2719.05(2016-04-15)</td>
-                            <td>159.91</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>1459.91</td>
                         </tr>
                     </table></div>
                 </div>
@@ -685,9 +424,7 @@
 
 </body>
 <!--日历JS-->
-<script src="js/lib/laydate.dev.js"></script>
 <script>
-    //日历JS
     laydate({
         elem: '#J-xl'
     });

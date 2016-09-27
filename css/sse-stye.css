@@ -2,19 +2,49 @@
 input {
 
     outline: none;
+    color: #989898;
 }
-
+a{
+    color: #343434;
+}
+select {
+    color: #989898;
+}
+.bule{
+    color: #337ab7 !important;
+}
 .indexbody {
     background: #f5f5f5;
 }
 
 .ib_mid_wrap .nav_logo {
-    width: 443px;
+    width: 212px;
     background: url("../images/layout/nav_logo.png") no-repeat;
 }
-
+.ib_mid_wrap .nav_logo1 {
+    width: 212px;
+    background: url("../images/layout/nav_logo.png") no-repeat;
+}
+.ib_mid_wrap .nav_logo1 {
+    width: 344px;
+    height: 43px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 232px;
+    margin-top: -22px;
+    background-image: url("../images/layout/nav_logo1.png");
+}
 .f16 {
     font-size: 14px !important;
+}
+
+.green {
+    color: #3ca912;
+}
+
+.red {
+    color: #ec4d4e;
 }
 
 .nava {
@@ -71,6 +101,24 @@ input {
 .search_inputt {
     color: #aba6a7 !important;
 }
+/*.desk_search input::-webkit-input-placeholder{color:#fff !important;}
+.desk_search input::-moz-placeholder{color:#fff !important;}
+.desk_search input:-moz-placeholder{color:#fff !important;}
+*/
+.desk_search  input::-webkit-input-placeholder {color: #fff !important; /* WebKit browsers */}
+.desk_search  input:-moz-placeholder {color: #ffffff !important; /* Mozilla Firefox 4 to 18 */}
+.desk_search  input::-moz-placeholder {color: #ffffff !important; /* Mozilla Firefox 19+ */}
+.desk_search  input:-ms-input-placeholder {color: #ffffff !important; /* Internet Explorer 10+ */}
+/*.desk_search input::-webkit-input-placeholder{color:#fff !important;}
+.desk_search input::-moz-placeholder{color:#fff !important;}
+.desk_search input:-moz-placeholder{color:#fff !important;}
+*/
+.desk_search  input::-webkit-input-placeholder {color: #fff !important; /* WebKit browsers */}
+.desk_search  input:-moz-placeholder {color: #ffffff !important; /* Mozilla Firefox 4 to 18 */}
+.desk_search  input::-moz-placeholder {color: #ffffff !important; /* Mozilla Firefox 19+ */}
+.desk_search  input:-ms-input-placeholder {color: #ffffff !important; /* Internet Explorer 10+ */}
+
+
 
 .row-main {
     margin-top: 15px;
@@ -165,7 +213,14 @@ input {
     overflow: hidden;
     margin-top: 22px;
 }
-
+.indexspan{
+    float: right;
+    margin-right: 10px;
+}
+.indexspan1{
+    color: #188dd2;
+    font-size: 22px;
+}
 .sse_list_right h4 {
     line-height: 35px;
 }
@@ -250,11 +305,42 @@ input {
     width: 100%;
     display: block;
 }
+.marketbu{
+  background: #fff;
+}
+.fundmarket_date{
 
+}
+._date{
+  height: 10%;
+  width: 70%;
+  float: left;
+  font-size: 14px;
+}
+.date_detail{
+  float: right;
+  margin-right: 30px;
+}
+#ticker01{
+    height:243px;
+    float:left;
+    margin-top:5px;
+    cursor:pointer;
+    width: 100%;
+}
+.can_click{
+    cursor:pointer;
+}
 .fast-nav-conmentbu {
     border-top: #49a2d6 solid 3px;
 }
-
+.cl_bgColor1 {
+    background-color: #f2f2f2;
+    color:#337ab7;
+}
+.cl_bgColor2 {
+    background-color: #fff;
+}
 .sse_home_in_table2 span {
     font-size: 12px;
     color: #959595;
@@ -389,15 +475,26 @@ input {
 }
 
 #jsddm li a {
+    /*text-align: center;*/
     display: block;
     /*background: #324143;*/
-    /*padding: 5px 25px;*/
+    padding: 0 30px;
+    padding-left: 45px;
     text-decoration: none;
     /*border-right: 1px solid white;*/
-    width: 135px;
+    /*width: 135px;*/
     color: #EAFFED;
     text-align: center;
-    white-space: nowrap
+    white-space: nowrap;
+    font-size: 16px;
+    background: url("../images/layout/nav-icon.png") no-repeat 15px center;
+    font-family: "微软雅黑";
+}
+
+.navf i {
+    margin-right: 5px;
+    font-size: 16px;
+    opacity: 0.5;
 }
 
 #jsddm li ul {
@@ -414,29 +511,16 @@ input {
 }
 
 #jsddm li ul li a {
-    width: 135px;
     text-align: center;
     background: #1467b3;
     color: white;
     line-height: 30px;
-    padding: 13px 41px;
+    padding: 10px 42px;
+    font-size: 14px;
 }
 
 #jsddm li ul li a:hover {
     color: #cccccc;
-}
-
-.navfaul a {
-    width: auto !important;
-    text-align: center;
-    background: #1467b3;
-    color: white;
-    line-height: 30px;
-    padding: 13px 40px;
-}
-
-.navfaul {
-    left: 228px !important;
 }
 
 .ul-menu {
@@ -451,6 +535,32 @@ input {
     float: right;
 }
 
+.funds-title {
+    border-bottom: #1a8dd0 solid 2px;
+    background: white;
+}
+
+.content-information {
+    background: white;
+    padding-top: 30px;
+}
+
+.content-informationbu {
+    padding-top: 0;
+}
+
+.funds-title a {
+    line-height: 46px;
+    font-size: 16px;
+    color: #666666;
+    text-align: center;
+}
+
+.funds-title .funds-active {
+    background: #198bd1;
+    color: #ffffff;
+}
+
 /*����ָ��*/
 .rules-title {
     border-bottom: #1a8dd0 solid 2px;
@@ -459,7 +569,11 @@ input {
 
 .content-information {
     background: white;
-    padding-top: 30px;
+    padding-top: 25px;
+}
+
+.content-informationbu {
+    padding-top: 0;
 }
 
 .rules-title a {
@@ -473,7 +587,33 @@ input {
     background: #198bd1;
     color: #ffffff;
 }
-
+.rules-title li{
+    position: relative;
+    text-align: center;
+}
+.rules-title li a{
+    text-align: center;
+}
+.xia{
+    position: absolute;
+    width: 100%;
+    top: 48px;
+    left: 0;
+    clear: both;
+    display: none;
+    text-align: center;
+    background: #fafafa;
+    border: #e9e9e9 solid 1px;
+    border-top:none;
+    z-index: 999;
+}
+.xia a{
+    display: block;
+    font-size: 14px;
+}
+.xia a:hover{
+    background: #eeeeee;
+}
 .content-information-li {
     overflow: hidden;
 }
@@ -591,10 +731,12 @@ input {
     margin-top: 15px;
     margin-bottom: 15px;
     color: #4a4a4a;
+    cursor: pointer;
 }
 
 .rules-details-title {
     background: white;
+    padding-bottom: 50px;
 }
 
 .rules-details-titlep {
@@ -635,7 +777,104 @@ input {
 .rules-details-content-last {
     padding-bottom: 15px;
 }
-
+/*// article - 发布时间 / 打印 / 放大 / 缩小*/
+.article-info {
+  padding-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article-info .onelevel-center {
+  max-width: 66.66666667%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+.article-opt {
+  padding: 0px 0 15px;
+  line-height: 1.75;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  font-size: 0;
+}
+.article-opt span {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: middle;
+}
+.article-opt .send-timer {
+  color: #999;
+  font-size: 14px;
+}
+.article-opt .send-timer i {
+  font-style: normal;
+}
+.article-opt .article-opt-inner a {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  text-decoration: none;
+}
+.article-opt .article-opt-inner .sseicon-icon_print {
+  padding: 0 30px;
+  margin-right: 30px;
+  border-right: 1px solid #ddd;
+  color: #666;
+  font-size: 12px;
+  vertical-align: top;
+}
+.article-opt .article-opt-inner .sseicon-icon_print:before {
+  margin-right: 8px;
+  content: "\e62e";
+  color: #888;
+  font-size: 14px;
+  font-family: "sseinfo" !important;
+  font-style: normal;
+  font-weight: normal;
+  vertical-align: top;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.article-opt .article-opt-inner .zoom {
+  display: inline-block;
+  width: 14px;
+}
+.article-opt .article-opt-inner .zoom + .zoom {
+  margin-left: 15px;
+}
+.article-opt .article-opt-inner .sseicon-icon_fontSizeUp {
+  background: url(../images/layout/fs-plus.png) no-repeat left center;
+}
+.article-opt .article-opt-inner .sseicon-icon_fontSizeDown {
+  vertical-align: -1px;
+  background: url(../images/layout/fs-reduce.png) no-repeat left center;
+}
+.article-body {
+  padding-top: 30px;
+  color: #666;
+}
+.article-body > p {
+  margin-bottom: 20px;
+  line-height: 1.75;
+  color: #666;
+}
+.article-body h4 {
+  margin-bottom: 20px;
+  color: #333;
+}
+.article-body .article-img {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.article-body > img {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.article-body img {
+  display: block;
+  max-width: 80%;
+  height: auto;
+}
 .rules-details-content h5 {
     cursor: pointer;
     padding-top: 10px;
@@ -797,6 +1036,12 @@ input {
     overflow: hidden;
 }
 
+.maket-tabbu {
+    background: white;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
 .sse-date-a, .maket-tab-input {
     float: right;
 }
@@ -814,12 +1059,22 @@ input {
 .maket-tab-box {
     clear: both;
     width: 95%;
-    margin: auto;
+    margin-left: 25px;
+}
+
+.maket-tab-boxbu {
+    padding-top: 16px;
 }
 
 .maket-tab-ul {
     margin-left: 25px;
     line-height: 35px;
+}
+
+.maket-tab-ulbu li {
+    border: #eeeeee solid 1px;
+    border-radius: 20px;
+    margin-right: 10px;
 }
 
 .maket-tab-ul .maket-active {
@@ -862,7 +1117,7 @@ input {
 
 .sse-date-a {
     padding: 8px 25px;
-    background: red;
+    background: #ea4e4f;
     color: white;
     cursor: pointer;
 }
@@ -877,6 +1132,7 @@ input {
 .fund-title {
     background: #f9f9f9;
     overflow: hidden;
+    border-bottom: #e5e5e5 solid 1px;
 }
 
 .fund-sousuo p {
@@ -895,7 +1151,7 @@ input {
     border: #dddddd solid 1px;
     border-left: none;
     padding-left: 10px;
-    width: 60%;
+    width: 65%;
 }
 
 .fund-sousuo {
@@ -905,10 +1161,18 @@ input {
 
 .fund-search {
     margin-top: 10px;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
 }
 
 .fund-search input {
+    height: 35px;
+    border: none;
+    border: #cccccc solid 1px;
+    padding-left: 10px;
+    width: 60%;
+}
+
+.fund-search select {
     height: 35px;
     border: none;
     border: #cccccc solid 1px;
@@ -926,9 +1190,10 @@ input {
     width: 33%;
     color: white;
     margin-left: 2%;
+    cursor: pointer;
 }
 
-.fund-search input, .fund-search p {
+.fund-search input, .fund-search select, .fund-search p {
     float: left;
 }
 
@@ -1015,12 +1280,750 @@ input {
     margin-left: 25px;
     padding-top: 10px;
 }
-.fund-ETFss{
+
+.fund-ETFss {
     background: white;
 }
-.fund-ETFsspp{
-   margin-left: 30px;
+
+.fund-ETFsspp {
+    margin-left: 30px;
     line-height: 30px;
+}
+
+.fund-ETF-content h5 {;
+    margin: auto;
+    text-indent: 2rem;
+    line-height: 40px;
+}
+
+.fund-ETF-content p {;
+    margin: auto;
+    width: 95%;
+    text-indent: 4rem;
+    line-height: 35px;
+}
+
+.fund-list {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /*border-bottom: #198bd1 solid 2px;*/
+}
+
+.fund-listbu {
+    width: auto;
+}
+
+.fund-list li {
+    display: inline-block;
+    font-size: 14px;
+    padding: 12px 25px;
+    cursor: pointer;
+}
+
+.fund-list .fund-list-active {
+    color: #1d8ed2;
+    font-size: 14px;
+    /*background: #1a8dd0;*/
+    border-bottom: #1a8dd0 solid 2px;
+}
+
+.fund-table-1 {
+    background: white;
+}
+
+.fund-table-1 table {
+    margin: auto;
+}
+
+.fund-table1-p {
+    width: 100%;
+    height: 20px;
+    background: white;
+}
+
+.fund-table-1 table td {
+    padding-left: 25px;
+    border: #e8e8e8 solid 1px;
+    line-height: 38px;
+}
+
+.fund-table-1 table td:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.fund-market-content {
+    background: white;
+    padding-bottom: 60px;
+}
+
+.fund-market-content h4 {
+    margin-top: 0;
+    line-height: 60px;
+    width: 95%;
+    margin: auto;
+    color: #188cd0;
+    padding-left: 15px;
+    background: url("../images/layout/fund-maek-q.png") no-repeat left center;
+}
+
+.fund-market-content p {
+    width: 95%;
+    margin: auto;
+    line-height: 30px;
+}
+
+.fund-title-f {
+    overflow: hidden;
+    background: white;
+    padding-top: 10px;
+}
+
+.fund-title-ip input {
+    width: 100%;
+    height: 35px;
+    margin-top: 10px;
+    border: none;
+    border: #cccccc solid 1px;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+/*基金总览*/
+.fund-pandect-content {
+    background: white;
+}
+
+.fund-pandect-box {
+    overflow: hidden;
+    margin: 25px 20px;
+    padding-bottom: 20px;
+    border-bottom: #eeeeee solid 1px;
+}
+
+.fund-pandect-box p {
+    margin-top: 3px;
+    padding-left: 10px;
+}
+
+.fund-pandect-ul li {;
+    background: #fffcfd;
+    border-radius: 20px;
+    border: #cccccc solid 1px;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.fund-pandect-ul .fund-pandect-active {
+    background: #1a8dd0;
+    color: white;
+    border: #1a8dd0 solid 1px;
+}
+
+.maket-td-hong {
+    color: red;
+}
+
+.fund-search-1 input {
+    width: 33%;
+    margin-left: 2%;
+}
+
+.fund-search-1bu input {
+    width: 45%;
+    margin-left: 0;
+}
+
+.fund-search-2 input, .fund-search-2 a, .fund-search-2 p {
+    float: left;
+}
+
+.fund-search-2 a {
+    text-align: center;
+    display: block;
+    width: 6%;
+    line-height: 35px;
+    margin: 0 2%;
+    color: #d1d1d1;
+}
+
+.fund-search-1 select {
+    width: 33%;
+}
+
+.fund-chaxun {
+    margin-top: 10px;
+}
+
+.fund-chaxun p {
+    width: 70%;
+    background: #ea4e4f;
+    color: white;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fund-search-1 p {
+    width: 20%;
+    cursor: pointer;
+}
+
+.fund-xiala {
+    margin: auto;
+    margin-top: 10px;
+}
+
+.fund-xialabu {
+    margin-left: 30px;
+}
+
+.fund-xiala select {
+    height: 35px;
+    border: none;
+    border: #cccccc solid 1px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.lanhang {
+    background: #1666b3 !important;
+}
+
+.ul-menu li {
+    background: #262626 !important;
+}
+
+.menu-active {
+    border-left: #ec4d4e solid 3px;
+    background: url("../images/layout/menu-xia.png") no-repeat right center;
+}
+
+.fund-chart {
+    width: 90%;
+    margin: 35px 30px;
+}
+
+.fund-chart img {
+    width: 100%;
+    display: block;
+}
+
+.fund-price-ul {
+    margin: auto;
+    overflow: hidden;
+    margin: 35px 30px;
+}
+
+.fund-price-ul li {
+    text-align: center;
+    float: left;
+    padding: 6px 25px;
+    background: #fffcfd;
+    border: #eeeeee solid 1px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.fund-price-ul .fund-price-active {
+    background: #1a8dd0;
+    color: white;
+}
+
+.fund-price {
+    background: white;
+}
+
+.fund-price-right {
+    background: #f4f9fc;
+}
+
+.fund-price-right p {
+    margin: 0;
+}
+
+.price-rcont1 {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 85px;
+    border-bottom: #eeeeee solid 1px;
+}
+
+.priceleft {
+    float: left;
+}
+
+.priceright {
+    float: right;
+}
+
+.priceleftp1 {
+    line-height: 35px;
+}
+
+.priceleftp2 {
+    font-size: 22px;
+    color: #e94f51;
+    padding-bottom: 15px;
+}
+
+.priceleftp3 {
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.priceleftp4 {
+    text-align: right;
+    color: #e94f51;
+}
+
+.fund-price-table {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.fund-price-table1 {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.fund-price-table table {
+    border-bottom: #eeeeee solid 1px;
+}
+
+.fund-price-table td {
+    width: 33.3333%;
+    padding-bottom: 8px;
+}
+
+.fund-price-table1 td {
+    width: 25%;
+    line-height: 30px;
+}
+
+.fund-div p {
+    line-height: 45px;
+    margin-bottom: 0;
+    font-size: 17px;
+    color: #1c8dd1;
+    margin-left: 30px;
+}
+
+.fund-notice-box {
+    background: white;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.sse-datebu1 {
+    margin-left: 25px;
+}
+
+.sse-datebu1 input, .sse-datebu1 a {
+    float: left;
+}
+
+.fund-fea {
+    background: white;
+    overflow: hidden;
+}
+
+.fund-featu {
+    border-bottom: #efefef solid 1px;
+}
+
+.fund-featutu {
+    margin: 30px 50px;
+}
+
+.fund-featu img {
+    width: 100%;
+    display: block;
+}
+
+.fund-feaa a {
+    display: block;
+    color: #646464;
+}
+
+.fund-listbu1 {
+    float: right;
+}
+
+.feaconten {
+    width: 95%;
+    margin: auto;
+}
+
+.feaconten h4 {
+    font-size: 16px;
+    color: #333333;
+    line-height: 40px;
+}
+
+.feaconten1 {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.feaconten p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.fund-ETF-in {
+    background: white;
+    overflow: hidden;
+}
+
+.fund-ETF1 a {
+    padding: 5px 25px;
+    background: #e9e9e9;
+    color: #656565;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.fund-ETFbox {
+    width: 95%;
+    margin: auto;
+}
+
+.fund-img {
+    width: 100%;
+}
+
+.fund-img img {
+    width: 100%;
+    display: block;
+}
+
+.fund-ETF-table {
+    margin-top: 60px;
+}
+
+.fund-ETF-table table td {
+    width: 50%;
+    border: #eaeaea solid 1px;
+    padding: 0 15px;
+    line-height: 35px;
+    color: #666666;
+    font-size: 14px;
+}
+
+.fund-ETF-table table td:nth-child(odd) {
+    background: #f5f5f5;
+}
+
+.fund-ETF-tb table td {
+    width: 50%;
+    border: #eaeaea solid 1px;
+    line-height: 35px;
+    color: #666666;
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+.fund-ETF-tbb {
+    margin-bottom: 30px;
+}
+
+.fund-ETF-tbb table th {
+    text-align: center;
+    padding: 0 15px;
+    background: #e2e2e2;
+    line-height: 40px;
+    border: #e2e2e2 solid 1px;
+}
+
+.fund-ETF-tbb table td {
+    text-align: center;
+    border: #eaeaea solid 1px;
+    line-height: 35px;
+    color: #666666;
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+.fund-ETF-tb table td:nth-child(odd) {
+    background: #f5f5f5;
+}
+
+.fund-ETF-tb h4 {
+    font-size: 16px;
+    line-height: 60px;
+}
+
+.fund-ETF-tbb h4 {
+    font-size: 16px;
+    line-height: 60px;
+}
+
+.viedobox {
+    width: 100%;
+    margin: auto;
+    background: white;
+    overflow: hidden;
+}
+
+.viedobox h5 {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 35px;
+}
+
+.viedobox p {
+    width: 95%;
+    margin: auto;
+    line-height: 30px;
+    margin-top: 10px;
+    color: #c3c3c3;
+    text-align: center;
+    font-size: 12px;
+}
+
+.online_bg {
+    width: 100%;
+    position: relative;
+}
+
+.m_online {
+    width: 90%;
+    margin: auto;
+}
+
+.m_online img {
+    width: 100%;
+    margin: auto;
+}
+
+#media {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: none;
+}
+
+.star_img.active {
+    display: none;
+}
+
+#media.active {
+    display: block;
+}
+
+.viedeguanbi {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.viedeguanbi a {
+    display: block;
+    float: left;
+    padding: 10px 50px;
+    background: #48a4d9;
+    color: white;
+    border-radius: 5px;
+}
+
+.viedeguanbia1 {
+    margin-left: 29%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.viedeguanbia2 {
+    margin-left: 15%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.tablebox{
+    width: 100%;
+    overflow: hidden;
+    background: white;
+    position: relative;
+}
+.tablebox h4{
+    position: absolute;
+    top: 15px;
+    left: 110px;
+    z-index: 10;
+    color: #1a8dd0;
+}
+.tableleft{
+    margin: auto;
+    min-height: 690px;
+    background: #f8f8f8;
+    padding-top: 70px;
+}
+.tableleft .tableleft-active{
+    background:#1a8dce ;
+    color: white;
+}
+.tableleft li{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    border: #eeeeee solid 1px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.viede-jijin p{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    border: #eeeeee solid 1px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: white;
+}
+.tableright{
+    margin: 30px 0;
+}
+.caption p{
+    text-align: center;
+    margin: 0;
+}
+.viede-ss{
+    width: 100%;
+    overflow: hidden;
+    background: #f9f9f9;
+}
+.viede-ss a{
+    display: block;
+    width: 90%;
+    margin: auto;
+    font-size: 20px;
+    color: #333333;
+    line-height: 55px;
+    background: url("../images/layout/menu-xia.png") no-repeat right center;
+}
+.viede-jijin{
+    display: none;
+    width: 90%;
+    margin: auto;
+}
+.ziliao-table{
+    width: 95%;
+    margin: auto;
+}
+.ziliao-table th{
+    padding-left: 16px;
+    line-height: 40px;
+    border: #e5e5e5 solid 1px;
+    background: #f9f9f9;
+}
+.ziliao-table td{
+    padding-left: 10px;
+    line-height: 40px;
+    border: #e5e5e5 solid 1px;
+}
+.ziliao-table a{
+    padding-left: 10px;
+}
+.map-p{
+    line-height: 55px;
+    margin-bottom: 0;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color:#434343;
+    border-bottom: 1px solid #ddd;
+;
+}
+.fund-informationtow{
+    min-height: 600px !important;
+}
+.fund-titlebai{
+    background: white;
+}
+.map-title{
+    width: 100%;
+    overflow: hidden;
+    border-bottom: #EEEEEE solid 1px;
+}
+.map-title p{
+    margin: 15px 25px;
+    float: left;
+}
+.map-title a{
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin: 15px 25px;
+    font-size: 22px;
+    background: url("../images/layout/menu-jian.png") no-repeat right center;
+}
+.fund-wen{
+    text-align: right;
+}
+.fund-wen a{
+    line-height: 56px;
+    margin-right: 20px;
+}
+.fund-wen span{
+    color: #e94d4e;
+}
+.fund-searchh select{
+    width: 100%;
+}
+.fund-searchch input{
+    width: 48%;
+}
+.retcontent{
+    width: 100%;
+    overflow: hidden;
+    border-bottom: #f5f5f5 solid 1px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+.retop{
+    width: 100%;
+    overflow: hidden;
+}
+.retop p{
+    width: 70%;
+    color: #1a8dd0;
+    font-size: 16px;
+    margin-left: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.retop-p3{
+    width: 92%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-left: 72px;
+    color: #a8a8a8;
+}
+.retop .retop-span{
+    color: #e1e1e1;
+    margin-right: 10px;
+}
+.retop .retop-span1{
+    display: block;
+    width: 20%;
+    margin-right: 25px;
+    text-align: right;
+    font-size: 12px;
+    color: #707070;
 }
 @media screen and (max-width: 768px) {
     .footer-bottom-span {
@@ -1044,7 +2047,6 @@ input {
         margin-right: 15px;
         margin-top: 7px;
     }
-
     /*����ָ��*/
     .container-content {
         padding-left: 0 !important;
@@ -1158,7 +2160,7 @@ input {
     .market-search input {
         width: 65%;
         margin-left: 5px;
-        height: 44px;
+        height: 42px;
     }
 
     .market-search input {
@@ -1169,7 +2171,7 @@ input {
         width: 28%;
         text-align: center;
         background: #ec4d4e;
-        line-height: 42px;
+        line-height: 40px;
         float: right;
         margin-right: 2%;
         color: white;
@@ -1191,8 +2193,10 @@ input {
         clear: both;
         /*max-width: 727px;*/
         width: 100%;
+        margin: 0px;
     }
-    .maket-table-box{
+
+    .maket-table-box {
         clear: both;
         /*max-width: 727px;*/
         width: 100%;
@@ -1200,6 +2204,53 @@ input {
         overflow-y: hidden;
         white-space: nowrap;
     }
+
+    .fund-table-1 {
+        width: 92%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        background: white;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    .fund-ETF-table {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+
+    .fund-ETF-tb {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+    .ziliao-table{
+        width: 95%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        margin-bottom: 10px;
+    }
+    .ziliao-table td{
+        padding: 0 10px;
+    }
+    .fund-ETF-tbb {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+
+    .fund-table-1 table td {
+        text-align: center;
+        line-height: 38px;
+        padding: 0 20px;
+    }
+
     .maket-tab-ulETF {
         width: 100%;
         overflow-x: auto;
@@ -1224,8 +2275,17 @@ input {
         font-size: 12px;
     }
 
+    .sse-datebu {
+        background: #e3e9ec;
+        padding: 10px 0;
+    }
+
     .sse-date {
         float: left !important;
+    }
+
+    .maket-tabbu {
+        padding-top: 0;
     }
 
     .maket-title a {
@@ -1247,6 +2307,10 @@ input {
 
     .sse-date-a {
         margin-right: 5%;
+    }
+
+    .sse-date input {
+        height: 42px;
     }
 
     .maket-tab-input {
@@ -1292,6 +2356,14 @@ input {
         width: 60%;
     }
 
+    .fund-search select {
+        height: 42px;
+        border: none;
+        border: #cccccc solid 1px;
+        padding-left: 10px;
+        width: 60%;
+    }
+
     .fund-search p {
         background: #ea4e4e;
         float: left;
@@ -1320,6 +2392,7 @@ input {
         border: #cccccc solid 1px;
         border-left: none;
         padding-left: 10px;
+        width: 60%;
     }
 
     .fund-query {
@@ -1349,8 +2422,480 @@ input {
         margin-left: 10px;
         padding-top: 10px;
     }
-    .fund-ETFsspp{
+
+    .fund-ETFsspp {
         margin-left: 10px;
         line-height: 30px;
+    }
+
+    .fund-ETF-content h5 {;
+        margin: auto;
+        text-indent: 2rem;
+        line-height: 35px;
+    }
+
+    .fund-ETF-content p {;
+        margin: auto;
+        width: 95%;
+        text-indent: 2rem;
+        line-height: 30px;
+    }
+
+    .fund-list {
+        background: #f9f9f9;
+    }
+
+    .fund-list li {
+        display: inline-block;
+        font-size: 14px;
+        padding: 12px 12px;
+    }
+
+    .fund-market-content {
+        background: white;
+        padding-bottom: 30px;
+    }
+
+    .fund-title-ip input {
+        width: 95%;
+        height: 38px;
+        margin-top: 1px;
+        margin-bottom: 10px;
+        border: none;
+        border: #cccccc solid 1px;
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+
+    .maket-tab-ulbu li {
+        border: #eeeeee solid 1px;
+        border-radius: 20px;
+        margin-right: 0;
+        width: 40%;
+        margin-left: 6%;
+        margin-top: 10px;
+        line-height: 35px;
+    }
+
+    .maket-tab-boxbu {
+        padding-top: 10px;
+    }
+
+    /*基金总览*/
+    .fund-pandect-box {
+        margin: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .fund-pandect-ul li {;
+        background: #fffcfd;
+        border-radius: 20px;
+        border: #cccccc solid 1px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 12px;
+    }
+
+    .fund-pandect-ul li {
+        margin-right: 0;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .fund-pandect-box p {
+        margin: 0;
+        margin-left: 10px;
+        padding-left: 0;
+    }
+
+    .fund-pandect-box {
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    .fund-xiala {
+        margin: auto;
+        margin-top: 0;
+    }
+
+    .fund-xiala select {
+        height: 42px;
+        border: none;
+        border: #cccccc solid 1px;
+        padding-left: 10px;
+        width: 95%;
+        margin-left: 10px;
+    }
+
+    .fund-search-1 input {
+        margin-left: 0;
+    }
+
+    .fund-search-1bu {
+        margin-top: 10px;
+    }
+
+    .ul-menu li a {
+        padding-left: 30px;
+        background: url("../images/layout/menu-jian.png") no-repeat 150px center;
+    }
+
+    .menu-active {
+        display: block;
+        color: #fff;
+        width: 95%;
+        font-size: 14px;
+        text-align: left;
+        border-left: #ec4d4e solid 2px;
+        /*background: url("../images/layout/menu-xia.png") no-repeat right center !important;*/
+    }
+
+    .menu-active1 {
+        background: url("../images/layout/menu-xia.png") no-repeat right center !important;
+    }
+
+    .fund-chart {
+        width: 100%;
+        margin: 0;
+        background: white;
+    }
+
+    .fund-chart img {
+        width: 100%;
+        display: block;
+    }
+
+    .fund-price-left {
+        background: #e3e9ec;
+    }
+
+    .fund-price-ul {
+        width: 95%;
+        overflow: hidden;
+        margin: 0;
+        margin: auto;
+        padding-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .fund-price-ul li {
+        line-height: 27px;
+        width: 50%;
+    }
+
+    .fund-price-left {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .price-rcont1 {
+        margin-top: 10px;
+    }
+
+    .fund-price-right {
+        width: 95%;
+        margin: auto;
+        background: white;
+        border: #eeeeee solid 1px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .fund-price-table1 {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .fund-chaxun p {
+        text-align: center;
+        width: 95%;
+        background: #ec4e4f;
+        color: white;
+        margin-left: 10px;
+        line-height: 45px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .fund-xialabu {
+        margin-top: 10px;
+    }
+
+    .fund-chaxun {
+        margin-top: 0;
+    }
+
+    .fund-search-2 input {
+        width: 46%;
+    }
+
+    .fund-search-2 .fund-search-2input {
+        margin-left: 3%;
+    }
+
+    .fund-listbu {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .fund-notice-box {
+        padding-top: 0;
+    }
+
+    .sse-datebu1 {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .sse-datebu1 input {
+        width: 60%;
+        margin-left: 10px;
+    }
+
+    .sse-datebu1 a {
+        text-align: center;
+        width: 30%;
+        margin-right: 0;
+        line-height: 42px;
+        padding: 0;
+    }
+
+    .fund-featu {
+        margin: 0 0;
+    }
+
+    .feaconten1 {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .feaconten h4 {
+        font-size: 16px;
+        color: #333333;
+        line-height: 30px;
+    }
+
+    .fund-featutu {
+        margin: 0 0;
+    }
+
+    .fund-ETF1 a {
+        padding: 5px 25px;
+        background: #e9e9e9;
+        color: #656565;
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    .fund-ETF-table {
+        margin-top: 20px;
+    }
+
+    .fund-ETF-tb h4 {
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+    .fund-ETF-tbb h4 {
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+    .viedobox h5 {
+        width: 95%;
+        margin: auto;
+        text-align: center;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .viedobox p {
+        width: 95%;
+        margin: auto;
+        line-height: 30px;
+        margin-top: 10px;
+        color: #c3c3c3;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .viedeguanbi a {
+        display: block;
+        float: left;
+        padding: 0;
+        width: 42%;
+        background: #48a4d9;
+        color: white;
+        border-radius: 5px;
+        margin-left: 5%;
+        text-align: center;
+        line-height: 38px;
+    }
+
+    .viedeguanbia1 {
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .viedeguanbia2 {
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .caption p{
+        text-align: center;
+        font-size: 12px;
+        margin: 0;
+    }
+    .tableright{
+        margin: 15px 0;
+        margin-bottom: 5px;
+    }
+    .map-p{
+        /*margin-left: 10px;*/
+        padding-left: 10px;
+    }
+    .map-title p{
+        margin: 15px 10px;
+        float: left;
+    }
+    .map-title a{
+        width: 12px;
+        height: 12px;
+        float: right;
+        margin: 15px 10px;
+        margin-top: 25px;
+        background: url("../images/layout/menu-jian.png") no-repeat right center;
+    }
+    .red_bottom_border > h2 span{
+        padding-left: 10px;
+        display: block;
+        border-bottom: 1px solid #eaeaea;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .sse_list_tit1 h2{
+        border: none;
+    }
+    .sse_sitemap{
+        margin-left: 10px;
+    }
+    .sse_sitemap li {
+        padding-left: 3px;
+        padding-bottom: 10px;
+        overflow: hidden;
+        float: left;
+    }
+    .fund-informationtow{
+        height: auto !important;
+    }
+    .fund-searchh select{
+        width: 95%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .retcontent{
+        width: 100%;
+        overflow: hidden;
+        border-bottom: #f5f5f5 solid 1px;
+        margin-top: 15px;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+    }
+    .retop{
+        width: 100%;
+        overflow: hidden;
+    }
+    .retop p{
+        width: 70%;
+        color: #1a8dd0;
+        font-size: 15px;
+        margin-left: 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .retop-p3{
+        width: 92%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-left: 10px;
+        color: #a8a8a8;
+        font-size: 13px;
+    }
+    .retop .retop-span{
+        color: #e1e1e1;
+        margin-right: 10px;
+    }
+    .retop .retop-span1{
+        display: block;
+        width: 20%;
+        margin-right: 10px;
+        text-align: right;
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (min-width: 980px) {
+    .ib_midbu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .ib_mid_wrap .nav_logo {
+        display: none;
+    }
+
+    .content-information-li p {
+        width: 75%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding-left: 15px;
+        background: url(../images/layout/list-base1-dl-dd.png) no-repeat left center;
+        float: left;
+        line-height: 45px;
+        margin: 0;
+        color: #3d3d3d;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 980px) {
+    .container-content {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-right: -5px !important;
+        margin-left: -5px !important;
+        background: white;
+        border-bottom: #e5e5e5 solid 1px;
+    }
+
+    .heaad_wrap {
+        background: white;
+    }
+
+    .ul-menu li a {
+        padding-left: 30px;
+        background: url("../images/layout/menu-jian.png") no-repeat 150px center;
+    }
+
+    .navbar-header {
+        float: right !important;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar_wrap {
+        background: white;
     }
 }

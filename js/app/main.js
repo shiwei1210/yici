@@ -18,6 +18,8 @@ require.config({
 		sse                   :"sse",
 		waypoints             :"../lib/jquery.waypoints.min",
 		numberjs              :"../lib/number",
+		sseinfopagination      :"sseinfo-pagination",
+		sseinfocontrol      :"sseinfo-control",
 		swiper:(function() {
 			var isIE = document.all && !window.atob;
 			if (isIE) {
@@ -34,8 +36,9 @@ require.config({
 		popularize      :"popularize",
 		qrcode          :"../lib/jquery.qrcode",
 		selectjs        :"../lib/jquery.select",
-		pdfmodaliefix   :"pdf_modal_oldIEfix" //IE9样式修复
-
+		pdfmodaliefix   :"pdf_modal_oldIEfix" ,//IE9样式修复
+   		Pajax           :"ajaxServer",
+    	index           :"index",
 	},
 	shim: {//模块依赖关系 demo
 		//'swiperscrollbar'             : {deps:['swiper']},
@@ -130,7 +133,7 @@ require(['sse'], function (sse){
 				}
 			}());
         }
-		
+
         var isIE9 = document.all && document.addEventListener && !window.atob;
         if (isIE9) {
             $("html").addClass("ie9");
@@ -152,4 +155,25 @@ require(['control'], function (control) {
 require(['popularize'], function (popularize) {
 	popularize.process();
 });
+//分页引用文件
+require(['sseinfocontrol'],function(control){
+	control.listPage();//列表分页
+});
+require(['fundmaster'], function (fundmaster){
+	$(function() {
+		fundmaster.init();
+	});
+});
 
+
+var webComm = {};
+var currpage = $("#pagename").val();
+if(currpage==""||currpage==undefined||currpage==null){
+
+}else{
+	require(['Pajax',currpage],function(Pajax,page){
+	webComm.Pajax = Pajax;
+	page.init();
+});
+
+}

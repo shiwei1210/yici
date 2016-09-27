@@ -38,7 +38,8 @@
     <!-- win 8 磁贴图标 -->
     <meta name="msapplication-TileImage" content="images/webappicon/apple-touch-icon-120x120.png">
     <meta name="msapplication-tooltip" content="Tooltip">
-
+    <!--以IE最高版本打开-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
     <meta http-equiv="Cache-Control" content="no-siteapp">
 
     <!--调试阶段禁止缓存,例如微信，QQ浏览器缓存-->
@@ -48,19 +49,31 @@
     <script src="js/lib/require.js" data-main="js/app/main" async></script>
     <link href="css/sse-stye.css" rel="stylesheet" type="text/css">
     <script src="js/lib/jquery.min.js" type="text/javascript"></script>
+    <script src="js/35full.js" type="text/javascript"></script>
+    <script src="js/app/sse_menu_fun.js"></script>
     <script src="js/lib/index.js" type="text/javascript"></script>
-
-
+    <script src="js/app/highstock.js"></script>
+    <script src="js/app/hqHome.js"></script>
+    <!-- <script type="text/javascript" src="js/app/hq_dataControl.js"></script> -->
+    <script type="text/javascript">
+      $(function(){
+        // alert(a());
+        function a(){
+          if (true) return 1;return 2;
+        }
+      })
+    </script>
 </head>
 <body class="indexbody">
+  <input type="hidden" value="index" id="pagename">
 <div class="desk_search_wrap">
     <div class="container ib_mid_wrap txa_r">
         <!-- PC版logo -->
-        <a href="#" class="nav_logo_wrap hidden-xs ">
+        <a href="#" class="nav_logo_wrap hidden-xs">
             <div class="nav_logo"></div>
         </a>
         <!-- end -->
-        <div class="desk_search_el ib_mid hidden-lg hidden-md hidden-sm">
+        <div class="desk_search_el ib_mid ib_midbu hidden-lg hidden-md">
             <div class="desk_search">
                 <input type="search" class="search_input search_inputt" placeholder="请输入您想搜索的文字"><!-- 清除空格HACK写法
         --><input type="" class="search_btn search_btnn" value="搜索">
@@ -71,7 +84,7 @@
                     href="#" class="sht">股票期权</a><a href="#" class="sht">上市公司</a>
             </div>
         </div>
-        <div class="navbar-right hidden-xs">
+        <div class="navbar-right hidden-xs hidden-sm">
             <a href="#" class="f16 nava">子站链接 丨</a>
             <a href="#" class="f16 nava">意见反馈</a>
         </div>
@@ -95,13 +108,12 @@
         </div>
         <!-- mobile头部 end -->
         <!-- pc主菜单 -->
-        <div class="navbar navbar-collapse collapse  hidden-xs hidden-sm hidden-md">
+        <div class="hidden-xs  hidden-sm">
             <div class="">
-                <!--<script type="text/javascript">document.write(sseMenuObj.menu_tab_text);</script>-->
-                <ul class="navf pull-left" id="jsddm">
+              <script type="text/javascript">document.write(ssefundMenuObj.menu_con_text);</script>
+                <!-- <ul class="navf pull-left" id="jsddm">
                     <li>
-                        <a href="#"><i class="sseicon-nav_icon_1"></i>首页</a>
-
+                        <a href="index.html"><i class="sseicon-nav_icon_1"></i>首页</a>
                     </li>
                     <li class="acttive">
                         <a href="#"><i class="sseicon-nav_icon_2"></i>市场动态</a>
@@ -110,84 +122,40 @@
                             <li><a href="#">动态信息</a></li>
                         </ul>
                     </li>
-                    <li class="navfa">
-                        <a href="#"><i class="sseicon-nav_icon_3"></i>基金信息</a>
-                        <ul class="navfaul">
-                            <li><a href="#">基金总览</a></li>
-                            <li><a href="#">基金公告</a></li>
-                            <li><a href="#">LOF动态净值</a></li>
-                            <li><a href="#">基金特征展示</a></li>
-                            <li><a href="#">ETF申赎清单</a></li>
-                        </ul>
-                    </li>
-                    <li class="">
-                        <a href="#"><i class="sseicon-nav_icon_4"></i>投教专区</a>
-                        <ul>
-                            <li><a href="#">基础知识</a></li>
-                            <li><a href="#">投教策略</a></li>
-                            <li><a href="#">投教讲堂</a></li>
-                            <li><a href="#">资料下载</a></li>
-                            <li><a href="#">常见问题</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="sseicon-nav_icon_5"></i>规则指南</a>
-                        <ul>
-                            <li><a href="#">上位法规</a></li>
-                            <li><a href="#">本所规则</a></li>
-                            <li><a href="#">业务指南</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                </ul> -->
             </div>
             <div class="desk_search_el ib_mid pull-right desk_search_elbu">
-                <div class="desk_search desk_searchbu">
-                    <input type="search" class="search_input" placeholder="" value="请输入搜索内容"><!-- 清除空格HACK写法
-        --><input type="button" class="search_btn search_bt" value="搜索">
+                <div class="desk_search desk_searchbu input-group">
+                    <input type="search" class="search_input form-control" placeholder="请输入搜索内容">
+                     <!-- 清除空格HACK写法 -->
+                    <button type="button" class="input-group-btn search_btn search_bt">搜索</button>
                 </div>
             </div>
         </div>
-        <!--pc主菜单 end-->
+
+
+        <!-- pc主菜单 end -->
+        <!-- pc主菜单(二三级) -->
     </div>
 </div>
+<div class="nav-side-show mobile_hide" sidshowclass="nsshow">
+  <div class="inner container menu_con" id="menu_con">
+    <script type="text/javascript">document.write(ssefundMenuObj.menu_con_text);</script>
+  </div>
+</div>
+<!-- pc主菜单(二三级) end -->
 <div class="dl-menuwrapper" id="dl-menu">
     <button id="dl-menu-button" class="btn"></button>
-    <ul class="dl-menu" id="mobile_menu">
-        <!--<script type="text/javascript">document.write(sseMenuObj.mobile_menu_text);</script>-->
-        <li><a>首页</a></li>
+    <ul class="dl-menu dl-menubu" id="mobile_menu">
+        <script type="text/javascript">document.write(ssefundMenuObj.mobile_menu_text);</script>
+        <!-- <h2><a href="#">导航</a></h2>
+        <li><a class="menu-active">首页</a></li>
         <li><a class="menu-li">市场动态</a>
             <ul class="row ul-menu">
-                <li class=""><a href="#">基金广告</a></li>
+                <li class=""><a href="#">市场概况</a></li>
                 <li class=""><a href="#">动态信息</a></li>
             </ul>
-        </li>
-        <li><a class="menu-li">基金信息</a>
-            <ul class="row ul-menu">
-                <li><a href="#">市场总览</a></li>
-                <li><a href="#">基金列表</a></li>
-                <li><a href="#">公告查询</a></li>
-                <li><a href="#">ETF申购赎回申请单</a></li>
-                <li><a href="#">交易市场型货币市场基金</a></li>
-                <li><a href="#">申购赎回清单</a></li>
-            </ul>
-        </li>
-        <li><a class="menu-li">投教专区</a>
-            <ul class="row ul-menu">
-                <li><a href="#">基础知识</a></li>
-                <li><a href="#">投教策略</a></li>
-                <li><a href="#">视频课程</a></li>
-                <li><a href="#">资料下载</a></li>
-                <li><a href="#">常见问题</a></li>
-                <li><a href="#">知识下载</a></li>
-            </ul>
-        </li>
-        <li><a class="menu-li">规则指南</a>
-            <ul class="row ul-menu">
-                <li><a href="#">上位法则</a></li>
-                <li><a href="#">本所业务</a></li>
-                <li><a href="#">业务指南</a></li>
-            </ul>
-        </li>
+        </li> -->
     </ul>
 </div>
 <!-- mobile菜单end -->
@@ -363,7 +331,7 @@
                                 <option>管理员</option>
                                 <option>管理员</option>
                             </select>
-                            <input type="button" class="form-control form-controlbu2" aria-label="..." value="搜索">
+                            <button class="form-control form-controlbu2" aria-label="..." >搜索</button>
                         </div>
                     </div>
                     <div class="sse_list_right1">
@@ -401,19 +369,19 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="rowx row">
-                        <div class="market col-md-7">
+                        <div class="market col-md-7 col-sm-12 col-xs-12">
                             <h4>市场行情</h4>
                             <span class="marketsp hidden-lg hidden-md hidden-sm">2015-06-15<i
                                     class="sseicon-icon_more"></i></span>
-                            <table width="100%" border="0" class="marketab">
-                                <tr class="marketabtr">
+                            <table width="100%" border="0" class="marketab" id="home_market_data">
+                                <!-- <tr class="marketabtr">
                                     <td>代码</td>
                                     <td>基金简称</td>
                                     <td>最新价格</td>
                                     <td>当日跌涨幅</td>
                                     <td>成交量(亿元)</td>
-                                </tr>
-                                <tr>
+                                </tr> -->
+                                <!-- <tr>
                                     <td>510050</td>
                                     <td>华夏上证</td>
                                     <td>2.187</td>
@@ -440,12 +408,14 @@
                                     <td>2.187</td>
                                     <td class="marketlv">-0.09%</td>
                                     <td>1.07</td>
-                                </tr>
+                                </tr> -->
                             </table>
                         </div>
-                        <div class="marketb marketbu col-md-5">
-                            <img src="images/ui/index-biao.png" class="hidden-lg hidden-md hidden-sm">
-                            <img src="images/ui/index-d-biao.png" class="hidden-xs ">
+                        <div class="marketb marketbu col-md-5 col-sm-12 col-xs-12">
+                            <!-- <img src="images/ui/index-biao.png" class="hidden-lg hidden-md hidden-sm">
+                            <img src="images/ui/index-d-biao.png" class="hidden-xs "> -->
+                            <div class="fundmarket_date"><h4 class="_date"></h4></div>
+                            <div id="ticker01"></div>
                         </div>
                     </div>
                 </div>
@@ -454,11 +424,11 @@
                         <div class="sse_list_title">
                             <h2><img src="images/ui/sse_tit_h2_icon7.png" class="pr5"/>市场数据 <span
                                     class="span">2015-10-09</span></h2>
-                            <h5>上市基金</h5>
+                            <h5>上市基金<span class="indexspan _fundAmount"></span></h5>
                         </div>
                         <div class="sse_home_in_table2">
-                            <table class="table">
-                                <tr>
+                            <table class="table _test">
+                                <!-- <tr>
                                     <td><i>股票型</i><em>1030<span>只</span></em></td>
                                     <td><i>固守型</i><em>4052<span>只</span></em></td>
                                     <td><i>货币型</i><em>4052<span>只</span></em></td>
@@ -472,7 +442,7 @@
                                     <td><i>市价总值</i><em>27813.13<span>亿元</span></em></td>
                                     <td><i>成交金额</i><em>27813.13<span>亿元</span></em></td>
                                     <td></td>
-                                </tr>
+                                </tr> -->
                             </table>
                         </div>
                     </div>
@@ -623,4 +593,5 @@
 <!-- 页脚end -->
 
 </body>
+
 </html>

@@ -38,7 +38,8 @@
     <!-- win 8 磁贴图标 -->
     <meta name="msapplication-TileImage" content="images/webappicon/apple-touch-icon-120x120.png">
     <meta name="msapplication-tooltip" content="Tooltip">
-
+    <!--以IE最高版本打开-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
     <meta http-equiv="Cache-Control" content="no-siteapp">
 
     <!--调试阶段禁止缓存,例如微信，QQ浏览器缓存-->
@@ -49,7 +50,6 @@
     <link href="css/sse-stye.css" rel="stylesheet" type="text/css">
     <script src="js/lib/jquery.min.js" type="text/javascript"></script>
     <script src="js/lib/index.js" type="text/javascript"></script>
-
 
 </head>
 <body class="indexbody">
@@ -103,7 +103,7 @@
                         <a href="#"><i class="sseicon-nav_icon_1"></i>首页</a>
 
                     </li>
-                    <li class="acttive">
+                    <li class="">
                         <a href="#"><i class="sseicon-nav_icon_2"></i>市场动态</a>
                         <ul>
                             <li><a href="#">市场概况</a></li>
@@ -120,7 +120,7 @@
                             <li><a href="#">ETF申赎清单</a></li>
                         </ul>
                     </li>
-                    <li class="">
+                    <li class="acttive">
                         <a href="#"><i class="sseicon-nav_icon_4"></i>投教专区</a>
                         <ul>
                             <li><a href="#">基础知识</a></li>
@@ -152,39 +152,38 @@
 </div>
 <div class="dl-menuwrapper" id="dl-menu">
     <button id="dl-menu-button" class="btn"></button>
-    <ul class="dl-menu" id="mobile_menu">
+    <ul class="dl-menu dl-menubu" id="mobile_menu">
         <!--<script type="text/javascript">document.write(sseMenuObj.mobile_menu_text);</script>-->
-        <li><a>首页</a></li>
+        <h2><a href="#">导航</a></h2>
+        <li><a class="">首页</a></li>
         <li><a class="menu-li">市场动态</a>
             <ul class="row ul-menu">
-                <li class=""><a href="#">基金广告</a></li>
+                <li class=""><a href="#">市场概况</a></li>
                 <li class=""><a href="#">动态信息</a></li>
             </ul>
         </li>
         <li><a class="menu-li">基金信息</a>
             <ul class="row ul-menu">
-                <li><a href="#">市场总览</a></li>
-                <li><a href="#">基金列表</a></li>
+                <li><a href="#">基金总览</a></li>
+                <li><a href="#">基金公告</a></li>
                 <li><a href="#">公告查询</a></li>
-                <li><a href="#">ETF申购赎回申请单</a></li>
-                <li><a href="#">交易市场型货币市场基金</a></li>
-                <li><a href="#">申购赎回清单</a></li>
+                <li><a href="#">LOF动态净值</a></li>
+                <li><a href="#">基金特征展示</a></li>
+                <li><a href="#">ETF申赎清单</a></li>
             </ul>
         </li>
-        <li><a class="menu-li">投教专区</a>
+        <li><a class="menu-li menu-active">投教专区</a>
             <ul class="row ul-menu">
                 <li><a href="#">基础知识</a></li>
                 <li><a href="#">投教策略</a></li>
-                <li><a href="#">视频课程</a></li>
-                <li><a href="#">资料下载</a></li>
+                <li><a href="#">投教讲堂</a></li>
                 <li><a href="#">常见问题</a></li>
-                <li><a href="#">知识下载</a></li>
             </ul>
         </li>
         <li><a class="menu-li">规则指南</a>
             <ul class="row ul-menu">
-                <li><a href="#">上位法则</a></li>
-                <li><a href="#">本所业务</a></li>
+                <li><a href="#">上位法规</a></li>
+                <li><a href="#">本所规则</a></li>
                 <li><a href="#">业务指南</a></li>
             </ul>
         </li>
@@ -198,8 +197,8 @@
             <div class="row">
                 <div class="col-sm-12">
                     <ol class="breadcrumb">
-                        <li><a href="#">基金信息</a></li>
-                        <li><a href="#">规则指南</a></li>
+                        <li><a href="#">投教专区</a></li>
+                        <li><a href="#">常见问题</a></li>
                     </ol>
                 </div>
             </div>
@@ -209,17 +208,23 @@
     <div class="container">
         <!--页面大标题-->
         <div class="row">
-            <div class="col-sm-12">
-                <h1 class="page_big_title">规则指南</h1>
+            <div class="col-sm-12 hidden-lg hidden-md">
+                <h1 class="page_big_title">常见问题</h1>
             </div>
         </div>
         <div class="container container-content">
-            <div class="rules-title row">
-                <a href="#" class="col-sm-2 col-xs-3">基础知识</a>
-                <a href="#" class="col-sm-2 col-xs-3">投资策略</a>
-                <a href="#" class="col-sm-2 col-xs-3">投资讲堂</a>
-                <a href="#" class="rules-active col-sm-2 col-xs-3">常见问题</a>
-            </div>
+            <ul class="rules-title row">
+                <li class="col-sm-2 col-xs-3"><a href="#">基础知识</a></li>
+                <li class="col-sm-2 col-xs-3"><a href="#">投资策略</a></li>
+                <li class="col-sm-2 col-xs-3 rules-titleli"><a href="javascript:;">投资讲堂</a>
+                    <div class="xia">
+                        <a href="">培训通知</a>
+                        <a href="">视频课程</a>
+                        <a href="">资料下载</a>
+                    </div>
+                </li>
+                <li class="col-sm-2 col-xs-3 rules-active "><a href="#" class="rules-active">常见问题</a></li>
+            </ul>
             <div class="education-details-title">
                 <div class="education-details-content">
                     <h5 data-toggle="collapse" href="#collapse06" class="collapsed education-details-h5">1、开放式基金简称和代码是如何确定的？</h5>

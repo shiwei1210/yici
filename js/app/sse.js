@@ -6,7 +6,9 @@
 // var setTimeout = {} || setTimeout;
 // var location = {} || location;
 // var $ = {} || $;
+
 define([], function () {
+
     var sseF = {};
     sseF.init = function () {
         var self = this;
@@ -807,7 +809,7 @@ define([], function () {
                 });
 
             };
-            //销毁	
+            //销毁
             _this.destroyFixedTable = function (isTrue) {
                 var $fe = _this.cacheElement.$floadDiv;
                 var $tbes = _this.cacheElement.$tables;

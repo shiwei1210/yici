@@ -1,4 +1,4 @@
-var SSE_MENU_28= {
+var SSE_MENU_35= {
 "0":{"CHNLNAME":"2016中文版上交所官网","PARENTCODE":"","TYPE":"","DISPLAY":"", "ORDER":"","ISSPECIALCHANNEL":"","CHILDREN": "8301;8311;8450;8522;8638;8703;8862;","STYLE":"","URL":"2016.sse.com.cn","DATATYPE":"0","TARGET":""}
 ,"9059":{"CHNLNAME":"利润分配","PARENTCODE":"9054","TYPE":"0","DISPLAY":"1","ORDER":"9058","ISSPECIALCHANNEL":"0","SHORTCUTORDER":"5","CHILDREN":"","STYLE":"","URL": "/assortment/stock/list/info/profit/","DATATYPE":"","TARGET":"0"}
 ,"9060":{"CHNLNAME":"成交概况","PARENTCODE":"9054","TYPE":"0","DISPLAY":"1","ORDER":"9059","ISSPECIALCHANNEL":"0","SHORTCUTORDER":"6","CHILDREN":"","STYLE":"","URL": "/assortment/stock/list/info/turnover/","DATATYPE":"","TARGET":"0"}
