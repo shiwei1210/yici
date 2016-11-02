@@ -2,62 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Document</title>
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
     <style>
-        body{overflow:hidden;}
-        header{position: absolute;/*或者fixed*/height: 50px;line-height:50px;left: 0;right: 0;top: 0;background:#f00;text-align:center;color:#fff;font-size:18px;}
-        footer {position: absolute;/*或者fixed*/height: 40px;left: 0;right: 0;bottom: 0;border-top:1px solid #f00;border-bottom:1px solid #f00;}
-        footer input{border:0;height:38px;float:left;padding-left:10px;width:60%;font-size:16px;}
-        footer button{background:#f00;border:0;width:35%;height:40px;color:#fff;font-size:18px;float:right;}
-        section{
-            /* main绝对定位，进行内部滚动 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top {
+            position: fixed;
+            top: 0;
+            height: 50px;
+            background-color: black;
+            width: 100%;
+        }
+
+        .but {
+            position: fixed;
+            bottom: 0;
+            height: 50px;
+            background-color: red;
+            width: 100%;
+        }
+
+        .main {
             position: absolute;
             top: 50px;
-            bottom: 34px;
+            bottom: 50px;
+            width: 100%;
             /* 使之可以滚动 */
             overflow-y: scroll;
-            /* 增加该属性，可以增加弹性，是滑动更加顺畅 */
+            /* 增加该属性，可以增加弹性 */
             -webkit-overflow-scrolling: touch;
-            width:98%
         }
-        .content p{line-height:50px;}
+
+        .content {
+            height: 2000px;
+            overflow-y: scroll;
+        }
     </style>
 </head>
 <body>
-<!-- absolute定位的头部 (fixed绝对定位也可以)-->
-<header>这里是头部</header>
-<!-- 可以滚动的区域 -->
-<section>
+<div class="top"></div>
+<div class="main">
     <div class="content">
-        <p>这里是内容区域</p>
-        <p>这里是内容区域</p>
-        <p>这里是内容区域</p>
-        <p>这里是内容区域</p>
-        <p>这里是内容区域</p>
-        <p>这里是内容区域</p>
-        <p>这里是内容区域</p>
-        <p>这里是内容区域</p>
-        <p>这里是内容区域</p>
-        <p>这里是内容区域</p>
-        <p>这里是内容区域</p>
-        <p>这里是内容区域</p>
-        <p>这里是内容区域</p>
-        <p>这里是内容区域</p>
-        <p>这里是内容区域</p>
-        <p>这里是内容区域</p>
-        <p>这里是内容区域</p>
-        <p>这里是内容区域</p>
-        <p>这里是内容区域</p>
-        <p>这里是内容区域</p>
-        <p>这里是内容区域</p>
-        <p>这里是内容区域</p>
+        <div>1</div>
+        <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div> <div>1</div>
     </div>
-</section>
-<!-- absolute定位的底部 （fixed绝对定位也可以）-->
-<footer>
-    <input type="text" placeholder="Footer"/>
-    <button class="submit">立即投资</button>
-</footer>
+</div>
+<div class="but"><input type="text" />
+    <button class="submit">提交</button>
+</div>
 </body>
-</html>
+</html>  
