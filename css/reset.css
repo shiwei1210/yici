@@ -1,0 +1,205 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+}
+html{
+	overflow-y:scroll;
+}
+body{
+	font-family:"PingFangSC-Regular","microsoft yahei", "微软雅黑";
+    overflow-y:scroll;
+    background: #f1f1f1;
+}
+ol, ul { 
+	list-style: none; 
+	}
+em,i,b{
+	font-style:normal;
+	}
+a img { 
+	border: none;
+	text-decoration:none; 
+	}
+input,button{
+	outline: none;
+	border:0;
+}
+table { 
+	border-collapse: collapse;
+	border-spacing: 0; }
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    float:none !important;
+}
+table, th, td {
+    vertical-align: middle;
+}
+/* 重置安卓Pad下面input焦点状态白底的样式 */  
+input{
+   -webkit-user-modify: read-write-plaintext-only;
+/*   -webkit-tap-highlight-color:#3072af;*/
+}
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner{
+	border:none;padding:0;
+}
+/*重置placeholder的样式*/
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+color: #666; 
+} 
+input:-moz-placeholder, textarea:-moz-placeholder { 
+color: #666; 
+} 
+input::-moz-placeholder, textarea::-moz-placeholder { 
+color: #666; 
+} 
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+color: #666; 
+}
+
+/*头部的样式*/
+header{
+	width:100%;
+	height:2.2rem;
+	line-height:2.2rem;
+	color:#FFF;
+	text-align: center;
+	font-size: 0.9rem;
+	overflow: hidden;
+	background: #302F35;
+	position: fixed;
+	top:0px;
+	left: 0px;
+	opacity: 1;
+	z-index: 1000;
+}
+.header_kb{
+	height:2.2rem;
+	width: 100%;
+}
+header>img{
+	width:1.1rem;
+	height:1.1rem;
+	position: absolute;
+	left:0.75rem;
+	top:0.55rem;
+}
+header .navbar-inner, .toolbar-inner{
+	padding:0 0.75rem;
+}
+a{
+	color: #fff;
+}
+.navbar{
+	background: #302F35;
+	opacity: 1;
+	
+}
+header .icon img{
+	width: 1.1rem;
+	height:1.1rem;
+	margin-top: 0.8rem;
+}
+.navbar, .toolbar{
+	height: 2.2rem;
+	line-height: 2.2rem;
+}
+.navbar .left, .navbar .right{
+	height:2.2rem;
+	line-height: 2.2rem;
+	font-size: 0.9rem;
+}
+.navbar .center{
+	line-height: 2.2rem;
+	font-size: 0.9rem;
+}
+html.ios-gt-8 .navbar .center{
+	font-weight: normal;
+}
+/* 弹窗开始 */
+.tanchuang{
+	position: absolute;
+	width:  100%;
+	top:  50%;
+	margin-top: -2rem;
+	text-align: center;
+	display: none;
+}
+.tanchuang .conten{
+	display: inline-block;
+	padding:  0.5rem 1rem;
+	opacity: 0.69;
+	background: #202020;
+	border-radius: 0.4rem;
+	font-size: 0.7rem;
+	color: #FFFFFF;
+	letter-spacing: 0px;
+}
+
+/* 弹窗结束 */
+/* 模态弹窗 开始 */
+.party-mengceng{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	background: #000;
+	opacity: 0.6;
+	z-index: 100;
+	overflow: hidden;
+	display: none;
+}
+.party-mengceng-box{
+	width:13.5rem;
+	height:6.5rem;
+	background: rgba(255,255,255,1);
+	border-radius: 0.6rem;
+	overflow: hidden;
+	position: fixed;
+	top:50%;
+	left:50%;
+	margin:-3.25rem 0 0 -6.75rem;
+	z-index: 101;
+	display: none;
+}
+.party-mengceng-box>p{
+	width:100%;
+	height:4.3rem;
+	text-align: center;
+	font-size: 0.8rem;
+	color: #000000;
+	line-height: 1.2rem;
+	margin:0;
+	border-bottom:1px #cdcbcb solid;	
+	padding-top:0.85rem;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+.party-mengceng-box>div{
+	width:100%;
+	height:2.2rem;
+}
+.party-mengceng-box>div>span{
+	width:50%;
+	height:2.2rem;
+	float:left;
+	text-align: center;
+	line-height: 2.2rem;
+	color:#0076FF;
+	font-size: 0.85rem;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+.party-mengceng-box>div>span.active{
+	border-right:1px #cdcbcb solid;
+}
+/* 模态弹窗 结束 */
