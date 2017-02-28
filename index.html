@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+    </head>
+    <body>
+    <div class="index-wrap">
+        <img class="index-logo" src="images/logo.png" height="177" width="590" alt="">
+        <div class="index-loop">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="about.html">
+                            <img class="index-img" src="images/index5-1.png">
+                            <img class="index5-2 index-animate" src="images/index5-2.png">
+                            <h1>了解至慧</h1>
+                            <!-- <h3>Memorabilia</h3> -->
+                            <p>了解详情<img src="images/right-more.png" height="25" width="14" alt=""></p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="achievement.html">
+                            <img class="index-img" src="images/index2-1.png">
+                            <img class="index2-2" src="images/index2-2.png">
+                            <img class="index2-3" src="images/index2-3.png">
+                            <img class="index2-4" src="images/index2-3.png">
+                            <img class="index2-5" src="images/index2-3.png">
+                            <h1>至慧成就</h1>
+                            <!-- <h3>Memorabilia</h3> -->
+                            <p>了解详情<img src="images/right-more.png" height="25" width="14" alt=""></p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="teach.html">
+                            <img class="index-img" src="images/index6-1.png">
+                            <img class="index6-2 index-animate6" src="images/index6-2.png" >
+                            <h1>i至慧 · 多元<br>互动教学体系</h1>
+                            <!-- <h3>Memorabilia</h3> -->
+                            <p>了解详情<img src="images/right-more.png" height="25" width="14" alt=""></p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="bigEvents1.html">
+                            <img class="index-img" src="images/index1-1.png" height="307" width="306" alt="">
+                            <img class="index1-2 index-animate1" src="images/index1-2.png" height="147" width="103" alt="">
+                            <h1>至慧大事记</h1>
+                            <!-- <h3>Memorabilia</h3> -->
+                            <p>了解详情<img src="images/right-more.png" height="25" width="14" alt=""></p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="s01.html">
+                            <img class="index-img" src="images/index3-1.png">
+                            <h1>至慧之师</h1>
+                            <!-- <h3>Memorabilia</h3> -->
+                            <p>了解详情<img src="images/right-more.png" height="25" width="14" alt=""></p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="bantu.html">
+                            <img class="index-img" src="images/index4-1.png">
+                            <img class="index4-2 index-animate" src="images/index4-2.png" height="111" width="88" alt="">
+                            <h1>至慧版图</h1>
+                            <!-- <h3>Memorabilia</h3> -->
+                            <p>了解详情<img src="images/right-more.png" height="25" width="14" alt=""></p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="kecheng.html">
+                            <img class="index7-1 index-animate7" src="images/index7-1.png">
+                            <img class="index7-2" src="images/index7-2.png" >
+                            <h1>至慧课程</h1>
+                            <!-- <h3>Memorabilia</h3> -->
+                            <p>了解详情<img src="images/right-more.png" height="25" width="14" alt=""></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="index-bot">哈佛教学法  数学小达人</p>
+        <p class="z-button" id="z-button"></p>
+    </div>
+    <!-- Initialize Swiper -->
+     <script src="js/swiper.js"></script>
+        <script src="js/jquery-1.12.0.min.js"></script>
+        <script src="js/demo.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        direction : 'vertical',
+        height:1030, //强制Swiper的高度，当你的Swiper在隐藏状态下初始化时才用得上。这个参数会使自适应失效
+        slidesPerView:3,    //设置slider容器能够同时显示的slides数量
+        initialSlide :2,    //设定初始化时slide的索引
+        spaceBetween: -65,   //slide之间的距离
+        grabCursor: true,
+        centeredSlides: true,
+		observer:true,//修改swiper自己或子元素时，自动初始化swiper
+        observeParents:true,//修改swiper的父元素时，自动初始化swiper
+        loop:true,
+        coverflow: {
+            rotate: 0,      //slide做3d旋转时Y轴的旋转角度
+            stretch: 12,    //每个slide之间的拉伸值，越大slide靠得越紧
+            depth: 110,     //slide的位置深度。值越大z轴距离越远，看起来越小
+            modifier: 3,  //depth和rotate和stretch的倍率,值越大这三个参数的效果越明显
+            slideShadows : false
+        },
+        /*onSlideChangeEnd: function (swiper) {
+            console.log(swiper, swiper.activeIndex, $(".swiper-slide").eq(swiper.activeIndex))
+            $(".swiper-slide").eq(swiper.activeIndex ).find("img").removeClass("paused").parent("").siblings(".swiper-slide").find("img").addClass("paused");
+        },*/
+        autoplayDisableOnInteraction: false
+    });
+    </script>
+    </body>
+</html>

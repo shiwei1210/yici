@@ -1,0 +1,779 @@
+body {
+    background: #16a64e;
+    font-family: "Microsoft Yahei";
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    margin: 0;
+    padding: 0;
+}
+
+.table-tr {
+    height: 20px;
+    color: #000000;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.table-tr td {
+    width: 20%;
+    height: 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+input {
+    border: none;
+}
+
+td {
+    font-size: 14px;
+}
+
+img {
+    border: none;
+    display: block;
+}
+
+html {
+    background: #16a64e;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+
+/*互动教学体系*/
+.t-wrap {
+    width: 1080px;
+    height: 1920px;
+    margin: 0 auto;
+    background: url(../images/bg.png) no-repeat;
+    position: relative;
+}
+
+.goback {
+    width: 107px;
+    height: 108px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.goback img {
+    width: 100%;
+    display: block;
+}
+
+.t-logo {
+    margin: auto;
+    width: 590px;
+    height: 177px;
+    margin-top: 98px;
+}
+
+.t-logo img {
+    width: 100%;
+    display: block;
+}
+
+.t-p1 {
+    width: 173px;
+    /*height: 174px;*/
+    margin: auto;
+    margin-top: 90px;
+}
+
+.t-p1 img {
+    width: 100%;
+    display: block;
+}
+
+.t-p2 {
+    width: 901px;
+    height: 903px;
+    margin: auto;
+    margin-top: 65px;
+    position: relative;
+}
+
+.t-p2 img {
+    width: 100%;
+    display: block;
+}
+
+.t-w1 {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 48px;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.t-w2 {
+    width: 80%;
+    color: #ffffff;
+    font-size: 29px;
+    font-family: "微软雅黑";
+    margin: auto;
+    line-height: 50px;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+/*教学体系文字*/
+.t-w3 {
+    width: 774px;
+    height: 76px;
+    margin: auto;
+    text-align: center;
+    font-family: "微软雅黑";
+    color: #ffffff;
+    font-size: 40px;
+    background: #24964f;
+    border-radius: 40px;
+    margin-top: 50px;
+    line-height: 76px;
+}
+
+.t-w4 {
+    width: 80%;
+    color: #ffffff;
+    font-size: 30px;
+    margin: auto;
+    line-height: 50px;
+    margin-top: 17px;
+}
+
+.t-show {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.t-show img {
+    width: 48%;
+    /*height: 350px;*/
+    margin-top: 15px;
+}
+
+.t-show img:nth-child(even) {
+    float: right;
+}
+
+.t-show img:nth-child(odd) {
+    float: left;
+}
+
+.t-show2 {
+    margin-top: 20px;
+}
+
+/*简介*/
+.about-p1 {
+    width: 969px;
+    height: 1380px;
+    margin: auto;
+    margin-top: 60px;
+    position: relative;
+}
+
+.about-p1 img {
+    width: 100%;
+    display: block;
+}
+
+.about-w1 {
+    width: 90%;
+    margin: auto;
+    color: #ffe9ad;
+    font-size: 50px;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    position: absolute;
+    top: 450px;
+    padding-left: 55px;
+}
+
+.about-w2 {
+    width: 90%;
+    margin: auto;
+    font-size: 32px;
+    color: #ffffff;
+    font-family: "微软雅黑";
+    position: absolute;
+    top: 505px;
+    line-height: 62px;
+    padding-left: 55px;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+.page {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.page-left {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.page-left a {
+    width: 280px;
+    color: #29ad40;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "微软雅黑";
+    background: #69e79a;
+    border-radius: 15px;
+    display: block;
+    line-height: 80px;
+    float: right;
+    margin-right: 30px;
+}
+
+.page-right {
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+.page-right a {
+    width: 280px;
+    color: #a75616;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "微软雅黑";
+    background: #fed63a;
+    border-radius: 15px;
+    display: block;
+    line-height: 80px;
+    float: left;
+    margin-left: 30px;
+}
+
+/*哈佛案列教学*/
+.h-bold {
+    font-weight: 700;
+}
+
+.online_bg {
+    width: 980px;
+    margin: auto;
+    position: relative;
+    margin-top: 35px;
+}
+
+.m_online {
+    width: 90%;
+    margin: auto;
+}
+
+.m_online img {
+    width: 100%;
+    margin: auto;
+}
+
+#media {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: none;
+}
+
+.star_img.active {
+    display: none;
+}
+
+#media.active {
+    display: block;
+}
+
+.viedeguanbi {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.viedeguanbi a {
+    display: block;
+    float: left;
+    padding: 10px 50px;
+    background: #48a4d9;
+    color: white;
+    border-radius: 5px;
+}
+
+.viedeguanbia1 {
+    margin-left: 29%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.viedeguanbia2 {
+    margin-left: 15%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*各大课程*/
+.kc-icon {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.kc-icon a {
+    width: 17%;
+    margin: 0 1.8%;
+    display: block;
+    float: left;
+}
+
+.kc-icon img {
+    width: 100%;
+    display: block;
+}
+
+.kc-icon a:first-child {
+    margin-left: 0;
+}
+
+.kc-icon a:last-child {
+    margin-right: 0;
+    float: right;
+}
+
+.kc-p2 {
+    width: 739px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.kc-p2 img {
+    width: 100%;
+    display: block;
+}
+
+/*版图*/
+.b-wrap {
+    width: 1080px;
+    height: 1920px;
+    margin: 0 auto;
+    background: url(../images/bt-bg.png) no-repeat;
+    position: relative;
+}
+
+.bt-icon {
+    position: absolute;
+    bottom: 150px;
+    overflow: hidden;
+}
+
+.bt-icon a {
+    width: 298px;
+    display: block;
+    float: left;
+    margin-left: 47px;
+}
+
+.bt-icon a img {
+    width: 100%;
+    display: block;
+}
+
+.index-logo {
+    padding-top: 95px;
+}
+
+/*大事记*/
+.sj-wrap {
+    width: 1080px;
+    height: 1920px;
+    margin: 0 auto;
+    background: url(../images/sj-bg.png) no-repeat;
+    position: relative;
+}
+
+.sj-w1 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.sj-w1 p:first-child {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 62px;
+    float: left;
+    width: 40%;
+    padding-left: 120px;
+}
+
+.sj-w1 p:last-child {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 62px;
+    float: left;
+    width: 60%;
+}
+
+/*成就*/
+.cj-show {
+    background: white;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 60px;
+    margin-left: 52px;
+    margin-right: 52px;
+}
+
+.cj-left {
+    float: left;
+    padding: 30px;
+}
+
+.cj-right {
+    float: right;
+}
+
+.cr-box {
+    overflow: hidden;
+}
+
+.cr-l {
+    float: left;
+}
+
+.cr-r {
+    float: right;
+}
+
+.cr-l p:first-child {
+    font-size: 60px;
+    font-family: Arial;
+    color: #009943;
+    line-height: 44px;
+    padding-top: 75px;
+}
+
+.cr-l p:last-child {
+    font-size: 24px;
+    color: #009943;
+    line-height: 44px;
+    border-bottom: #ccebd9 solid 1px;
+}
+
+.cr-r {
+    padding-top: 60px;
+    padding-right: 45px;
+}
+
+.cj-z {
+    margin-top: 35px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #009943;
+}
+
+.crx {
+    margin-top: 15px;
+}
+
+.cj-show1 {
+    margin-top: 40px;
+}
+
+/*至慧之师*/
+.zh-h {
+    width: 49%;
+    padding: 0;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.zh-p {
+    width: 43%;
+    margin-right: 40px;
+    font-size: 22px;
+    line-height: 44px;
+    color: #ffffff;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.s01show {
+    background: #26b962;
+}
+
+.s01show1 {
+    margin-top: 20px;
+}
+
+.zh-x {
+    float: right;
+    margin-top: 25px;
+}
+
+.s01h {
+    padding: 0;
+}
+
+.s01z {
+    width: 67%;
+    float: left;
+}
+
+.s01z h1 {
+    font-size: 42px;
+    color: #037d3b;
+    line-height: 44px;
+    padding-left: 40px;
+}
+
+.s01z span {
+    display: block;
+    font-size: 22px;
+    color: #009943;
+    margin: 40px;
+    line-height: 44px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.paging {
+    width: 540px;
+    overflow: hidden;
+    margin: auto;
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    margin-left: -270px;
+}
+
+.paging a {
+    display: block;
+    float: left;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+.paging a:first-child {
+    float: left;
+    width: 160px;
+    text-align: center;
+    background: #5be997;
+    color: #00af39;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 80px;
+    border-radius: 15px;
+}
+
+.paging a:nth-child(2) {
+    font-size: 36px;
+    font-family: Arial;
+    color: white;
+    margin: 0 30px;
+}
+
+.paging a:nth-child(3) {
+    font-size: 36px;
+    font-family: Arial;
+    color: white;
+    margin: 0 15px;
+}
+
+.paging a:nth-child(4) {
+    font-size: 36px;
+    font-family: Arial;
+    color: white;
+    margin: 0 30px;
+}
+
+
+.paging a:last-child {
+    float: right;
+    width: 160px;
+    text-align: center;
+    background: #ffd81c;
+    font-size: 36px;
+    font-weight: bold;
+    color: #aa5603;
+    line-height: 80px;
+    border-radius: 15px;
+}
+
+.pactive {
+    color: #ffd81c !important;
+}
+
+.top110 {
+    margin-top: 110px;
+}
+
+.about-span {
+    font-size: 36px;
+    color: #ffe9ad;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.about-w1p {
+    font-size: 42px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.about-wp {
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: normal;
+    line-height: 62px;
+}
+
+.about-sp {
+    margin-left: 50px;
+}
+
+.about1 {
+    top: 880px;
+}
+
+.top20 {
+    margin-top: 22px;
+}
+.top10 {
+    margin-top: 15px;
+}
+.top420{
+    top: 420px !important;
+}
+/*多元互动教学体系跳转*/
+.t-a {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+}
+
+.t-a1 {
+    left: 35px;
+    top: 45px;
+}
+
+.t-a2 {
+    right: 40px;
+    top: 45px;
+}
+
+.t-a3 {
+    left: 50px;
+    bottom: 45px;
+}
+
+.t-a4 {
+    right: 40px;
+    bottom: 45px;
+}
+
+.lv a {
+    color: #29ad40 !important;
+    background: #69e79a !important;
+}
+
+.chen a {
+    color: #a75616 !important;
+    background: #fed63a !important;
+}
+
+.cheng {
+    color: #a75616 !important;
+    background: #fed63a !important;
+}
+
+.lvv {
+    color: #29ad40 !important;
+    background: #69e79a !important;
+}
+
+.phonee {
+    position: absolute;
+    bottom: 50px;
+    width: 470px;
+    left: 50%;
+    margin-left: -235px;
+}
+
+.phonee p {
+    font-size: 36px;
+    color: #ffffff;
+    background: url("../images/bt-ic.png") no-repeat center left;
+    padding-left: 45px;
+}
+
+.phonee span {
+    color: #ffe328;
+    font-size: 36px;
+    font-family: Arial;
+    margin-left: 27px;
+}
+
+.t-p2 .hand {
+    width: 114px;
+    position: absolute;
+    right: 30px;
+    bottom: -50px;
+    animation: hands 3.5s infinite;
+}
+
+@-webkit-keyframes hands {
+    0% {
+        right: 30px;
+        bottom: -50px;
+    }
+    100% {
+        right: 90px;
+        bottom: 10px;
+    }
+}
+
+@keyframes hands {
+    0% {
+        right: 30px;
+        bottom: -50px;
+    }
+    100% {
+        right: 90px;
+        bottom: 10px;
+    }
+}
+
+.z-button {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
