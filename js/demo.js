@@ -28,10 +28,5 @@ $(function(){
             }
         });
     });
-    $(".z-button").on("click",function(){
-        if (confirm("确定要关闭程序？")) {
-            if (typeof (window["jsWinform"]) != "undefined" && jsWinform != undefined && jsWinform != null)
-                jsWinform.exitWinform();
-        }
-    })
+ 
 });

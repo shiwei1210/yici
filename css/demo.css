@@ -15,6 +15,7 @@ body {
 
 a {
     text-decoration: none;
+	-webkit-tap-highlight-color:transparent
 }
 
 p {
@@ -551,17 +552,17 @@ html {
 .s01z h1 {
     font-size: 42px;
     color: #037d3b;
-    line-height: 44px;
+    line-height: 90px;
     padding-left: 40px;
 }
 
 .s01z span {
     display: block;
-    font-size: 22px;
+    font-size: 26px;
     color: #009943;
-    margin: 40px;
-    line-height: 44px;
-    margin-top: 30px;
+    margin: 30px;
+    line-height: 48px;
+    margin-top: 10px;
     margin-bottom: 0;
     text-align: justify;
 }

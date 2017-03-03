@@ -1,6 +1,7 @@
 body {
     background: #16a64e;
 }
+a{-webkit-tap-highlight-color:transparent;}
 a:hover{text-decoration: none;}
 .index-wrap{
     width:1080px;
@@ -19,7 +20,7 @@ a:hover{text-decoration: none;}
 .index-loop{
     width:819px;
     height:1172px;
-    margin: 170px auto;
+    margin: 115px auto;
 }
 .index-loop .swiper-container {
     width: 100%;
@@ -121,7 +122,7 @@ a:hover{text-decoration: none;}
 .index2-2{
     position: absolute;
     left:240px;
-    top: 66px;
+    top: 115px;
 }
 .index2-3,.index2-4,.index2-5{
     position: absolute;
@@ -162,7 +163,7 @@ a:hover{text-decoration: none;}
 .index6-2{
     position: absolute;
     left:135px;
-    top: 165px;
+    top: 217px;
 }
 .index-animate{
     /* animation:index4-2 25s alternate;
@@ -381,5 +382,25 @@ a:hover{text-decoration: none;}
     animation-play-state: running
 }*/
 
+.phonee {
+    position: absolute;
+    bottom: 80px;
+    width: 470px;
+    left: 50%;
+    margin-left: -235px;
+}
 
+.phonee p {
+    font-size: 36px;
+    color: #ffffff;
+    background: url("../images/bt-ic.png") no-repeat center left;
+    padding-left: 45px;
+}
+
+.phonee span {
+    color: #ffe328;
+    font-size: 36px;
+    font-family: Arial;
+    margin-left: 27px;
+}
 
