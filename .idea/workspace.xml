@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5affaeed-1a90-435f-9a75-beb6d51a4477" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/demo.css" afterPath="$PROJECT_DIR$/css/demo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/teach.html" afterPath="$PROJECT_DIR$/teach.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -38,15 +39,15 @@
       <file leaf-file-name="demo.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/demo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7">
-              <caret line="836" column="23" selection-start-line="836" selection-start-column="23" selection-end-line="836" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.15795454">
+              <caret line="699" column="17" selection-start-line="699" selection-start-column="17" selection-end-line="699" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kecheng.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kecheng.html">
+      <file leaf-file-name="teach.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/teach.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-8.5161295">
               <caret line="12" column="72" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
@@ -77,6 +78,7 @@
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/achievement.html" />
         <option value="$PROJECT_DIR$/kecheng.html" />
+        <option value="$PROJECT_DIR$/teach.html" />
         <option value="$PROJECT_DIR$/css/demo.css" />
       </list>
     </option>
@@ -248,13 +250,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/achievement.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12485812">
-          <caret line="5" column="66" selection-start-line="4" selection-start-column="3" selection-end-line="5" selection-end-column="66" />
+        <state vertical-scroll-proportion="0.09988649">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kecheng.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2996595">
+          <caret line="12" column="72" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teach.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.5161295">
           <caret line="12" column="72" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
@@ -264,8 +274,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/demo.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7">
-          <caret line="836" column="23" selection-start-line="836" selection-start-column="23" selection-end-line="836" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.15795454">
+          <caret line="699" column="17" selection-start-line="699" selection-start-column="17" selection-end-line="699" selection-end-column="17" />
           <folding />
         </state>
       </provider>

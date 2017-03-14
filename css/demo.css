@@ -110,10 +110,9 @@ html {
 }
 
 .t-p2 {
-    width: 901px;
-    height: 903px;
+    width: 60%;
     margin: auto;
-    margin-top: 65px;
+    margin-top: 25px;
     position: relative;
 }
 
@@ -693,29 +692,35 @@ html {
 }
 /*多元互动教学体系跳转*/
 .t-a {
-    width: 350px;
-    height: 350px;
     position: absolute;
 }
 
 .t-a1 {
-    left: 35px;
-    top: 45px;
+    width: 80px;
+    height: 80px;
+    left: 4%;
+    top: 2%;
 }
 
 .t-a2 {
-    right: 40px;
-    top: 45px;
+    width: 80px;
+    height: 80px;
+    right: 4%;
+    top: 2%;
 }
 
 .t-a3 {
-    left: 50px;
-    bottom: 45px;
+    width: 80px;
+    height: 80px;
+    left: 4%;
+    bottom: 5%;
 }
 
 .t-a4 {
-    right: 40px;
-    bottom: 45px;
+    width: 80px;
+    height: 80px;
+    right: 4%;
+    bottom: 5%;
 }
 
 .lv a {
@@ -761,31 +766,32 @@ html {
 }
 
 .t-p2 .hand {
-    width: 114px;
+    width: 54px;
+    height: 54px;
     position: absolute;
     right: 30px;
     bottom: -50px;
-    animation: hands 3.5s infinite;
+    animation: hands 2.5s infinite;
 }
 
 @-webkit-keyframes hands {
     0% {
-        right: 30px;
+        right:20px;
         bottom: -50px;
     }
     100% {
-        right: 90px;
+        right: 50px;
         bottom: 10px;
     }
 }
 
 @keyframes hands {
     0% {
-        right: 30px;
+        right: 20px;
         bottom: -50px;
     }
     100% {
-        right: 90px;
+        right: 50px;
         bottom: 10px;
     }
 }
