@@ -72,11 +72,11 @@ html {
 }
 
 .goback {
-    width: 107px;
-    height: 108px;
+    width: 40px;
+    height: 40px;
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 15px;
+    left: 15px;
 }
 
 .goback img {
@@ -209,25 +209,24 @@ html {
     width: 90%;
     margin: auto;
     color: #ffe9ad;
-    font-size: 50px;
+    font-size: 18px;
     font-family: "微软雅黑";
     font-weight: bold;
     position: absolute;
     top: 450px;
-    padding-left: 55px;
+    padding-left: 15px;
 }
 
 .about-w2 {
     width: 90%;
     margin: auto;
-    font-size: 36px;
+    font-size: 12px;
     color: #ffffff;
     font-family: "微软雅黑";
     position: absolute;
-    top: 425px;
-    line-height: 65px;
-    padding-left: 55px;
-    letter-spacing: 1px;
+    top: 155px;
+    line-height: 25px;
+    padding-left: 15px;
     text-align: justify;
 }
 
@@ -244,15 +243,15 @@ html {
 }
 
 .page-left a {
-    width: 280px;
+    width: 120px;
     color: #29ad40;
-    font-size: 36px;
+    font-size: 14px;
     font-weight: bold;
     font-family: "微软雅黑";
     background: #69e79a;
-    border-radius: 15px;
+    border-radius: 5px;
     display: block;
-    line-height: 80px;
+    line-height: 40px;
     float: right;
     margin-right: 30px;
 }
@@ -264,15 +263,15 @@ html {
 }
 
 .page-right a {
-    width: 280px;
+    width: 120px;
     color: #a75616;
-    font-size: 36px;
+    font-size: 14px;
     font-weight: bold;
     font-family: "微软雅黑";
     background: #fed63a;
-    border-radius: 15px;
+    border-radius: 5px;
     display: block;
-    line-height: 80px;
+    line-height: 40px;
     float: left;
     margin-left: 30px;
 }
@@ -410,7 +409,7 @@ html {
 }
 
 .index-logo {
-    padding-top: 95px;
+    padding-top: 35px;
 }
 
 /*大事记*/
@@ -677,7 +676,7 @@ html {
     margin-top: 15px;
 }
 .top420{
-    top: 345px !important;
+    top: 125px !important;
 }
 /*多元互动教学体系跳转*/
 .t-a {
@@ -786,5 +785,5 @@ html {
     top: 20px;
 }
 .abou{
-    width: 840px !important;
+    width: 300px !important;
 }
