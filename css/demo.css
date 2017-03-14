@@ -787,3 +787,106 @@ html {
 .abou{
     width: 300px !important;
 }
+@media screen and (min-width: 376px) {
+    .abou{
+        width: 350px !important;
+    }
+    .top420{
+        top: 145px !important;
+    }
+    .about-w1 {
+        width: 90%;
+        margin: auto;
+        color: #ffe9ad;
+        font-size: 20px;
+        font-family: "微软雅黑";
+        font-weight: bold;
+        position: absolute;
+        top: 450px;
+        padding-left: 25px;
+    }
+
+    .about-w2 {
+        width: 90%;
+        margin: auto;
+        font-size: 14px;
+        color: #ffffff;
+        font-family: "微软雅黑";
+        position: absolute;
+        top: 175px;
+        line-height: 30px;
+        padding-left: 25px;
+        text-align: justify;
+    }
+}
+@media screen and (max-width: 320px) {
+    .abou{
+        width: 280px !important;
+    }
+    .top420{
+        top: 115px !important;
+    }
+    .about-w1 {
+        width: 90%;
+        margin: auto;
+        color: #ffe9ad;
+        font-size: 16px;
+        font-family: "微软雅黑";
+        font-weight: bold;
+        position: absolute;
+        top: 450px;
+        padding-left: 15px;
+    }
+
+    .about-w2 {
+        width: 90%;
+        margin: auto;
+        font-size: 10px;
+        color: #ffffff;
+        font-family: "微软雅黑";
+        position: absolute;
+        top: 140px;
+        line-height: 25px;
+        padding-left: 15px;
+        text-align: justify;
+    }
+    .page{
+        margin-top: 10px;
+    }
+    .page-left a {
+        width: 100px;
+        color: #29ad40;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: "微软雅黑";
+        background: #69e79a;
+        border-radius: 5px;
+        display: block;
+        line-height: 30px;
+        float: right;
+        margin-right: 30px;
+    }
+
+    .page-right {
+        width: 50%;
+        float: right;
+        text-align: center;
+    }
+
+    .page-right a {
+        width: 100px;
+        color: #a75616;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: "微软雅黑";
+        background: #fed63a;
+        border-radius: 5px;
+        display: block;
+        line-height: 30px;
+        float: left;
+        margin-left: 30px;
+    }
+    .about-p1{
+        margin-top: 10px;
+    }
+}
