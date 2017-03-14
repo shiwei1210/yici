@@ -371,7 +371,7 @@ html {
 }
 
 .kc-p2 {
-    width: 189px;
+    width: 60%;
     margin: auto;
     margin-top: 10px;
 }
@@ -929,7 +929,7 @@ html {
         margin-top: 5px;
     }
     .kc-p2{
-        width: 155px;
+        width: 50%;
     }
     .goback{
         width: 30px;
