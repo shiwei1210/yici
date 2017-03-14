@@ -852,7 +852,8 @@ html {
         text-align: justify;
     }
     .page{
-        margin-top: 10px;
+        position: absolute;
+        bottom: 0;
     }
     .page-left a {
         width: 100px;
