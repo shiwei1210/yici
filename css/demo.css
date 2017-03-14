@@ -776,23 +776,23 @@ html {
 
 @-webkit-keyframes hands {
     0% {
-        right:20px;
+        right:-20px;
         bottom: -50px;
     }
     100% {
-        right: 50px;
-        bottom: 10px;
+        right: 10px;
+        bottom: -20px;
     }
 }
 
 @keyframes hands {
     0% {
-        right: 20px;
+        right: -20px;
         bottom: -50px;
     }
     100% {
-        right: 50px;
-        bottom: 10px;
+        right: 10px;
+        bottom: -20px;
     }
 }
 
