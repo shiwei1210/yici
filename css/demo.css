@@ -853,7 +853,7 @@ html {
     }
     .page{
         position: absolute;
-        bottom: 0;
+        bottom: 100px;
     }
     .page-left a {
         width: 100px;
