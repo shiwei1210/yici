@@ -135,11 +135,11 @@ html {
 .t-w2 {
     width: 90%;
     color: #ffffff;
-    font-size: 36px;
+    font-size: 14px;
     font-family: "微软雅黑";
     margin: auto;
-    line-height: 65px;
-    margin-top: 15px;
+    line-height: 20px;
+    margin-top: 10px;
     text-align: justify;
 }
 
@@ -345,7 +345,7 @@ html {
 .kc-icon {
     width: 90%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
     overflow: hidden;
 }
 
@@ -371,9 +371,9 @@ html {
 }
 
 .kc-p2 {
-    width: 739px;
+    width: 219px;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 10px;
 }
 
 .kc-p2 img {
@@ -916,5 +916,19 @@ html {
     }
     .cj-show{
         margin-top: 10px;
+    }
+    .t-w2{
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .kc-icon{
+        margin-top: 5px;
+    }
+    .t-p1{
+        width: 60px;
+        margin-top: 10px;
+    }
+    .kc-p2{
+        width: 170px;
     }
 }
