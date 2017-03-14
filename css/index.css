@@ -397,7 +397,7 @@ a:hover{text-decoration: none;}
     padding-left: 45px;
 }
 
-.phonee span {
+.phonee span a{
     color: #ffe328;
     font-size: 36px;
     font-family: Arial;
