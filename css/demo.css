@@ -832,6 +832,10 @@ html {
         padding-left: 25px;
         text-align: justify;
     }
+    .t-w2{
+        font-size: 14px;
+        line-height: 25px;
+    }
 }
 @media screen and (max-width: 320px) {
     .abou{
