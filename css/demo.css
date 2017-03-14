@@ -453,12 +453,15 @@ html {
     border-radius: 5px;
     width: 90%;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .cj-left {
     float: left;
-  width: 40%;
+  width: 38%;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 .cj-left img{
     width: 100%;
@@ -488,6 +491,7 @@ html {
     font-family: Arial;
     color: #009943;
     padding-top: 5px;
+    margin-left: 10px;
 }
 
 .cr-l p:last-child {
@@ -495,6 +499,7 @@ html {
     color: #009943;
     line-height: 25px;
     border-bottom: #ccebd9 solid 1px;
+    margin-left: 10px;
 }
 
 .cr-r {
@@ -510,10 +515,12 @@ html {
     font-size: 12px;
     font-weight: bold;
     color: #009943;
+    margin-left: 10px;
 }
 
 .crx {
     margin-top: 5px;
+    margin-left: 10px;
 }
 
 
@@ -793,6 +800,7 @@ html {
 .abou{
     width: 300px !important;
 }
+
 @media screen and (min-width: 376px) {
     .abou{
         width: 350px !important;
@@ -895,5 +903,18 @@ html {
     }
     .about-p1{
         margin-top: 5px;
+    }
+    .cj-left {
+        float: left;
+        width: 30%;
+        margin-left: 2%;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .cj-right{
+        width: 68%;
+    }
+    .cj-show{
+        margin-top: 10px;
     }
 }
