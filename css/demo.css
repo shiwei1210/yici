@@ -5,6 +5,8 @@ body {
     overflow-scrolling: touch;
     margin: 0;
     padding: 0;
+    height:100%;
+    overflow:hidden;
 }
 
 .table-tr {
@@ -67,7 +69,6 @@ html {
     margin: 0 auto;
     background: url(../images/bg.png) no-repeat;
     background-size: 100% 100%;
-    position: absolute;
     overflow: hidden;
 }
 
