@@ -98,10 +98,10 @@ html {
 }
 
 .t-p1 {
-    width: 173px;
+    width: 80px;
     /*height: 174px;*/
     margin: auto;
-    margin-top: 90px;
+    margin-top: 15px;
 }
 
 .t-p1 img {
@@ -126,10 +126,10 @@ html {
     width: 100%;
     text-align: center;
     color: #ffffff;
-    font-size: 48px;
+    font-size: 16px;
     font-family: "微软雅黑";
     font-weight: bold;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .t-w2 {
@@ -450,18 +450,22 @@ html {
     background: white;
     margin: auto;
     overflow: hidden;
-    border-radius: 20px;
-    margin-top: 60px;
-    margin-left: 52px;
-    margin-right: 52px;
+    border-radius: 5px;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
 }
 
 .cj-left {
     float: left;
-    padding: 30px;
+  width: 40%;
 }
-
+.cj-left img{
+    width: 100%;
+    display: block;
+}
 .cj-right {
+    width: 60%;
     float: right;
 }
 
@@ -475,42 +479,43 @@ html {
 
 .cr-r {
     float: right;
+    margin-right: 10px;
+    margin-top: 3px;
 }
 
 .cr-l p:first-child {
-    font-size: 60px;
+    font-size: 18px;
     font-family: Arial;
     color: #009943;
-    line-height: 44px;
-    padding-top: 75px;
+    padding-top: 5px;
 }
 
 .cr-l p:last-child {
-    font-size: 24px;
+    font-size: 12px;
     color: #009943;
-    line-height: 44px;
+    line-height: 25px;
     border-bottom: #ccebd9 solid 1px;
 }
 
 .cr-r {
-    padding-top: 60px;
-    padding-right: 45px;
+   width: 30px;
+    height: 40px;
 }
-
+.cr-r img{
+    width: 100%;
+    display: block;
+}
 .cj-z {
-    margin-top: 35px;
-    font-size: 30px;
+    margin-top: 10px;
+    font-size: 12px;
     font-weight: bold;
     color: #009943;
 }
 
 .crx {
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
-.cj-show1 {
-    margin-top: 40px;
-}
 
 /*至慧之师*/
 .zh-h {
